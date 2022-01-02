@@ -1,7 +1,7 @@
 header{
     background-color: #EEEBD3;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
+    font-size: 0.5em;
     color: #333;
     text-align: center;
     border: 1px solid #ccc;
@@ -9,6 +9,7 @@ header{
     margin: 0 auto;
     padding: 50px;
     border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
 }
 header img{
@@ -43,6 +44,12 @@ body {
     min-width: 550px;
 }
 
+.text-header{
+    margin-bottom: -2%;
+    text-align: center;
+
+}
+
 .list-container{
   max-width: 850px;
   min-width: 550px;
@@ -62,13 +69,3 @@ footer{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
 }
-
-/* @media screen and (max-width: 850px) {
-    body{
-        width: 100%;
-    }
-    img{
-        width: 80%;
-    }
-}
-     */
