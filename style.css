@@ -12,6 +12,7 @@ header{
     padding-right: 100px;
     border-radius: 20px;
     background-color: #437C90;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
 }
 header img{
@@ -20,6 +21,7 @@ header img{
     float:left;
     margin-right:5px;
     margin-top: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 
@@ -58,4 +60,5 @@ footer{
     border-radius: 20px;
     font-size: 20px;
     background-color: #437C90;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
