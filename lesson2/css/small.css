@@ -2,9 +2,6 @@
 https://coolors.co/022b3a-1f7a8c-bfdbf7-e1e5f2-ffffff   
 */
 
-html{
-	color: #6D5A72;
-}
 .content {
     margin: 0 auto;
     background-color: #1f7a8c;
@@ -24,8 +21,8 @@ html{
 }
 
 header {
+    background-color: #022b3a;
     border-radius: 12px;
-	color:  #172A3A;
 }
 
 h1,
@@ -42,58 +39,66 @@ img {
     margin-left: auto;
     margin-right: auto;
     padding-top: 30px;
-	width: 23.5rem;
 }
 
 p, h3 {
+    color: #bfdbf7;
     font-family: "roboto condensed";
     font-weight: bold;
     font-size: x-large;
-	text-align: center;
 }
-a{
-	color: #6D5A72;
-	font-size: 1.5em;
+
+a {
+    color: #bfdbf7;
+    font-family: "roboto condensed";
+    font-weight: bolder;
+    font-size: x-large;
 }
 
 section {
-    background-color: #93BEDF;
+    background-color: #022b3a;
 }
 
 .website1,
 .website2,
 .website3 {
     padding: 10px;
-    box-shadow: 4px 4px 4px #473144;
+    box-shadow: 4px 4px 4px #bfdbf7;
     border-style: inset;
     border: 3px ridge #bfdbf7;
     border-radius: 12px;
+	background-color: #566E3D;
+}
+img{
+	width: 250px;
+	height: auto;
 }
 .back-button {
- padding: 1.3em 3em;
- font-size: 12px;
- text-transform: uppercase;
- letter-spacing: 2.5px;
- font-weight: 500;
- color: #000;
- background-color: #fff;
- border: none;
- border-radius: 45px;
- box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
- transition: all 0.3s ease 0s;
+ position: relative;
+ display: inline-block;
+ margin: 15px;
+ padding: 15px 30px;
+ text-align: center;
+ font-size: 18px;
+ letter-spacing: 1px;
+ text-decoration: none;
+ color: #725AC1;
+ background: transparent;
  cursor: pointer;
- outline: none;
+ transition: ease-out 0.5s;
+ border-radius: 30px;
+ border: 2px solid #725AC1;
+ border-radius: 10px;
+ box-shadow: inset 0 0 0 0 #725AC1;
 }
 
 .back-button:hover {
- background-color: #4E3D42;
- box-shadow: 0px 15px 20px #6A3E37;
- color: #fff;
- transform: translateY(-7px);
+ color: white;
+ box-shadow: inset 0 -100px 0 0 #725AC1;
 }
 
 .back-button:active {
- transform: translateY(-1px);
+ transform: scale(0.9);
 }
 
 footer {
@@ -104,5 +109,4 @@ footer {
     padding: 2px;
     line-height: 1.8em;
     font-family: Montserrat;
-	margin-top: 2.5rem;
 }
