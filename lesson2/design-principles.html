@@ -1,36 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Page Title</title>
-		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<link rel="stylesheet" href="css/style.css">
-	</head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>W02 Assignment</title>
+        <meta name="description" content="W02 Design Principles Document Assignment to share with class">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto+Condensed:wght@300&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+    </head>
 
     <body>
-		<div class="parent">
-			<div class="div1"> </div>
-			<div class="div2"> 
-				<h2>Hick's Law</h2>
-			</div>
-			<div class="div3">
-				<h2>Visual Hierarchy</h2>
-			</div>
-			<div class="div4"> 
-				<h2>Proximity</h2>
-			</div>
-			<div class="div5"> 
-				<img src="images/hicks.jpg" alt="hicks">
-			</div>
-			<div class="div6"> 
-				<img src="images/hierarchy.jpg" alt="hierarchy">
-			</div>
-			<div class="div7">
-				<img src="images/proximity.jpg" alt="proximity">
-			</div>
-			<div class="div8"> Desc1</div>
-			<div class="div9"> Desc2</div>
-			<div class="div10"> Desc3</div>
-		</div> 
+        <div class="content">
+            <header>
+				<input class ="back-button" type="button" value="Back" onClick="history.go(-1);">
+                <h1>Design Principles Document</h1>
+                <h2>Ulises M. Melgarejo</h2>
+            </header>
+
+            <main class="grid">
+                <section class="website1">
+                    <h3 class="par1">Visual Hierarchy</h3>
+                    <a href="https://rt.com" target="_blank">RT News</a>
+                    <br>
+                    <img src="images/hierarchy.jpg" alt="RT News website">
+                    <br>
+                    <p class="par3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+					Pellentesque aliquam velit sit amet ante malesuada laoreet. Vestibulum vitae vestibulum libero. 
+					Curabitur eleifend dapibus risus a molestie. Pellentesque quis metus velit. Maecenas vel felis id leo sodales dignissim. 
+					Morbi venenatis viverra diam vitae luctus.</p>
+
+                </section>
+
+                <section class="website2">
+                    <h3 class="par1">Law of Proximity</h3>
+                    <a href="https://www.walmart.com/" target="_blank">Walmart</a>
+                    <br>
+                    <img src="images/proximity.jpg" alt="Walmart website">
+                    <br>
+                    <p class="par3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+					Pellentesque aliquam velit sit amet ante malesuada laoreet. Vestibulum vitae vestibulum libero. 
+					Curabitur eleifend dapibus risus a molestie. Pellentesque quis metus velit. Maecenas vel felis id leo sodales dignissim. 
+					Morbi venenatis viverra diam vitae luctus.</p>
+
+                </section>
+
+                <section class="website3">
+                    <h3 class="par1">Hicks Law</h3>
+                    <a href="https://mbest.aliexpress.com/" target="_blank">Ali Express</a>
+                    <br>
+                    <img src="images/hicks.jpg" alt="Ali Express website">
+                    <br>
+                    <p class="par3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+					Pellentesque aliquam velit sit amet ante malesuada laoreet. Vestibulum vitae vestibulum libero. 
+					Curabitur eleifend dapibus risus a molestie. Pellentesque quis metus velit. Maecenas vel felis id leo sodales dignissim. 
+					Morbi venenatis viverra diam vitae luctus.</p>
+                    <br>
+                </section>
+            </main>
+            <footer>
+        <p>
+            &copy; <span id="year"></span> .:|:. Ulises M.Melgarejo .:|:. Argentina
+        </p>
+        <p>Last Updated: <span id="modify"></span>.</p>
+            </footer>
+		<script src="js/script.js" defer></script>
+            
+        </div>
     </body>
+
 </html>
