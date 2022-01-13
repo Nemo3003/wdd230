@@ -43,14 +43,14 @@ img {
 
 p, h3 {
     color: #bfdbf7;
-    font-family: "roboto condensed";
+    font-family: "roboto condensed", Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: x-large;
 }
 
 a {
     color: #bfdbf7;
-    font-family: "roboto condensed";
+    font-family: "roboto condensed", Arial, Helvetica, sans-serif;
     font-weight: bolder;
     font-size: x-large;
 }
