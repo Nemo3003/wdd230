@@ -3,13 +3,13 @@
   justify-content: space-evenly;
   align-items: center;
   background: lightblue;
+  height: 5.5rem;
+  font-size: 24px;
 
 }
 footer{
-    padding: 10px;
+	margin-top: 2.7rem;
     text-align: center;
     border: 1px solid #ccc;
-    border-radius: 20px;
     background-color: #EEEBD3;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
