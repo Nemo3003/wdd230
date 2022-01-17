@@ -2,4 +2,14 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  background: lightblue;
+
+}
+footer{
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #EEEBD3;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
