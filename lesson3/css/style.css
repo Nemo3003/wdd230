@@ -7,8 +7,58 @@
   font-size: 24px;
 
 }
+.color-title{
+	text-align: center;
+}
+.colors{
+	display: flex;
+	justify-content: space-evenly;
+}
+.name-color{
+	border-left: 4px solid #ccc;
+	border-bottom: 4px solid #ccc;
+	border-top: 4px solid #ccc;
+}
+.color1{
+	background: #F2F3AE;
+	width: 20px;
+	height: 20px;
+	border: 1px dotted #ccc;
+}
+.color2{
+	background: #EDD382;
+	width: 20px;
+	height: 20px;
+	border: 1px dotted #ccc;
+}
+.color3{
+	background: #FC9E4F;
+	width: 20px;
+	height: 20px;
+	border: 1px dotted #ccc;
+}
+.color4{
+	background: #FF521B;
+	width: 20px;
+	height: 20px;
+	border: 1px dotted #ccc;
+}
+.color5{
+	background: #020122;
+	width: 20px;
+	height: 20px;
+	border: 1px dotted #ccc;
+}
+
+body{
+	width: 975px;
+	height: 650px;
+	margin: 0 auto;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
 footer{
-	margin-top: 2.7rem;
+	
     text-align: center;
     border: 1px solid #ccc;
     background-color: #EEEBD3;
