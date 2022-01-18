@@ -1,0 +1,10 @@
+@media only screen and (min-width: 32.5em){
+	.navbar{
+		display:  flex;
+		justify-content: space-evenly;
+		font-size: 24px;
+		height: 5.5rem;
+		background-color:  lightcoral;
+
+	}
+}
