@@ -13,6 +13,32 @@
 h1,h2,h3{
 	text-align:  center;
 }
+nav {
+  padding: 1em;
+  font-family: font-family: Verdana, Geneva, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+nav ul {
+  
+  margin: 0;
+  background: #333;
+
+}
+
+nav li a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  padding: .5em 1em;
+}
+
+nav li a:hover {
+  background: tomato;
+  color: white;
+}
 
 
 .navbar {
