@@ -46,11 +46,17 @@ nav .mainMenu .closeMenu , .icons i {
 
 nav .logo {
     margin: 6px;
+    width: 75px;
+}
+nav .title-logo{
+    margin: 6px;
     font-size: 25px;
     cursor: pointer;
 }
-
-section{
+#displayDateTime{
+    font-size: 1rem;
+}
+main{
     height: 79vh;
 }
 footer{
