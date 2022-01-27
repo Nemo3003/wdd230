@@ -98,8 +98,8 @@ nav li a:hover {
 	}
 
 
-	}
 	body{
+	
 
 	margin: 0 auto;
 	margin-top: 1rem;
@@ -107,6 +107,7 @@ nav li a:hover {
 	display: flex;
  	flex-direction: column;
  	height: 100%;
+	max-width:800px;
 }
 	footer{
 	    text-align: center;
