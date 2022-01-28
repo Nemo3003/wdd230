@@ -109,6 +109,10 @@ main{
     grid-area: 5 / 4 / 7 / 5;
     background-color: rgb(177, 170, 170);
 }
+h1{
+    font-size: 25px;
+    text-align: center;
+}
 
 footer{
     text-align: center;
