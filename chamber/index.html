@@ -5,34 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chamber of Commercing</title>
 	<meta name="description" content="This website is the home page of the chamber of commerce">
-    <link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
-
+    <script src="https://kit.fontawesome.com/6cf4e2cf58.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
 </head>
 <body>
-	<header>
-        <nav>
-            <img class="logo" src="images/mylogoCC.png" alt="My Logo">
-            <h1 class="title-logo">Chamber of Commercing</h1>
-            <div class="openMenu"><i class="fa fa-bars"></i></div>
-            <ul class="mainMenu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">About</a></li>
-                <div class="closeMenu"><i class="fa fa-times"></i></div>
-                <span class="icons">
-                    <a href="https://www.facebook.com/ulisesmariano.melgarejo.5/"><i class="fab fa-facebook"></i></a>
-                    <a href="instagram.com"><i class="fab fa-instagram"></i></a>
-                    <a href="https://twitter.com/UlisesMarianoM1"><i class="fab fa-twitter"></i></a>
-                    <a href="https://github.com/Nemo3003"><i class="fab fa-github"></i></a>
-                </span>
-            </ul>
-        </nav>
-        <h2 id="displayDateTime"></h2>
-	</header>
+    <header>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="#" class="enlace">
+            <img src="images/mylogoCC.png" alt="" class="logo">
+        </a>
+        <ul>
+            <li><a class="active" href="#">Portal</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-github"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter" ></i>
+       </div>
+        
+    </nav>
+    <span id="displayDateTime"></span>
+</header>
 	<main>
         <div class="event">Event</div>
         <div class="weather">Weather</div>
