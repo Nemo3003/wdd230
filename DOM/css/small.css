@@ -26,19 +26,17 @@ main {
 	border: 1px solid #999;
 	padding: 0.5rem;
 	background-color: #9da08e;
-	display: grid;
-	grid-template-columns: 1fr;
 	border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 input,
 button {
-	padding: 0.15rem;
+	padding: 0.7rem;
 	margin-left: 1rem;
 	font-size: 1.1rem;
 	border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 input {
