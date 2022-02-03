@@ -83,7 +83,9 @@
         grid-column-end: 5;
         
      }
-    
+    footer{
+       margin-top: 30%;
+    }
     
     
 }

@@ -48,7 +48,13 @@
         background-color: rgb(177, 170, 170);
         display: none;
     }
-    
+    footer{
+
+        margin-top: 30%;
+        padding: 10px 10px 0px 10px;
+        bottom: 0;
+        width: 100%;
+    }
 }
 @media (max-width: 500px){
     .checkbtn{
@@ -121,5 +127,10 @@
         background-color: rgb(177, 170, 170);
         display: none;
     }
-    
+    footer{
+        margin-top: 40%;
+        padding: 10px 10px 0px 10px;
+        bottom: 0;
+        width: 100%;
+    }
 }
