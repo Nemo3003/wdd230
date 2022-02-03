@@ -36,7 +36,7 @@ nav ul li a{
     border-radius: 3px;
     text-transform: uppercase;
 }
-li a.active, li a:hover{
+li a:hover{
     background: #000090;
     transition: .5s;
 }
@@ -83,8 +83,9 @@ main{
 }
 .weather{
     grid-area: 3 / 1 / 5 / 2;
-    background-color: rgb(177, 170, 170);
+    background-color: #4682b4
 }
+
 .join{
     grid-area: 5 / 1 / 7 / 2;
     background-color: rgb(177, 170, 170);
@@ -92,6 +93,10 @@ main{
 .hero{
     grid-area: 1 / 2 / 5 / 4;
     background-color: rgb(177, 170, 170);
+}
+.hero-img{
+    width: 100%;
+    height:  auto;
 }
 .news{
     grid-area: 5 / 2 / 7 / 4;
@@ -113,6 +118,10 @@ h1{
     font-size: 25px;
     text-align: center;
 }
+h2{
+    text-align:  center;
+}
+
 
 footer{
     text-align: center;
