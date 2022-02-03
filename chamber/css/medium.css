@@ -1,10 +1,8 @@
 @media screen and (max-width: 820px) {
     main{
         display: grid; 
-     
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        
         gap: 2px;
         height: calc(100vh - 80px);
         
