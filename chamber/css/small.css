@@ -101,7 +101,7 @@ main{
 }
 .event{
     grid-area: 1 / 1 / 3 / 2; 
-    background-image: url("/chamber/images/culture.png");
+    background-image: url("/chamber/images/3.jpg");
     background-size: 100% auto;
     
 }
@@ -113,7 +113,7 @@ main{
 
 .join{
     grid-area: 5 / 1 / 7 / 2;
-    background-image: url('/chamber/images/joinus.jpg');
+    background-image: url('/chamber/images/4.jpg');
     background-size: 100% auto;
 }
 .hero{
@@ -126,7 +126,7 @@ main{
 }
 .news{
     grid-area: 5 / 2 / 7 / 4;
-    background-image: url("/chamber/images/news-tirol.jpg");
+    background-image: url("/chamber/images/6.jpg");
     background-size: 100% auto;
 }
 p{
@@ -134,18 +134,18 @@ p{
 }
 .spot1{
     grid-area: 1 / 4 / 3 / 5;
-    background-image: url("/chamber/images/delivery.jpg");
+    background-image: url("/chamber/images/2.jpg");
     background-size: 100% auto;
 }
 .spot2{
     grid-area: 3 / 4 / 5 / 5;
-    background-image: url("/chamber/images/R.png");
+    background-image: url("/chamber/images/1.jpg");
     background-size: 100% auto;
 }
 
 .spot3{
     grid-area: 5 / 4 / 7 / 5;
-    background-image: url("/chamber/images/recycle.jpeg");
+    background-image: url("/chamber/images/5.jpg");
     background-size: 100% auto;
 
 }
