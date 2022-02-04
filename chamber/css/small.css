@@ -126,7 +126,7 @@ main{
 }
 .news{
     grid-area: 5 / 2 / 7 / 4;
-    background-image: url("../images/6.jpg");
+    background-image: url("../images/news-tirol.jpg");
     background-size: 100% auto;
 }
 p{
