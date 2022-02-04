@@ -16,8 +16,13 @@
      
         grid-row-end: 2;
         grid-column-end: 5;
-        
+        height: 20rem;
      }
+     .hero-img{
+        height: 20rem;
+         width: 100%;
+     }
+     
      .news {
      
         background-color: rgb(177, 170, 170);
@@ -26,6 +31,7 @@
      
         grid-row-end: 3;
         grid-column-end: 5;
+        height: 7rem;
         
      }
      .spot1 {
@@ -36,6 +42,7 @@
      
         grid-row-end: 4;
         grid-column-end: 3;
+        height: 7rem;
         
      }
      .spot2 {
@@ -46,20 +53,19 @@
      
         grid-row-end: 4;
         grid-column-end: 5;
+        height: 7rem;
     }
     .spot3{
         display: none;
     }
      
      .join {
-     
         background-color: rgb(177, 170, 170);
         grid-row-start: 4;
         grid-column-start: 1;
-     
         grid-row-end: 5;
         grid-column-end: 5;
-        
+        height: 7rem;
      }
      .event {
      
@@ -81,9 +87,11 @@
         grid-column-end: 5;
         
      }
-    footer{
-       margin-top: 30%;
-    }
-    
+     footer{
+         margin-top: 15%;
+         padding: 10px 10px 0px 10px;
+         bottom: 0;
+         width: 100%;
+     }
     
 }
