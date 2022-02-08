@@ -6,7 +6,7 @@ document.getElementById('displayDateTime').innerHTML=today;
 let banner = document.querySelector('#banner');
 let dayOfWeek = new Date().getDay();
 // if Monday or Tuesday displays this
-if (dayOfWeek == 2 || dayOfWeek == 3) {
+if (dayOfWeek == 1 || dayOfWeek == 2) {
     banner.style.display = "block";
 }
 
