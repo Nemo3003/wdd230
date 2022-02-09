@@ -29,7 +29,8 @@
     }
     .hero{
         grid-area: 1 / 1 / 2 / 2;
-        background-color: rgb(177, 170, 170);
+        /*background-image: url("../images/Optimized-Optimized-Tirol-small.jpg");
+        background-size: 100% auto;*/
     }
     .news{
         grid-area: 4 / 1 / 5 / 2;
@@ -102,7 +103,8 @@
     }
     .hero{
         grid-area: 1 / 1 / 2 / 2;
-        background-color: rgb(177, 170, 170);
+       /* background-image: url("../images/Optimized-Optimized-Tirol-small.jpg");
+        background-size: 100% auto;*/
     }
     .news{
         grid-area: 4 / 1 / 5 / 2;

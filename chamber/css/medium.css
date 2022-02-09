@@ -9,19 +9,15 @@
      }
        
      .hero {
-     
-        background-color: rgb(177, 170, 170);
-        grid-row-start: 1;
-        grid-column-start: 1;
-     
-        grid-row-end: 2;
-        grid-column-end: 5;
-
+      grid-row-start: 1;
+      grid-column-start: 1;
+      grid-row-end: 2;
+      grid-column-end: 5;
+      /*background-image: url("../images/Optimized-Optimized-Tirol-medium.jpg");
+      background-size: 100% auto;*/
         
      }
-     .hero-img{
-         height: 18rem;
-     }
+     
      .news {
      
         background-color: rgb(177, 170, 170);

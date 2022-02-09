@@ -101,11 +101,10 @@ main{
 }
 .event{
     grid-area: 1 / 1 / 3 / 2; 
-    background-image: url("../images/3.jpg");
+    background-image: url("../images/Optimized-3.jpg");
     background-size: 100% auto;
-    
-}
 
+}
 .weather{
     grid-area: 3 / 1 / 5 / 2;
     background-color: #4682b4
@@ -113,20 +112,19 @@ main{
 
 .join{
     grid-area: 5 / 1 / 7 / 2;
-    background-image: url('../images/4.jpg');
+    background-image: url('../images/Optimized-4.jpg');
     background-size: 100% auto;
 }
 .hero{
     grid-area: 1 / 2 / 5 / 4;
-    background-color: rgb(177, 170, 170);
+    
+    background-size: 100% auto;
+
 }
-.hero-img{
-    width: 100%;
-    height:  auto;
-}
+
 .news{
     grid-area: 5 / 2 / 7 / 4;
-    background-image: url("../images/news-tirol.jpg");
+    background-image: url("../images/Optimized-news-tirol.jpg");
     background-size: 100% auto;
 }
 p{
@@ -134,18 +132,18 @@ p{
 }
 .spot1{
     grid-area: 1 / 4 / 3 / 5;
-    background-image: url("../images/2.jpg");
+    background-image: url("../images/Optimized-2.jpg");
     background-size: 100% auto;
 }
 .spot2{
     grid-area: 3 / 4 / 5 / 5;
-    background-image: url("../images/1.jpg");
+    background-image: url("../images/Optimized-1.jpg");
     background-size: 100% auto;
 }
 
 .spot3{
     grid-area: 5 / 4 / 7 / 5;
-    background-image: url("../images/5.jpg");
+    background-image: url("../images/Optimized-5.jpg");
     background-size: 100% auto;
 
 }
