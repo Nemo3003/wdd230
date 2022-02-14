@@ -66,10 +66,14 @@
             <p>Join us this weekend as we celebrate our cultural differences!</p>
         </div>
         <div class="weather">
-            <h2>Weather</h2>
-            <div class="weatherWidget" ></div>
-           
-            
+           <div class="code-cont">
+               <h2>Weather</h2>
+               <p class="weather-new"></p>
+               <p class="degree">35 ºC</p>
+               <p class="another-title">Storm</p>
+               <p class="windSpeed">Wind Speed: 15 km/h</p>
+               <p id="windChill"></p>
+           </div>
         </div>
         <div class="join">
             <h2>Join Us!</h2>
@@ -77,11 +81,11 @@
         </div>
         <div class="hero">
             <picture>
-                <source media="(max-width: 720px)" srcset="images/small.jpg">
-                <source media="(max-width: 500px)" srcset="images/small.jpg">
-                <source media="(max-width: 820px)" srcset="images/medium.jpg">
+                <source media="(max-width: 720px)" srcset="images/small_3.jpg">
+                <source media="(max-width: 500px)" srcset="images/small_3.jpg">
+                <source media="(max-width: 820px)" srcset="images/medium_3.jpg">
                 <source media="(max-width: 70rem)" srcset="images/large.jpg">
-                <img src="images/0.jpg" alt="Puerto Tirol weather sizes">
+                <img src="images/0_7_new.jpg" alt="Puerto Tirol weather sizes">
             </picture>
         </div>
         <div class="news">
@@ -111,8 +115,8 @@
 			</p>
 			<p>Last Updated: <span id="modify"></span>.</p>
 		</footer>
-     <script src="js/weather.js"></script>
-     <!--<script src="js/windChill.js"></script>-->
+
+    <script src="js/windChill.js"></script>
     <script src="js/app.js" defer></script>
     
 </body>
