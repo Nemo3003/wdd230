@@ -1,3 +1,17 @@
 *{
     margin: 0 auto;
 }
+html{
+    background-image: url("../images/background.jpg");
+}
+body{
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+img{
+    width: 300px;
+    height: 400px;
+}

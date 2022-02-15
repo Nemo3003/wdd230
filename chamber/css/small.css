@@ -188,6 +188,30 @@ h1{
 h2{
     text-align:  center;
 }
+.main{
+    margin: 0 auto;
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+
+    border: 2px solid black;
+}
+.container-img-dis{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.container-img-dis p{
+    font-size: 1rem;
+    text-align: center;
+}
+.container-img-dis img{
+    background-color: #000090;
+    width: 300px;
+    height: 400px;
+    border: 2px solid black;
+}
 
 
 footer{
