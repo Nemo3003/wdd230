@@ -1,4 +1,7 @@
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 51.25rem) {
+   body{
+      margin-bottom:80px;
+   }
     main{
         display: grid; 
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -85,5 +88,41 @@
         grid-column-end: 5;
         
      }
+     footer{
+      position: fixed;
+      height: 70px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      margin-bottom: 0px;
+     }
     
+}
+@media screen and (max-width:40.9375rem){
+   body{
+      margin-bottom:100px;
+   }
+   
+   footer{
+      position: fixed;
+      height: 70px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      margin-bottom: 0px;
+   }
+}
+@media screen and (max-width: 49.75rem){
+   body{
+      margin-bottom:100px;
+   }
+   
+   footer{
+      position: fixed;
+      height: 70px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      margin-bottom: 0px;
+   }
 }

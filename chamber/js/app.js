@@ -3,6 +3,8 @@ let today = new Date();
 document.getElementById('displayDateTime').innerHTML=today;
 //document.getElementById("displayDateTime").innerHTML = dateTime + ' <br> Day :- ' + daylist[day];
 
+
+
 let banner = document.querySelector('#banner');
 let dayOfWeek = new Date().getDay();
 // if Monday or Tuesday displays this
