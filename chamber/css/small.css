@@ -215,6 +215,10 @@ img{
     height: auto;
 }
 /*Discover Page - Beginning*/
+.wrapper-disc p{
+    text-align: center;
+    
+}
 .wrapper-disc{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -226,7 +230,6 @@ img{
 }
 .wrapper-disc-head {
     height: 100px;
-    position: relative;
 }
 .wrapper-disc-head h2 {
     margin: 0;
@@ -257,6 +260,11 @@ main.wrapper-disc article p{
 main.wrapper-disc picture img{
     box-shadow: 5px 4px 10px rgb(119, 113, 113);
     margin-left: 9rem;
+}
+.wrapper-disc picture img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .first{
     width: 300px;
@@ -294,6 +302,7 @@ main.wrapper-disc picture img{
 .fifth{
     width: 300px;
     height: 400;
+    padding: 20px;
     grid-area: 5 / 1 / 6 / 2;
 }
 .fifth-p{
