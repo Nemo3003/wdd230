@@ -133,12 +133,13 @@
     }
     .foot{
         position: fixed;
-        height: 70px;
+        height: 90px;
         bottom: 0px;
         left: 0px;
         right: 0px;
         margin-bottom: 0px;
         grid-area: 11 / 1 / 12 / 2;
+        padding-bottom: 1rem;
     }
     /*Discover page - ending*/
   
@@ -302,11 +303,12 @@
     }
     .foot{
         position: fixed;
-        height: 70px;
+        height: 90px;
         bottom: 0px;
         left: 0px;
         right: 0px;
         margin-bottom: 0px;
+        padding-bottom: 1rem;
         grid-area: 11 / 1 / 12 / 2;
     }
     /*Discover page - ending*/

@@ -310,12 +310,13 @@ main.wrapper-disc picture img{
 }
 .foot{
     position: fixed;
-    height: 70px;
+    height: 80px;
     bottom: 0px;
     left: 0px;
     right: 0px;
     margin-bottom: 0px;
     grid-area: 6 / 1 / 7 / 6;
+    padding: 20px;
 }
 /*Discover Page - Ending*/
 footer{
