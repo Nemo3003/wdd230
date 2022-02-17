@@ -86,7 +86,7 @@
     }
     .first{
         width: 300px;
-        height: 400;
+        height: auto;
         margin-right: 5.5rem;
         grid-area: 1 / 1 / 2 / 2;
         
@@ -96,7 +96,7 @@
      }
     .second{
         width: 300px;
-        height: 400;
+        height: auto;
         grid-area: 3 / 1 / 4 / 2;
     }
     .second-p{
@@ -104,7 +104,7 @@
     }
     .third{
         width: 300px;
-        height: 400;
+        height: auto;
         grid-area: 5 / 1 / 6 / 2;
     }
     .third-p{
@@ -112,7 +112,7 @@
     }
     .fourth{
         width: 300px;
-        height: 400;
+        height: auto;
         grid-area: 7 / 1 / 8 / 2;
     }
     .fourth-p{
@@ -120,7 +120,7 @@
     }
     .fifth{
         width: 300px;
-        height: 400;
+        height: auto;
         
         grid-area: 9 / 1 / 10 / 2;
     }
@@ -258,7 +258,7 @@
     }
     .first{
         width: 300px;
-        height: 400;
+        height: auto;
         
         grid-area: 1 / 1 / 2 / 2;
         
@@ -268,7 +268,7 @@
      }
     .second{
         width: 300px;
-        height: 400;
+        height: auto;
         grid-area: 3 / 1 / 4 / 2;
     }
     .second-p{
@@ -277,7 +277,7 @@
     }
     .third{
         width: 300px;
-        height: 400;
+        height: auto;
         grid-area: 5 / 1 / 6 / 2;
     }
     .third-p{
@@ -285,7 +285,7 @@
     }
     .fourth{
         width: 300px;
-        height: 400;
+        height: auto;
         grid-area: 7 / 1 / 8 / 2;
     }
     .fourth-p{
@@ -293,7 +293,7 @@
     }
     .fifth{
         width: 300px;
-        height: 400;
+        height: auto;
         
         grid-area: 9 / 1 / 10 / 2;
     }
