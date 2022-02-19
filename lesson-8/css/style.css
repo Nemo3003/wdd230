@@ -6,3 +6,33 @@ body{
     margin: 10rem auto;
     margin-left: 30rem;
 }
+thead tr{
+    background-color: #61a0b9;
+}
+tbody tr:nth-child(1){
+    background-color: rgb(206, 214, 205);
+}
+tbody tr:nth-child(2){
+    background-color: rgb(142, 197, 135);
+}
+tbody tr:nth-child(3){
+    background-color: rgb(206, 214, 205);
+}
+tbody tr:nth-child(4){
+    background-color: rgb(142, 197, 135);
+}
+tbody tr:nth-child(5){
+    background-color: rgb(206, 214, 205);
+}
+tbody tr:nth-child(6){
+    background-color: rgb(142, 197, 135);
+}
+.title{
+    background-color:#74a8bd;
+} 
+.grey-big{
+    background-color: #4d7fa8;
+}
+tfoot{
+    width: 10rem;
+}
