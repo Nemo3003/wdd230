@@ -1,38 +1,51 @@
-*{
-    font-family: "Ubuntu", sans-serif;
-}
-body{
-    max-width: 50%;
-    margin: 10rem auto;
-    margin-left: 30rem;
-}
-thead tr{
-    background-color: #61a0b9;
-}
-tbody tr:nth-child(1){
-    background-color: rgb(206, 214, 205);
-}
-tbody tr:nth-child(2){
-    background-color: rgb(142, 197, 135);
-}
-tbody tr:nth-child(3){
-    background-color: rgb(206, 214, 205);
-}
-tbody tr:nth-child(4){
-    background-color: rgb(142, 197, 135);
-}
-tbody tr:nth-child(5){
-    background-color: rgb(206, 214, 205);
-}
-tbody tr:nth-child(6){
-    background-color: rgb(142, 197, 135);
-}
-.title{
-    background-color:#74a8bd;
-} 
-.grey-big{
-    background-color: #4d7fa8;
-}
-tfoot{
-    width: 10rem;
-}
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+* {
+  font-family: "Ubuntu", sans-serif; }
+
+:root {
+  --shadow: hsl(0,0%,50%); }
+
+body {
+  max-width: 50%;
+  margin: 10rem auto;
+  margin-left: 30rem;
+  font-size: 20px;
+  font-weight: bold; }
+
+table {
+  box-shadow: 0 0 30px var(--shadow);
+  background-color: black; }
+
+thead tr {
+  background-color: #61a0b9; }
+
+tbody tr:nth-child(1) {
+  background-color: #ced6cd; }
+
+tbody tr:nth-child(2) {
+  background-color: #8ec587; }
+
+tbody tr:nth-child(3) {
+  background-color: #ced6cd; }
+
+tbody tr:nth-child(4) {
+  background-color: #8ec587; }
+
+tbody tr:nth-child(5) {
+  background-color: #ced6cd; }
+
+tbody tr:nth-child(6) {
+  background-color: #8ec587; }
+
+.title {
+  background-color: #74a8bd;
+  padding: 15px;
+  border: 1px solid  #000; }
+
+.blue {
+  background-color: #61a0b9 !important; }
+
+tfoot {
+  width: 10rem; }
+
+/*# sourceMappingURL=style.css.map */

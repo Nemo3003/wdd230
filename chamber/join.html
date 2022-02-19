@@ -26,6 +26,9 @@
         <link rel="stylesheet" href="css/small.css">
         <link rel="stylesheet" href="css/medium.css">
         <link rel="stylesheet" href="css/large.css">
+        <!--<link rel="stylesheet" media="screen and (max-width: 1200px) and (min-width: 601px)" href="responsiveform1.css" />
+<link rel="stylesheet" media="screen and (max-width: 600px) and (min-width: 351px)" href="responsiveform2.css" />
+<link rel="stylesheet" media="screen and (max-width: 350px)" href="responsiveform3.css" />-->
         <script src="https://kit.fontawesome.com/6cf4e2cf58.js" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
     </head>
@@ -56,6 +59,31 @@
         <span id="displayDateTime"></span>
     </header>
     <main>
+        <!DOCTYPE html>
+<html>
+<head>
+<title>FormGet Responsive Form</title>
+<!-----Including CSS for different screen sizes----->
+<link rel="stylesheet" type="text/css" href="responsiveform.css">
+
+
+<body>
+    <div id="envelope">
+        <form action="thankyou.html" method="get">
+            <label>Your Name</label>
+            <input name="name" placeholder="Ashley Peterson" type="text" width="100px;">
+            <label>Email Id</label>
+            <input name="email" placeholder="yourname@gmail.com" type="text">
+            <label>Contact Number</label>
+            <input name="contact" placeholder="123456789" type="tel">
+            <label>Website URL</label>
+            <input name="website" placeholder="www.yoursite.com" type="text">
+            <label>Message</label>
+            <textarea cols="15" name="message" placeholder="Message" rows="10">
+            </textarea>
+            <input id="submit" type="submit" value="Send Message">
+        </form>
+    </div>
 
     </main>
     <footer class="foot">

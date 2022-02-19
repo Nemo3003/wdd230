@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+$background-color: black;
+$greyish: rgb(206, 214, 205);
+$greenish:  rgb(142, 197, 135);
+$blueish: #61a0b9;
+$font-family:'Ubuntu', sans-serif;
+$font-size: 20px;
+$medium-padding: 15px;
+*{
+    font-family: $font-family;
+}
+
+:root {
+    --shadow: hsl(0,0%,50%);
+}
+body{
+    max-width: 50%;
+    margin: 10rem auto;
+    margin-left: 30rem;
+    font-size: $font-size;
+    font-weight: bold;
+}
+table{
+    box-shadow: 0 0 30px var(--shadow);
+    background-color: $background-color;
+     
+}
+thead tr{
+    background-color: #61a0b9;
+}
+tbody tr:nth-child(1){
+    background-color: $greyish;
+}
+tbody tr:nth-child(2){
+    background-color: $greenish;
+}
+tbody tr:nth-child(3){
+    background-color: $greyish;
+}
+tbody tr:nth-child(4){
+    background-color: $greenish;
+}
+tbody tr:nth-child(5){
+    background-color: $greyish;
+}
+tbody tr:nth-child(6){
+    background-color: $greenish;
+}
+.title{
+    background-color:#74a8bd;
+    padding: $medium-padding;
+    border: 1px solid  #000;
+} 
+
+.blue{
+    background-color: $blueish !important;
+}
+tfoot{
+    width: 10rem;
+}
