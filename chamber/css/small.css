@@ -257,9 +257,9 @@ main.wrapper-disc article p{
     color: #14213D;
 }
 
-main.wrapper-disc picture img{
+main.wrapper-disc picture{
     box-shadow: 5px 4px 10px rgb(119, 113, 113);
-    margin-left: 9rem;
+    margin: 0 auto;
 }
 .wrapper-disc picture img{
     display: flex;
