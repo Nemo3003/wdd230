@@ -70,18 +70,26 @@
 <body>
     <div id="envelope">
         <form action="thankyou.html" method="get">
-            <label>Your Name</label>
-            <input name="name" placeholder="Ashley Peterson" type="text" width="100px;">
-            <label>Email Id</label>
+            <label>First Name</label>
+            <input name="name" placeholder="Ashley" type="text" width="100px;" required>
+            <label>Last Name</label>
+            <input type="text" placeholder="Peterson" width="100px;" required>
+            <label>Email</label>
             <input name="email" placeholder="yourname@gmail.com" type="text">
             <label>Contact Number</label>
-            <input name="contact" placeholder="123456789" type="tel">
-            <label>Website URL</label>
-            <input name="website" placeholder="www.yoursite.com" type="text">
+            <input name="contact" placeholder="123456789" type="tel" required>
             <label>Message</label>
             <textarea cols="15" name="message" placeholder="Message" rows="10">
             </textarea>
-            <input id="submit" type="submit" value="Send Message">
+            <label>Membership level</label>
+            <select name="Membership Level">
+                <option value="none">Nothing</option>
+                <option value="Bronze">Bronze</option>
+                <option value="Silver">Silver</option>
+                <option value="Gold">Gold</option>
+            </select>
+            <input type="hidden" id="custId" name="custId" value="3487">
+            <button type="submit">Submit form</button>
         </form>
     </div>
 
