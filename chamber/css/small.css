@@ -321,7 +321,22 @@ main.wrapper-disc picture{
 }
 /*Discover Page - Ending*/
 /*Join Page - Beginning*/
+fieldset{
+    border: 1px solid #000;
+    border-radius: 20px;
+}
 /*Join Paage - Ending*/
+/*Thank you page - beginning*/
+.body-ty{
+    background-image: url("../images/background-ty.jpg");
+}
+.text-center{
+    max-width: 35rem;
+    margin: 0 auto;
+    margin-top: 15%;
+    font-size: 25px;
+}
+/*Thank you page - ending*/
 footer{
     text-align: center;
     border: 1px solid #ccc;
@@ -330,4 +345,18 @@ footer{
     font-family:'Dongle', sans-serif;
     width: 100%;
 }
+/*contact page - beginning*/
+.container-contact{
+    width: 50rem;
+    height: auto;
+    margin-left: 17rem;
+}
+/*contact page - ending*/
+/*directory page - beginning*/
+.container-directory{
+    width: 50rem;
+    height: auto;
+    margin-left: 17rem;
+}
+/*directory page - ending*/
 
