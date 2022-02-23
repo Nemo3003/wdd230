@@ -326,7 +326,41 @@ fieldset{
     border: 1px solid #000;
     border-radius: 20px;
 }
-/*Join Paage - Ending*/
+.main-join{
+    font-size: 24px;
+
+    width: 350px;
+    height: 1200px;
+    /* Setup */
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+.submit-Btn{
+    margin-top: 4%;
+    padding: 5px;
+    border-radius: 8px;
+    margin-left: 15rem;
+}
+.cost{
+    background-color: #a1a1be;
+}
+.join-title{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10%;
+}
+.description{
+   
+    font-size: 15px;
+    text-align: justify;
+}
+legend{
+    text-align: center;
+}
+/*Join Page - Ending*/
 /*Thank you page - beginning*/
 .body-ty{
     background-image: url("../images/background-ty.jpg");

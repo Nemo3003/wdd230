@@ -140,6 +140,20 @@
         padding-bottom: 1rem;
     }
     /*Discover page - ending*/
+    /*Join page - beginning*/
+    .main-join{
+        font-size: 24px;
+    
+        width: 150px;
+        height: 1200px;
+        /* Setup */
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    
+    }
+    /*Join page - ending*/
   
 }
 @media (max-width: 31.25rem){
@@ -310,5 +324,20 @@
         grid-area: 11 / 1 / 12 / 2;
     }
     /*Discover page - ending*/
+    /*Join page - beginning*/
+    .main-join{
+        font-size: 24px;
+    
+        width: 150px;
+        height: 1200px;
+        /* Setup */
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    
+    }
+    /*Join page - ending*/
 }
+
 

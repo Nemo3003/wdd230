@@ -28,8 +28,9 @@
         <link rel="stylesheet" href="css/large.css">
 
         <script src="https://kit.fontawesome.com/6cf4e2cf58.js" crossorigin="anonymous"></script>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+
     </head>
+    <body>
     <div id="banner">
         <p>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
       </div>
@@ -56,25 +57,15 @@
         </nav>
         <span id="displayDateTime"></span>
     </header>
-    <main>
-        <!DOCTYPE html>
-<html>
-<head>
-<title>FormGet Responsive Form</title>
-<!-----Including CSS for different screen sizes----->
-<link rel="stylesheet" type="text/css" href="responsiveform.css">
-
-
-<body>
-    <main>
+    <main class="main-join">
         <form action="thankyou.html" autocomplete="off" method="GET">
-            <h4>Join chamber form</h4>
+            <h3 class="join-title">Join chamber form</h3>
             <fieldset>
                 <legend><strong>Basic information</strong></legend>
                 <label>First Name*<br />
-                <input name="ftname" type="text"  required /></label><br>
+                <input name="ftname" type="text" placeholder="Karen" aria-placeholder="Introduce your name" required /></label><br>
                 <label>Last Name*<br />
-                <input name="lname" type="text"  required/></label><br>
+                <input name="lname" type="text" placeholder="Peterson" aria-placeholder="Introduce your last name" required/></label><br>
             </fieldset>
             <fieldset>
                 <legend><strong>Contact referrence</strong></legend>
@@ -82,12 +73,14 @@
                     <input name="email" type="email" placeholder="example@info.com"  required/>
                 </label><br>
                 <label>Contact number*<br />
-                <input name="contact" type="tel"  required/></label><br>
+                <input name="contact" type="tel" placeholder="113775648" required/></label><br>
             </fieldset>
             <fieldset>
                 <legend>Business Info</legend>
-                <label>Business name:<br />
-                    <input name="businessname" type="text"/></label><br>
+                <label pattern="[A-Za-z0-9 ]">Business name:<br />
+                    <input name="businessname" type="text"  placeholder="Enter a name"/></label><br>
+                <label>Business Description</label>
+                <textarea name="businessdescription" rows="4" cols="50" placeholder="Enter a brief description of your business"></textarea><br>
             </fieldset>
             <fieldset>
                 <legend>Membership</legend>
@@ -100,7 +93,7 @@
                 <label><input class="checkbox" name="checkbox" type="checkbox" value="yes" required /> I confirm that the information above is true.</label><br /> 
             </fieldset>
             <label><input type="hidden" id="date" name="date" value=""></label>
-            <button type="submit" value="Submit" class="submitBtn">Submit Form</button>
+            <button type="submit" value="Submit" class="submit-Btn">Submit Form</button>
         </form>
  
     </main>
@@ -116,7 +109,7 @@
     <script src="js/datetime.js"></script>
     <script src="js/visits.js"></script>
     <script src="js/app.js"></script>
-<body>
+
     
 </body>
 </html>
