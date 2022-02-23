@@ -93,6 +93,7 @@ section{
     margin-left: 150px;
     z-index: 1;
     margin-bottom: 5px;
+    cursor: pointer;
 }
 main{
     display: grid;
