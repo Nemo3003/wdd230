@@ -148,7 +148,7 @@
     .main-join{
         font-size: 10px;
 
-        width: 90px;
+        width: 35px;
         height: 800px;
         /* Setup */
         position: relative;
@@ -358,7 +358,7 @@
     .main-join{
         font-size: 10px;
 
-        width: 90px;
+        width: 35px;
         height: 800px;
         /* Setup */
         position: relative;
@@ -390,5 +390,7 @@
     legend{
         text-align: center;
     }
+    /*Join page - ending*/
+}
     /*Join page - ending*/
 }
