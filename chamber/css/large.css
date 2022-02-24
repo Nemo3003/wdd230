@@ -141,17 +141,43 @@
     }
     /*Discover page - ending*/
     /*Join page - beginning*/
+    fieldset{
+    border: 1px solid #000;
+    border-radius: 20px;
+    }
     .main-join{
-        font-size: 24px;
-    
-        width: 150px;
-        height: 1200px;
+        font-size: 10px;
+
+        width: 90px;
+        height: 800px;
         /* Setup */
         position: relative;
         align-items: center;
         justify-content: center;
         margin: 0 auto;
-    
+
+    }
+    .submit-Btn{
+        margin-top: 4%;
+        padding: 5px;
+        border-radius: 8px;
+        
+    }
+    .cost{
+        background-color: #a1a1be;
+    }
+    .join-title{
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 10%;
+    }
+    .description{
+       
+        font-size: 10px;
+        text-align: justify;
+    }
+    legend{
+        text-align: center;
     }
     /*Join page - ending*/
   
@@ -325,19 +351,44 @@
     }
     /*Discover page - ending*/
     /*Join page - beginning*/
+    fieldset{
+    border: 1px solid #000;
+    border-radius: 20px;
+    }
     .main-join{
-        font-size: 24px;
-    
-        width: 150px;
-        height: 1200px;
+        font-size: 10px;
+
+        width: 90px;
+        height: 800px;
         /* Setup */
         position: relative;
         align-items: center;
         justify-content: center;
         margin: 0 auto;
-    
+
+    }
+    .submit-Btn{
+        margin-top: 4%;
+        padding: 5px;
+        border-radius: 8px;
+        margin-right: 10rem;
+     
+    }
+    .cost{
+        background-color: #a1a1be;
+    }
+    .join-title{
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 10%;
+    }
+    .description{
+       
+        font-size: 10px;
+        text-align: justify;
+    }
+    legend{
+        text-align: center;
     }
     /*Join page - ending*/
 }
-
-
