@@ -1,13 +1,22 @@
-let todayDisplay = document.querySelector(".today");
-let visitsDisplay = document.querySelector(".visits");
+let numOfVisits = document.querySelector('.daysOfVisit');
 
-let numVisits = Number(window.localStorage.getItem("visits-ls"));
+let numOfVisits1 = Number(window.localStorage.getItem('visits'));
+let lastVisits= Number(window.localStorage.getItem('lastVisits'));
 
-if (numVisits !== 0) {
-	visitsDisplay.textContent = numVisits;
+const NUMS = 1000 * 60 * 60 * 24;
+
+let daysAmong = Date.now() - lastVisits;
+
+let numOfDays = Math.ceil(daysAmong / NUMS);
+
+localStorage.setItem('lastVisits', Date.now());
+
+if (numOfVisits1 != 0) {
+
+    numOfVisits.textContent = 'It\'s been ' + numOfDays + ' day(s) since your last visit.'
 } else {
-	visitsDisplay.textContent = `This is your first visit!`;
+    numOfVisits.textContent = 'This is your first page visit.'
 }
-numVisits++;
 
-localStorage.setItem("visits-ls", numVisits);
+numOfVisits1++;
+localStorage.setItem("visits", numOfVisits1);
