@@ -139,6 +139,15 @@
         grid-area: 11 / 1 / 12 / 2;
         padding-bottom: 1rem;
     }
+    .icons i {
+        display: inline-block;
+        width: 15px;
+        height: auto;
+        margin-left: 150px;
+        z-index: 1;
+        margin-bottom: 15px;
+        cursor: pointer;
+    }
     /*Discover page - ending*/
     /*Join page - beginning*/
     fieldset{
@@ -153,7 +162,7 @@
         width: 15px;
         height: 800px;
         /* Setup */
-        position: relative;
+
         align-items: center;
         justify-content: center;
         margin: 0 auto;
@@ -351,6 +360,14 @@
         padding-bottom: 1rem;
         grid-area: 11 / 1 / 12 / 2;
     }
+    .icons i {
+        display: inline-block;
+        width: 15px;
+        height: auto;
+        margin-left: 150px;
+        z-index: 1;
+
+    }
     /*Discover page - ending*/
     /*Join page - beginning*/
     fieldset{
@@ -363,7 +380,6 @@
         width: 35px;
         height: 800px;
         /* Setup */
-        position: relative;
         align-items: center;
         justify-content: center;
         margin: 0 auto;
