@@ -349,6 +349,7 @@ fieldset{
     padding: 5px;
     border-radius: 8px;
     margin-left: 15rem;
+    margin-bottom: -1.5rem;
     cursor: pointer;
 }
 .cost{
