@@ -295,7 +295,7 @@
         text-align: center;
     }
     .wrapper-disc picture{
-        margin-right: 0 auto;
+        margin-right: auto;
     }
     .wrapper-disc{
         display: grid;
