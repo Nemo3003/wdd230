@@ -144,11 +144,13 @@
     fieldset{
     border: 1px solid #000;
     border-radius: 20px;
+    width: 400px;
+    margin-left: 20px;
     }
     .main-join{
         font-size: 10px;
 
-        width: 35px;
+        width: 15px;
         height: 800px;
         /* Setup */
         position: relative;
@@ -392,5 +394,4 @@
     }
     /*Join page - ending*/
 }
-    /*Join page - ending*/
-}
+
