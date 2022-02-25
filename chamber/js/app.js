@@ -1,9 +1,7 @@
 
-let today = new Date();
-document.getElementById('displayDateTime').innerHTML=today;
+
+document.querySelector('#now').innerHTML = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format();
 //document.getElementById("displayDateTime").innerHTML = dateTime + ' <br> Day :- ' + daylist[day];
-
-
 
 let banner = document.querySelector('#banner');
 let dayOfWeek = new Date().getDay();

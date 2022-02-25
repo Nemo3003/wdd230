@@ -92,6 +92,7 @@ section{
     height: auto;
     margin-left: 150px;
     z-index: 1;
+    margin-top: 10px;
     margin-bottom: 5px;
     cursor: pointer;
 }
@@ -215,6 +216,12 @@ img{
     width: 100%;
     height: auto;
 }
+#now {
+    text-align: center;
+    padding: 0.5rem;
+    font-size: large;
+}
+
 /*Discover Page - Beginning*/
 .wrapper-disc p{
     text-align: center;
@@ -332,7 +339,6 @@ fieldset{
     width: 350px;
     height: 1200px;
     /* Setup */
-    position: relative;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
@@ -343,6 +349,7 @@ fieldset{
     padding: 5px;
     border-radius: 8px;
     margin-left: 15rem;
+    cursor: pointer;
 }
 .cost{
     background-color: #a1a1be;
@@ -350,7 +357,8 @@ fieldset{
 .join-title{
     text-align: center;
     font-size: 30px;
-    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 .description{
    
