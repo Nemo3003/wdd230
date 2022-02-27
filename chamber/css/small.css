@@ -28,6 +28,7 @@ body{
 /*-----------------------------------------------Nav------------------------------------------------------------------*/
 nav{
     display: flex;
+    justify-content: space-evenly;
     background: #FC9E4F;
     padding: 1.5em;
     font-family: 'Luxurious Roman', cursive;
