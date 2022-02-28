@@ -1,0 +1,53 @@
+@media screen and (min-width:12.5rem) {
+    h1 {
+        text-align: center;
+        background-color:#AD8B73;
+        padding: 1.5rem;
+    }
+    h2,p {
+        text-align:center;
+    }
+    
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5px;
+        background-color:#E3CAA5;
+        justify-items:center;
+    }
+
+    img {
+        max-width: 6.25rem;
+        align-self:center;
+        margin: 0.5rem;
+    }
+    footer{
+        margin: 1rem;
+        padding:  1.5rem;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:26.25rem) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+    }
+
+    img {
+        max-width: 12.5rem;
+        align-items:center;
+    }
+}
+
+@media screen and (min-width:43.75rem) {
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 5px;
+    }
+
+    img {
+        max-width: 18.75rem;
+    }
+}
+/*Nemo's*/
