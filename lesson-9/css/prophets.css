@@ -20,6 +20,7 @@
         max-width: 6.25rem;
         align-self:center;
         margin: 0.5rem;
+        box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
     }
     footer{
         margin: 1rem;
@@ -37,6 +38,7 @@
     img {
         max-width: 12.5rem;
         align-items:center;
+        box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
     }
 }
 
@@ -48,6 +50,7 @@
 
     img {
         max-width: 18.75rem;
+        box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
     }
 }
 /*Nemo's*/
