@@ -11,7 +11,8 @@
     .cards {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 5px;
+        grid-column-gap: 2px;
+        grid-row-gap: 2px; 
         background-color:#E3CAA5;
         justify-items:center;
     }
@@ -31,8 +32,10 @@
 
 @media screen and (min-width:26.25rem) {
     .cards {
+        display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 5px;
+        grid-column-gap: 2px;
+        grid-row-gap: 2px; 
     }
 
     img {
@@ -44,8 +47,10 @@
 
 @media screen and (min-width:43.75rem) {
     .cards {
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 5px;
+        grid-column-gap: 2px;
+        grid-row-gap: 2px;
     }
 
     img {
