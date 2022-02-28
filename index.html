@@ -3,40 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This website is assigned to Ulises Mariano Melgarejo to provide access to his homework for the class WDD:230">
-    <link rel="stylesheet" href="normalize.css">
+    <title>Puerto Tirol - Chamber of Commerce</title>
+	<meta name="description" content="This website is the home page of the chamber of commerce">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
-
-    <title>WDD 230: Assignment Portal - Ulises M Melgarejo</title>
+    <link rel="stylesheet" href="css/large.css">
+    <script src="https://kit.fontawesome.com/6cf4e2cf58.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
 </head>
 <body>
-    <header>
-        <img src="images/download.png" alt="my_pic">
-        <h1>Ulises M.Melgarejo</h1>
-    </header>
-    <main>
-        <h2 class="before-list">WDD 230: Assignment Portal</h2><hr>
-            <ul class="list-container">
-                <li>Lesson 02: <a href="lesson2/design-principles.html">Design Principles Document</a></li>
-                <li>Lesson 03: <a href="lesson3/index.html">Website Plan Document</a></li>
-                <li>Lesson 04: <a href="chamber/index.html">Chamber Home Page</a></li>
-                <li>Lesson 05: <a href="DOM/index.html">DOM Manipulation</a></li> <a href="chamber/index.html">Chamber of Commerce</a></li>
-                <li>Lesson 06: <a href="chamber/index.html">Responsive Images</a></li>
-                <li>Lesson 07: <a href="lesson7/lazyload.html">Lazy Loading Images</a></li> <a href="chamber/discover.html">Discover Page</a></li>
-                <li>Lesson 08: <a href="lesson-8/tablebuild.html">Table Build</a></li>
-                <li>Lesson 09: <a href="lesson-9/prophets.html">Latter-day Prophets</a></li>
-                <li>Lesson 10: <a href="#">Title</a></li>
-                <li>Lesson 11: <a href="#">Title</a></li>
-            </ul>
-        <hr>
-   </main>
-    <footer>
-        <p>
-            &copy; <span id="year"></span> .:|:. Ulises M.Melgarejo .:|:. Argentina
-        </p>
-        <p>Last Updated: <span id="modify"></span>.</p>
-    </footer>
-    <script src="js/index.js" defer></script>
+    <div id="banner">
+        <p>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+      </div>
+  <header>
+    <div id="now"></div>
+     <div id="logo">
+             <img class="loguinho" src="images/mylogoCC.png" alt="logooo">
+            <p>PUERTO TIROL - CHAMBER OF COMMERCE</p>
+        </div>
+	  <div class="icons" >
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+    	</div>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="#" class="enlace">
+            <img src="images/mylogoCC.png" alt="" class="logo">
+        </a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+    </nav>
+
+</header>
+	<main class="wrapper">
+      
+        <div class="event">
+            <h2>Cultural Meeting</h2>
+            <p>Join us this weekend as we celebrate our cultural differences!</p>
+        </div>
+        <div class="weather">
+           <div class="code-cont">
+               <h2>Weather</h2>
+               <p class="weather-new"></p>
+               <p class="degree">35 ºC</p>
+               <p class="another-title">Storm</p>
+               <p class="windSpeed">Wind Speed: 15 km/h</p>
+               <p id="windChill"></p>
+           </div>
+        </div>
+        <div class="join">
+            <h2>Join Us!</h2>
+            <p>Discover how and why to join the chamber of commerce, and how it will benefit you!</p>
+        </div>
+        <div class="hero">
+            <picture>
+                <source media="(max-width:31.25rem)" srcset="images/small.jpg">
+                <source media="(max-width: 45rem)" srcset="images/medium_3.jpg">
+                <source media="(max-width: 51.25rem)" srcset="images/large_3.jpg">
+                <img src="images/0_7_new.jpg" alt="Puerto Tirol weather sizes">
+            </picture>
+        </div>
+        <div class="news">
+            <h2>News Release</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quisque id diam vel quam. Eu facilisis sed odio morbi quis commodo odio. Vulputate enim nulla aliquet porttitor lacus luctus. At tempor commodo ullamcorper a. Pharetra et ultrices neque ornare aenean euismod elementum. Lacus vel facilisis volutpat est velit</p>
+        </div>
+        <div class="spot1">
+            <h2>Delivery</h2>
+            <p>Learn which shops have delivery, their prices and how fast they can get anything to you!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non arcu pellentesque.</p>
+        </div>
+        <div class="spot2">
+            <h2>Schooling</h2>
+            <p>We make it safe, we make it work</p>
+            <p>Learn how to safely come back to school</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non arcu pellentesque, sagittis nunc et, suscipit tellus. Nunc sed diam diam. 
+                Aliquam auctor augue eu elit efficitur, mollis viverra augue finibus</p>
+        </div>
+        <div class="spot3">
+            <h2>Recycling!</h2>
+            <p>Over 1000 ideas for you to recycle</p>
+            <p>recycling@example.eu</p>
+            <p>0800-999-999</p>
+        </div>
+        
+	</main>
+
+		<footer>
+			<p>
+				&copy; <span id="year"></span> .:|:. Ulises M.Melgarejo .:|:. Argentina
+			</p>
+			<p>Last Updated: <span id="modify"></span>.</p>
+		</footer>
+
+    <script src="js/windChill.js"></script>
+    <script src="js/app.js" defer></script>
+    
 </body>
 </html>
+

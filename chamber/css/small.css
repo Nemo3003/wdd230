@@ -28,9 +28,11 @@ body{
 /*-----------------------------------------------Nav------------------------------------------------------------------*/
 nav{
     display: flex;
-    justify-content: space-evenly;
-    background: #FC9E4F;
-    padding: 1.5em;
+    background-color: #FC9E4F;
+    text-align: center;
+    padding: 0.5rem;
+    justify-content: space-around;
+    align-items: center;
     font-family: 'Luxurious Roman', cursive;
 
 }
@@ -58,6 +60,14 @@ li a:hover{
     background: #000090;
     transition: .5s;
 }
+#menu-btn {
+    font-size: 20px;
+    align-items: center;
+    padding-right: 10px;
+}
+.hamburguerBtn{
+    display: none;
+}
 /*-----------------------------------------------Logo-----------------------------------------------------------------*/
 #logo{
 
@@ -65,6 +75,17 @@ li a:hover{
     font-size: 30px;
     font-family: 'Luxurious Roman', cursive;
     
+}
+#logo img{
+    display: flex;
+    justify-content: center;
+    width: 9.5rem;
+    
+}
+.loguinho{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
 }
 /*-----------------------------------------------Hamburguer Menu-----------------------------------------------------------------*/
 .enlace{

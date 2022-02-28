@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Puerto Tirol - Chamber of Commerce - Join</title>
+        <meta name="description" content="This website is the home page of the chamber of commerce">
+        <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="images/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+
+        <script src="https://kit.fontawesome.com/6cf4e2cf58.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+    <div id="banner">
+        <p>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+      </div>
+      <header>
+        <div id="now"></div>
+         <div id="logo">
+                 <img class="loguinho" src="images/mylogoCC.png" alt="logooo">
+                <p>PUERTO TIROL - CHAMBER OF COMMERCE</p>
+            </div>
+          <div class="icons" >
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="#" class="enlace">
+                <img src="images/mylogoCC.png" alt="" class="logo">
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+        </nav>
+    
+    </header>
+    <main class="main-join">
+        <form action="thankyou.html" autocomplete="off" method="GET">
+            <h3 class="join-title">Join chamber form</h3>
+            <fieldset>
+                <legend><strong>Basic information</strong></legend>
+                <label>First Name*<br />
+                <input name="ftname" type="text" placeholder="Karen"  required /></label><br>
+                <label>Last Name*<br />
+                <input name="lname" type="text" placeholder="Peterson"  required/></label><br>
+            </fieldset>
+            <fieldset>
+                <legend><strong>Contact referrence</strong></legend>
+                <label>Email*<br />
+                    <input name="email" type="email" placeholder="example@info.com"  required/>
+                </label><br>
+                <label>Contact number*<br />
+                <input name="contact" type="tel" placeholder="113775648" required/></label><br>
+            </fieldset>
+            <fieldset>
+                <legend>Business Info</legend>
+                <label>Business Position<br>
+                    <input name="businessPosition" type="text" placeholder="Your business position"></label><br>
+                <label >Business name:<br />
+                    <input name="businessname" type="text" pattern="[a-zA-Z][a-zA-Z0-9\s]*"  placeholder="Enter a name"/></label><br>
+                <label>Business Description</label>
+                <textarea name="businessdescription" rows="4" cols="50" placeholder="Enter a brief description of your business"></textarea><br>
+            </fieldset>
+            <fieldset>
+                <legend>Membership</legend>
+                <label class="la-lvl"><input type="radio" name="member" value="np"><span class="level"> Non-profit </span><span class="cost"> Free </span></label><p class="description"> You will have your business listed inside this chamber of commerce.</p>
+                <label class="la-lvl"><input type="radio" name="member" value="bronze"><span class="level"> Bronze </span><span class="cost"> $2,500 ARS </span></label><p class="description"> Your business will have access to five free adds and of course paid adds to be better presented to Puerto Tirol</p>
+                <label class="la-lvl"><input type="radio" name="member" value="silver"><span class="level"> Silver </span><span class="cost"> $6,120 ARS</span></label><p class="description"> Stay up-to-date in the Chamber's events, receive sugestions and even training if needed on how to grow your business.</p>
+                <label class="la-lvl"><input type="radio" name="member" value="gold"><span class="level"> Gold </span><span class="cost"> $8,100 ARS </span></label><p class="description"> Be part of our online community, have access to 50% discount in every add you pay for, stay up-to-date in everything that is going on in economy as well as receive tips to improve your business.</p>
+            </fieldset>
+            <fieldset>
+                <label><input class="checkbox" name="checkbox" type="checkbox" value="yes" required /> I confirm that the information above is true.</label><br /> 
+            </fieldset>
+            <label><input type="hidden" id="date" name="date" value=""></label>
+            <button type="submit" value="Submit" class="submit-Btn">Submit Form</button>
+        </form>
+ 
+    </main>
+    <footer class="foot-join">
+        <p class="daysOfVisit"></p>
+        <p>
+            &copy; <span id="year"></span> .:|:. Ulises M.Melgarejo .:|:. Argentina
+        </p>
+        <p class="last-upt">Last Updated: <span id="modify"></span>.</p>
+    </footer>
+    <script src="js/datetime.js"></script>
+    <script src="js/visits.js"></script>
+    <script src="js/app.js"></script>
+
+    
+</body>
+</html>
+
