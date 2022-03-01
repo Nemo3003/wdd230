@@ -6,7 +6,7 @@ fetch(requestURL)
 
     })
     .then(function (jsonObject) {
-        console.table(jsonObject); // temporary checking for valid response and data parsing
+        console.table(jsonObject);
         const prophets = jsonObject['prophets'];
         for (let i = 0; i < prophets.length; i++) {
             let card = document.createElement('section');
@@ -21,17 +21,16 @@ fetch(requestURL)
             birthplace.textContent = "Place of Birth: " + prophets[i].birthplace;
      
             if(prophets[i].order === 1) {
-                image.setAttribute('alt', prophets[i].name+' '+prophets[i].lastname+' - '+ prophets[i].order + "st" + ' ' + "president");
-               
+                image.setAttribute('alt','Portrait of'+' '+ prophets[i].name+' '+prophets[i].lastname+' - '+ prophets[i].order + "st" + ' ' + "Latter-day president");
             }
             else if(prophets[i].order === 2) {
-                image.setAttribute('alt', prophets[i].name+' '+prophets[i].lastname+' - '+ prophets[i].order + "nd" + ' ' + "president");
+                image.setAttribute('alt', 'Portrait of'+' '+ prophets[i].name+' '+prophets[i].lastname+' - '+ prophets[i].order + "nd" + ' ' + "Latter-day president");
             }
             else if(prophets[i].order === 3) {
-                image.setAttribute('alt', prophets[i].name+' '+prophets[i].lastname+' - '+ prophets[i].order + "rd" + ' ' + "president");
+                image.setAttribute('alt', 'Portrait of'+' '+ prophets[i].name+' '+prophets[i].lastname+' - '+ prophets[i].order + "rd" + ' ' + "Latter-day president");
             }
             else{
-                image.setAttribute('alt', prophets[i].name+' '+prophets[i].lastname+' - '+ prophets[i].order + "th" + ' ' + "president");
+                image.setAttribute('alt', 'Portrait of'+' '+ prophets[i].name+' '+prophets[i].lastname+' - '+ prophets[i].order + "th" + ' ' + "Latter-day president");
             }
             
             card.appendChild(h2);
