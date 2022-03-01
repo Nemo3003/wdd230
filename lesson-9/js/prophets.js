@@ -20,7 +20,7 @@ fetch(requestURL)
             birthdate.textContent = "Date of Birth: " + prophets[i].birthdate;
             birthplace.textContent = "Place of Birth: " + prophets[i].birthplace;
             order.textContent = 'President Number: '+ prophets[i].order;
-
+            
             card.appendChild(h2);
             card.appendChild(birthdate);
             card.appendChild(birthplace);
@@ -28,6 +28,7 @@ fetch(requestURL)
             card.appendChild(image);
 
             image.setAttribute('src', prophets[i].imageurl);
+            image.setAttribute('alt', prophets[i].name + prophets[i].lastname+ ' ' +'the prophet number: ' + prophets[i].order)
 
             document.querySelector('div.cards').appendChild(card);
         };
