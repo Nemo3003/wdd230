@@ -422,10 +422,17 @@ footer{
 }
 /*contact page - ending*/
 /*directory page - beginning*/
-.container-directory{
-    width: 50rem;
-    height: auto;
-    margin-left: 17rem;
-}
-/*directory page - ending*/
+/*I WILL WORK ON USING LESS CSS AS WELL AS LESS @MEDIA*/
+.cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 2px;
+        grid-row-gap: 2px;
+    }
 
+    .img-dir {
+        max-width: 18.75rem;
+        box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
+    }
+
+/*directory page - ending*/
