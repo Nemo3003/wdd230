@@ -205,7 +205,26 @@
         text-align: center;
     }
     /*Join page - ending*/
-  
+  /*Directory page - beginning*/
+  .title-dir {
+        text-align:center;
+    }
+    
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 2px;
+        grid-row-gap: 2px; 
+        justify-items:center;
+    }
+
+    .img-dir {
+        max-width: 90%;
+        margin: 1rem;
+        box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
+    
+    }
+  /*Directory page - ending*/
 }
 @media (max-width: 31.25rem){
     .wrapper {
@@ -402,5 +421,24 @@
         text-align: center;
     }
     /*Join page - ending*/
-}
+    /*Directory page - beginning*/
+  .title-dir {
+        text-align:center;
+    }
+    
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 2px;
+        grid-row-gap: 2px; 
+        justify-items:center;
+    }
 
+    .img-dir {
+        max-width: 90%;
+        margin: 1rem;
+        box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
+    
+    }
+  /*Directory page - ending*/
+}
