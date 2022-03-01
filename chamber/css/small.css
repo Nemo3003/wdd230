@@ -65,6 +65,7 @@ nav ul {
 nav ul.open {
     display: block;
 }
+/*I will change the position for this @media, but right now I am too tired*/
 @media only screen and (min-width: 63.75rem) {
 
     nav button {
