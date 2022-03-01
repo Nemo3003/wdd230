@@ -42,6 +42,7 @@ tbody tr:nth-child(4){
 }
 tbody tr:nth-child(5){
     background-color: $greyish;
+    
 }
 tbody tr:nth-child(6){
     background-color: $greenish;
@@ -53,7 +54,7 @@ tbody tr:nth-child(6){
 } 
 
 .blue{
-    background-color: $blueish !important;
+    background-color: $blueish;
 }
 tfoot{
     width: 10rem;

@@ -43,7 +43,7 @@ tbody tr:nth-child(6) {
   border: 1px solid  #000; }
 
 .blue {
-  background-color: #61a0b9 !important; }
+  background-color: #61a0b9; }
 
 tfoot {
   width: 10rem; }
