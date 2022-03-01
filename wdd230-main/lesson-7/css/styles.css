@@ -1,0 +1,48 @@
+
+* {
+    text-align: center;
+    margin: 0;
+}
+body {
+    background-image: url('../images/background-image.webp');
+    background-attachment: fixed;
+}
+div {
+    background-color: white;
+    padding: 10px;
+    max-width: 80vw;
+    margin: 0 auto;
+    box-shadow: 15px 0 10px -10px rgba(136,136,136, .97), -15px 0 10px -10px rgba(136,136,136, .97);
+}
+img {
+    max-width: 100%;
+}
+h1  {
+    padding: 1em;
+    font-family: 'Schoolbell';
+    color: #a1135a;
+}
+picture{
+    display: block;
+}
+picture img[data-src] {
+    filter: blur(0.2em);
+}
+picture img{
+    filter: none;
+    transition: filter 1s;
+}
+
+
+@media only screen and (min-width: 700px) {
+    div {
+        max-width: 60vw;
+        padding: 0;
+        padding-bottom: 2em;
+    }
+}
+@media only screen and (min-width: 1100px) {
+    div {
+        max-width: 40vw;
+    }
+}

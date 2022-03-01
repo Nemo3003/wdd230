@@ -1,0 +1,8 @@
+@media (min-width: 900px) {
+    nav, #color-schemes {
+    flex-direction: row;
+    }
+    nav a, #color-schemes {
+		font-size: 1.3rem;
+	}
+}

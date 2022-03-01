@@ -1,0 +1,96 @@
+
+* {
+    margin: 0;
+    /*padding: 0;*/
+    box-sizing: border-box;
+}
+
+#content {
+    max-width: 960px;
+    margin: 0 auto;
+}
+p, ul li {
+    font-size: large;
+}
+body {
+    background-color: lightcyan;
+}
+img {
+    max-width: 100%;
+}
+p, h1, h2, h3, ul, ol, li, img {
+    color: white;
+    padding: 15px;
+}
+
+
+/*--------Header---------------*/
+header, main, footer {
+    background-color: darkslategrey;
+    text-align: center;
+    padding: 1.5em;
+    color: floralwhite;
+}
+
+/*--------Navigation---------- */
+nav {
+    background-color: whitesmoke;
+}
+nav, #color-schemes {
+    display: flex;
+    flex-direction: column;
+}
+a:hover {
+    background-color: #BCDF3F;
+    color: floralwhite;
+}
+nav div, #color-schemes div {
+    flex: 1 1 100%;
+}
+nav a, #color-schemes div {
+	display: block;
+	text-align: center;
+    padding: 15px;
+	text-decoration: none;
+	/*font-size: 1em;*/
+}
+ul {
+    list-style: none;
+}
+
+/*---------Color Schemes--------*/
+.color-schemes-div1 {
+    background-color: #000000;
+}
+.color-schemes-div2 {
+    background-color: #14213D;
+}
+.color-schemes-div3 {
+    background-color: #FCA311;
+}
+.color-schemes-div4  {
+    background-color: #E5E5E5;
+    color: black
+}
+.color-schemes-div5 {
+    background-color: #FFFFFF;
+    color: black
+}
+
+/*---------Typography--------*/
+.sample {
+    font-family: 'Noto Serif';
+}
+.p-sample {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*----------Main--------------*/
+main {
+    text-align: left;
+}
+
+
+
+

@@ -9,6 +9,15 @@ let dayOfWeek = new Date().getDay();
 if (dayOfWeek == 1 || dayOfWeek == 2) {
     banner.style.display = "block";
 }
+//Let's get the hamburguer working!
+
+function toggleMenu() {
+
+    document.getElementById('Nav').classList.toggle('open');
+}
+
+let navig = document.getElementById('hamburgerBtn')
+navig.onclick = toggleMenu
 
 document.getElementById("modify").innerHTML = document.lastModified
 document.getElementById("year").innerHTML = new Date().getFullYear()

@@ -1,128 +1,25 @@
-@media screen and (max-width: 51.25rem) {
-   body{
-      margin-bottom:80px;
-   }
-    main{
-        display: grid; 
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 2px;
-        height: calc(100vh - 80px);
-        
-     }
-       
-     .hero {
-      grid-row-start: 1;
-      grid-column-start: 1;
-      grid-row-end: 2;
-      grid-column-end: 5;
-      /*background-image: url("../images/Optimized-Optimized-Tirol-medium.jpg");
-      background-size: 100% auto;*/
-        
-     }
-     
-     .news {
-     
-        background-color: rgb(177, 170, 170);
-        grid-row-start: 2;
-        grid-column-start: 1;
-     
-        grid-row-end: 3;
-        grid-column-end: 5;
-        
-     }
-     .spot1 {
-     
-        background-color: rgb(177, 170, 170);
-        grid-row-start: 3;
-        grid-column-start: 1;
-     
-        grid-row-end: 4;
-        grid-column-end: 3;
-
-        
-     }
-     .spot2 {
-     
-        background-color: rgb(177, 170, 170);
-        grid-row-start: 3;
-        grid-column-start: 3;
-     
-        grid-row-end: 4;
-        grid-column-end: 5;
-
+@media (min-width: 32.5em){
+    img {
+        float: right;
     }
-    .spot3{
-        display: none;
-    }
-     
-     .join {
-     
-        background-color: rgb(177, 170, 170);
-        grid-row-start: 4;
-        grid-column-start: 1;
-     
-        grid-row-end: 5;
-        grid-column-end: 5;
-    
+	html{
+		background-color: rgb(173,216,230);
+	}
+	body{
+		font-size: 20px;
+		color: #054A29;
+	}
+	h1{
+		color: #2E2D4D;
+		font-size: 1.7em;
 
-        
-     }
-     .event {
-     
-        background-color: rgb(177, 170, 170);
-        grid-row-start: 5;
-        grid-column-start: 1;
-     
-        grid-row-end: 6;
-        grid-column-end: 4;
-        
-     }
-     .weather {
-     
-        background-color: rgb(177, 170, 170);
-        grid-row-start: 5;
-        grid-column-start: 4;
-     
-        grid-row-end: 6;
-        grid-column-end: 5;
-        
-     }
-     footer{
-      position: fixed;
-      height: 70px;
-      bottom: 0px;
-      left: 0px;
-      right: 0px;
-      margin-bottom: 0px;
-     }
-    
-}
-@media screen and (max-width:40.9375rem){
-   body{
-      margin-bottom:100px;
-   }
-   
-   footer{
-      position: fixed;
-      height: 70px;
-      bottom: 0px;
-      left: 0px;
-      right: 0px;
-      margin-bottom: 0px;
-   }
-}
-@media screen and (max-width: 49.75rem){
-   body{
-      margin-bottom:100px;
-   }
-   
-   footer{
-      position: fixed;
-      height: 70px;
-      bottom: 0px;
-      left: 0px;
-      right: 0px;
-      margin-bottom: 0px;
-   }
+	}
+	header img{
+    width: 175px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+	li::marker{
+		color: #FED18C;
+		font-size: 1.25em;
+	}
 }
