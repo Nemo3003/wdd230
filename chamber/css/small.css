@@ -454,6 +454,15 @@ div.cards {
     flex-wrap: wrap;
     margin: .5rem;
 }
+.buttons-dir{
+    display: flex;
+    margin: 1.3rem;
+    justify-content: flex-end;
+    
+}
+.btn-1, .btn-2{
+    cursor: pointer;
 
+}
 
 /*directory page - ending*/
