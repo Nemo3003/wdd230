@@ -246,6 +246,17 @@ img{
     padding: 0.5rem;
     font-size: large;
 }
+/*--------------------------------------------------Footer-----------------------------------------------------------*/
+.main-footer {
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 5rem;
+    align-items: center;
+}
+.main-footer p{
+    margin: 0 auto;
+
+}
 
 /*Discover Page - Beginning*/
 .wrapper-disc p{
