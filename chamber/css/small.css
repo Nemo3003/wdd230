@@ -441,11 +441,10 @@ footer{
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-column-gap: 2px;
         grid-row-gap: 2px;
+        margin: 0 auto;
     }
-
-    .img-dir {
-        max-width: 18.75rem;
-        box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
-    }
+.cards.img-dir{
+    max-width: fit-content;
+}
 
 /*directory page - ending*/
