@@ -252,6 +252,8 @@ img{
     justify-content: space-evenly;
     min-height: 5rem;
     align-items: center;
+    font-size: smaller;
+    flex-wrap: wrap;
 }
 .main-footer p{
     margin: 0 auto;
