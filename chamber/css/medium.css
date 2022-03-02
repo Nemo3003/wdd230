@@ -110,7 +110,11 @@
         box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
     }
      /*Directory page - ending*/
-    
+     div.cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin: 0 auto;
+  }
 }
 @media screen and (max-width:40.9375rem){
    body{
@@ -153,4 +157,9 @@
         box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
     }
      /*Directory page - ending*/
+     div.cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin: 0 auto;
+  }
 }

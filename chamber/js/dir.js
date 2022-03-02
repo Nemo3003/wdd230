@@ -31,6 +31,7 @@ fetch(requestURL)
             image.setAttribute('src', companies[i].imageurl);
             title.setAttribute('class', 'title-dir');
             image.setAttribute('class', 'img-dir');
+            
 
 
             document.querySelector('div.cards').appendChild(card);

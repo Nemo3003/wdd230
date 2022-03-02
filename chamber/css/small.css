@@ -436,15 +436,21 @@ footer{
 /*contact page - ending*/
 /*directory page - beginning*/
 /*I WILL WORK ON USING LESS CSS AS WELL AS LESS @MEDIA*/
-.cards {
+div.cards {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-column-gap: 2px;
-        grid-row-gap: 2px;
+        grid-template-columns: repeat(4, 1fr);
         margin: 0 auto;
     }
-.cards.img-dir{
-    max-width: fit-content;
+.cards .img-dir{
+    margin: 0 .5rem;
+    
 }
+.main-dir{
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    margin: .5rem;
+}
+
 
 /*directory page - ending*/

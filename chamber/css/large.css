@@ -211,6 +211,11 @@
     .main-footer{
         min-height: 10px;
     }
+    div.cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
   /*Directory page - ending*/
 }
 @media (max-width: 31.25rem){
@@ -412,4 +417,9 @@
     
     }
   /*Directory page - ending*/
+  div.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+}
 }
