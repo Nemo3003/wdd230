@@ -38,4 +38,12 @@ fetch(requestURL)
             document.querySelector('div.cards').appendChild(card);
         };
     });
+    window.addEventListener("DOMContentLoaded", () => {
+        document.getElementById("sList").onclick = () => {
+          document.getElementById("cards").classList.remove("grid");
+        };
+        document.getElementById("sGrid").onclick = () => {
+          document.getElementById("cards").classList.add("grid");
+        };
+      });
     //Nemo's

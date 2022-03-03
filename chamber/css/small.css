@@ -444,31 +444,28 @@ footer{
 /*contact page - ending*/
 /*directory page - beginning*/
 /*I WILL WORK ON USING LESS CSS AS WELL AS LESS @MEDIA*/
-div.cards {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        margin: 0 auto;
-    }
-.cards .img-dir{
-    margin: 0 .5rem;
-    
-}
 .main-dir{
     display: flex;
-    height: auto;
-    flex-wrap: wrap;
-    margin: .5rem;
-}
-.buttons-dir{
-    display: flex;
-    margin: 1.3rem;
-    justify-content: center;
-    
-}
-.btn-1, .btn-2{
-    cursor: pointer;
-    font-size: larger;
+    height: fit-content;
     margin: 1rem;
 }
+#cards {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 5px;
+    margin: 0 auto;
+  }
+  #cards .item {
+      display: flex;
+    padding: 10px;
+    border: 1px solid #ddd;
+    justify-content: space-around;
+    
+  }
+  #cards .item:nth-child(odd) { background: #f7f7f7; }
+  
+  /* (B) TRANSFORM INTO GRID VIEW */
+  #cards.grid { grid-template-columns: repeat(3, 1fr); }
+  #cards.grid .item:nth-child(odd) { background: none; }
 
 /*directory page - ending*/
