@@ -23,10 +23,11 @@ fetch(requestURL)
             website.textContent	= companies[i].website
 
             card.appendChild(title);
+            card.appendChild(image);
             card.appendChild(address);
             card.appendChild(phone);
             card.appendChild(website);
-            card.appendChild(image);
+            
 
             image.setAttribute('src', companies[i].imageurl);
             title.setAttribute('class', 'title-dir');
