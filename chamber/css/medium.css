@@ -1,123 +1,165 @@
 @media screen and (max-width: 51.25rem) {
-   @media screen and (max-width: 51.25rem) {
-      body{
-         margin-bottom:80px;
-      }
-       main{
-           display: grid; 
-           grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-           grid-template-columns: 1fr 1fr 1fr 1fr;
-           gap: 2px;
-           height: calc(100vh - 80px);
-           
-        }
-          
-        .hero {
-         grid-row-start: 1;
-         grid-column-start: 1;
-         grid-row-end: 2;
-         grid-column-end: 5;
-         /*background-image: url("../images/Optimized-Optimized-Tirol-medium.jpg");
-         background-size: 100% auto;*/
-           
-        }
+   body{
+      margin-bottom:80px;
+   }
+    main{
+        display: grid; 
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 2px;
+        height: calc(100vh - 80px);
         
-        .news {
-        
-           background-color: rgb(177, 170, 170);
-           grid-row-start: 2;
-           grid-column-start: 1;
-        
-           grid-row-end: 3;
-           grid-column-end: 5;
-           
-        }
-        .spot1 {
-        
-           background-color: rgb(177, 170, 170);
-           grid-row-start: 3;
-           grid-column-start: 1;
-        
-           grid-row-end: 4;
-           grid-column-end: 3;
-   
-           
-        }
-        .spot2 {
-        
-           background-color: rgb(177, 170, 170);
-           grid-row-start: 3;
-           grid-column-start: 3;
-        
-           grid-row-end: 4;
-           grid-column-end: 5;
-   
-       }
-       .spot3{
-           display: none;
-       }
-        
-        .join {
-        
-           background-color: rgb(177, 170, 170);
-           grid-row-start: 4;
-           grid-column-start: 1;
-        
-           grid-row-end: 5;
-           grid-column-end: 5;
+     }
        
-   
-           
-        }
-        .event {
+     .hero {
+      grid-row-start: 1;
+      grid-column-start: 1;
+      grid-row-end: 2;
+      grid-column-end: 5;
+      /*background-image: url("../images/Optimized-Optimized-Tirol-medium.jpg");
+      background-size: 100% auto;*/
         
-           background-color: rgb(177, 170, 170);
-           grid-row-start: 5;
-           grid-column-start: 1;
+     }
+     
+     .news {
+     
+        background-color: rgb(177, 170, 170);
+        grid-row-start: 2;
+        grid-column-start: 1;
+     
+        grid-row-end: 3;
+        grid-column-end: 5;
         
-           grid-row-end: 6;
-           grid-column-end: 4;
-           
-        }
-        .weather {
-        
-           background-color: rgb(177, 170, 170);
-           grid-row-start: 5;
-           grid-column-start: 4;
-        
-           grid-row-end: 6;
-           grid-column-end: 5;
+     }
+     .spot1 {
+     
+        background-color: rgb(177, 170, 170);
+        grid-row-start: 3;
+        grid-column-start: 1;
+     
+        grid-row-end: 4;
+        grid-column-end: 3;
 
-        }
-        footer{
-         position: fixed;
-         height: 70px;
-         bottom: 0px;
-         left: 0px;
-         right: 0px;
-         margin-bottom: 0px;
-        }}
+        
+     }
+     .spot2 {
+     
+        background-color: rgb(177, 170, 170);
+        grid-row-start: 3;
+        grid-column-start: 3;
+     
+        grid-row-end: 4;
+        grid-column-end: 5;
+
+    }
+    .spot3{
+        display: none;
+    }
+     
+     .join {
+     
+        background-color: rgb(177, 170, 170);
+        grid-row-start: 4;
+        grid-column-start: 1;
+     
+        grid-row-end: 5;
+        grid-column-end: 5;
+    
+
+        
+     }
+     .event {
+     
+        background-color: rgb(177, 170, 170);
+        grid-row-start: 5;
+        grid-column-start: 1;
+     
+        grid-row-end: 6;
+        grid-column-end: 4;
+        
+     }
+     .weather {
+     
+        background-color: rgb(177, 170, 170);
+        grid-row-start: 5;
+        grid-column-start: 4;
+     
+        grid-row-end: 6;
+        grid-column-end: 5;
+        
+     }
+     footer{
+      position: fixed;
+      height: 70px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      margin-bottom: 0px;
+     }
      /*Directory page - beginning*/
      .cards {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-column-gap: 2px;
-      grid-row-gap: 2px; 
-   }
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2px;
+        grid-row-gap: 2px; 
+    }
 
-      .img-dir {
-      max-width: 12.5rem;
-      align-items:center;
-      box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
-  }
-   /*Directory page - ending*/
-      div.cards {
+    .img-dir {
+        max-width: 12.5rem;
+        align-items:center;
+        box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
+    }
+     /*Directory page - ending*/
+     div.cards {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       margin: 0 auto;
-   }
-     /*Directory page - ending*/
-
+  }
 }
+@media screen and (max-width:40.9375rem){
+   body{
+      margin-bottom:100px;
+   }
+   
+   footer{
+      position: fixed;
+      height: 70px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      margin-bottom: 0px;
+   }
+}
+@media screen and (max-width: 49.75rem){
+   body{
+      margin-bottom:100px;
+   }
+   
+   footer{
+      position: fixed;
+      height: 70px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      margin-bottom: 0px;
+   }
+   /*Directory page - beginning*/
+     .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2px;
+        grid-row-gap: 2px; 
+    }
 
-
+    .img-dir {
+        max-width: 12.5rem;
+        align-items:center;
+        box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
+    }
+     /*Directory page - ending*/
+     div.cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin: 0 auto;
+  }
+}
