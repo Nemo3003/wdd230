@@ -15,9 +15,7 @@
     }
    
     }
-
-
-@media (max-width: 45rem){
+  @media (max-width: 45rem){
     
     P{
         margin-bottom: 8%;
@@ -73,7 +71,7 @@
     img{
         width: 100%;
     }
-    
+    }
     /*Discover page - beginning*/
     .wrapper-disc{
         display: grid;
@@ -217,7 +215,7 @@
         margin: 0 auto;
     }
   /*Directory page - ending*/
-}
+
 @media (max-width: 31.25rem){
     .wrapper {
         height:auto !important;

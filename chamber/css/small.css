@@ -1,372 +1,297 @@
-
-*{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    
-/*-----------------------------------------------Body----------------------------------------------------------------*/
+*{  padding:0;
+    margin:0;
+    text-decoration:none;
+    list-style:none;
+    box-sizing:border-box}
+body{background-color:#f2f3ae;
+        font-family:'Zen Antique',serif;
+        font-weight:700;color:#020122}
+#banner{
+    display:none;
+    background-color:red;
+    color:#000;
+    padding:10px;
+    text-align:center;
+    font-family:Montserrat,serif;
+    font-size:20px
 }
-body{
-    background-color: #F2F3AE;
-    font-family: 'Zen Antique', serif;
-    font-weight: bold;
-    color: #020122;
-    
+/*-------------------------------------------------NAV MENU-------------------------------------------------*/
+nav button{
+    margin:0 auto;
+    background-color:transparent;
+    border:none;
+    font-size:2rem;
+    color:#fff;
+    padding:1rem
 }
-/*-----------------------------------------------Banner----------------------------------------------------------------*/
-#banner {
-    display: none;
-    background-color: red;
-    color: #000;
-    padding: 10px;
-    text-align: center;
-    font-family: "Montserrat", serif;
-    font-size: 20px;
+nav{
+    background-color:#fc9e4f;
+    text-align:center;
+    padding:.5rem;
+    justify-content:space-around;
+    font-size:2rem;
+    font-weight:700
 }
-/*-----------------------------------------------Nav------------------------------------------------------------------*/
-nav button {
-    margin: 0 auto;
-    background-color: transparent;
-    border: none;
-    font-size: 2rem;
-    color: white;
-    padding: 1rem;
+#menu-btn{
+    font-size:1.25rem;
+    align-items:center;
+    padding-right:.625rem
 }
-nav {
-    background-color: #FC9E4F;
-    text-align: center;
-    padding: 0.5rem;
-    justify-content: space-around;
-    font-size: 2rem;
-    font-weight: bold;
+nav ul{
+    list-style-type:none
 }
-#menu-btn {
-    font-size: 1.25rem;
-    align-items: center;
-    padding-right: 0.625rem;
+nav ul li a{
+    display:block;
+    text-decoration:none;
+    color:#fff;
+    padding:.8rem 2.5rem;
+    margin:.625rem
 }
-nav ul {
-    list-style-type: none;
-    
-}
-nav ul li a {
-    display: block;
-    text-decoration: none;
-    color: white;
-    padding: 0.8rem 2.5rem;
-    margin: 0.625rem;
-    
-}
-nav ul li a:hover {
+nav ul li a:hover{
     background-color:#000090;
-    color: #FC9E4F;
+    color:#fc9e4f
 }
-nav ul {
-    display: none;
+nav ul{
+    display:none
 }
-nav ul.open {
-    display: block;
-}
-
-
-/*-----------------------------------------------Logo-----------------------------------------------------------------*/
+/*-------------------------------------------LOGO---------------------------------------------------------*/
 #logo{
-
-    padding: 10px;
-    font-size: 30px;
-    font-family: 'Luxurious Roman', cursive;
-    
+    padding:10px;
+    font-size:30px;
+    font-family:'Luxurious Roman',cursive
+}#logo img{
+    display:flex;
+    justify-content:center;
+    width:9.5rem
+}.loguinho{
+    display:flex;
+    justify-content:center;
+    margin:0 auto
+}.fa-facebook:hover{
+    color:#006eff
+}.fa-instagram:hover{
+    color:#ff00bf
+}.icons i{
+    display:inline-flex
 }
-#logo img{
-    display: flex;
-    justify-content: center;
-    width: 9.5rem;
-    
-}
-.loguinho{
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-}
-/*-----------------------------------------------Hamburguer Menu-----------------------------------------------------------------*/
-.enlace{
-    position: absolute;
-    padding: 20px 50px;
-    margin-top: 5px;
-    width: 1px;
-    height: 1px;
-}
-
-
-.checkbtn{
-    font-size: 30px;
-    color: #fff;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-#check{
-    display: none;
-}
-
-/*-------------------------------------------------Icons----------------------------------------------------------------*/
-.fa-facebook:hover {color: rgb(0, 110, 255);}
-.fa-instagram:hover {color: rgb(255, 0, 191);}
-.fa-github:hover {color: rgb(255, 123, 0);}
-.icons i {
-    display: inline-flex;
-}
-/*--------------------------------------------------Main Content----------------------------------------------------------------*/
+/*------------------------------------------MAIN CONTENT----------------------------------------------------*/
 main{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-column-gap: 2px;
-    grid-row-gap: 2px;
-    
-    height: calc(100vh - 80px);
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows:repeat(6,1fr);
+    grid-column-gap:2px;
+    grid-row-gap:2px;
+    height:calc(100vh - 80px)
 }
 .event{
-    grid-area: 1 / 1 / 3 / 2; 
-    background-color: #ccc;
-    padding: 5px;
-
+    grid-area:1/1/3/2;
+    background-color:#ccc;
+    padding:5px
 }
 .event p{
-    text-align: center;
-    margin-top: 10%;
+    text-align:center;
+    margin-top:10%
 }
 .weather{
-    grid-area: 3 / 1 / 5 / 2;
-    width:  100%;
-    height: auto;
-
+    grid-area:3/1/5/2;
+    width:100%;
+    height:auto
 }
 .code-cont{
-    display: grid;
-    grid-template-columns: repeat(2, 200px);
-    grid-template-rows: 20px 80px repeat(3, 30px);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    display:grid;
+    grid-template-columns:repeat(2,200px);
+    grid-template-rows:20px 80px repeat(3,30px);
+    grid-column-gap:0;
+    grid-row-gap:0
 }
 .code-cont h2{
-      grid-area: 1 / 1 / 2 / 3;
+    grid-area:1/1/2/3
 }
 .weather-new{
-     grid-area: 2 / 1 / 3 / 2;
-     background-image: url('../images/weather-storm.svg_1_3.webp');
-     background-size: 100% auto;
+    grid-area:2/1/3/2;
+    background-image:url(../images/weather-storm.svg_1_3.webp);
+    background-size:100% auto
 }
 .degree{
-    grid-area: 2 / 2 / 3 / 3;
-    margin-top: 20px;
-    font-size: 30px;
+    grid-area:2/2/3/3;
+    margin-top:20px;
+    font-size:30px
 }
 .another-title{
-     grid-area: 3 / 1 / 4 / 3;
-     font-size: 30px;
+    grid-area:3/1/4/3;
+    font-size:30px
 }
 .windSpeed{
-     grid-area: 4 / 1 / 5 / 3;
-     margin-right: 10.5rem;
+    grid-area:4/1/5/3;
+    margin-right:10.5rem
 }
 .windChill{
-    grid-area: 5 / 1 / 6 / 3;
-
+    grid-area:5/1/6/3
 }
 .join{
-    grid-area: 5 / 1 / 7 / 2;
-    background-color: #ccc;
-    padding: 5px;
+    grid-area:5/1/7/2;
+    background-color:#ccc;
+    padding:5px
 }
 .join p{
-    text-align: center;
-    margin-top: 10%;
+    text-align:center;
+    margin-top:10%
 }
-    
-
 .hero{
-    grid-area: 1 / 2 / 5 / 4;
-
+    grid-area:1/2/5/4
 }
 .hero img{
-    height: 100%;
+    height:100%
 }
-
 .news{
-    grid-area: 5 / 2 / 7 / 4;
-    background-color: #ccc;
+    grid-area:5/2/7/4;
+    background-color:#ccc
 }
-
 p{
-    text-align: center;
+    text-align:center
 }
 .spot1{
-    grid-area: 1 / 4 / 3 / 5;
-    background-color: #ccc;
+    grid-area:1/4/3/5;
+    background-color:#ccc
 }
 .spot1 p{
-    text-align: center;
-    margin-top: 10%;
-    padding: 5px;
+    text-align:center;
+    margin-top:10%;
+    padding:5px
 }
 .spot2{
-    grid-area: 3 / 4 / 5 / 5;
-    background-color: #ccc;
-    padding: 5px;
+    grid-area:3/4/5/5;
+    background-color:#ccc;
+    padding:5px
 }
-
-
 .spot3{
-    grid-area: 5 / 4 / 7 / 5;
-    background-color: #ccc;
-    padding: 5px;
+    grid-area:5/4/7/5;
+    background-color:#ccc;
+    padding:5px
 }
 .spot3 p{
-    text-align: center;
-    margin-top: 10%;
+    text-align:center;
+    margin-top:10%
 }
 h1{
-    font-size: 25px;
-    text-align: center;
+    font-size:25px;
+    text-align:center
 }
 h2{
-    text-align:  center;
+    text-align:center
 }
 img{
-    width: 100%;
-    height: auto;
+    width:100%;
+    height:auto
 }
-#now {
-    text-align: center;
-    padding: 0.5rem;
-    font-size: large;
+#now{text-align:center;
+    padding:.5rem;
+    font-size:large
 }
-/*--------------------------------------------------Footer-----------------------------------------------------------*/
-.main-footer {
-    display: flex;
-    justify-content: space-evenly;
-    min-height: 5rem;
-    align-items: center;
-    font-size: smaller;
-    flex-wrap: wrap;
+/*---------------------------------Footer----------------------------------------------*/
+.main-footer{
+    display:flex;
+    justify-content:space-evenly;
+    min-height:5rem;
+    align-items:center;
+    font-size:smaller;
+    flex-wrap:wrap
 }
 .main-footer p{
-    margin: 0 auto;
-
+    margin:0 auto
 }
 
 /*Discover Page - Beginning*/
 .demographic{
-    font-size: 1rem;
+    font-size:1rem
 }
 .wrapper-disc p{
-    text-align: center;
-    
+    text-align:center
 }
 .wrapper-disc{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    height:75rem;
-    
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows:repeat(6,1fr);
+    grid-column-gap:0;
+    grid-row-gap:0;
+    height:75rem
 }
-.wrapper-disc-head {
-    height: 100px;
+.wrapper-disc-head{
+    height:100px
 }
-.wrapper-disc-head h2 {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    transform: translate(-50%, -50%);
+.wrapper-disc-head h2{
+    margin:0;
+    position:absolute;
+    top:50%;
+    left:50%;
+    text-align:center;
+    transform:translate(-50%,-50%)
 }
-main.wrapper-disc {
-    text-align: center;
+main.wrapper-disc{
+    text-align:center
 }
 main.wrapper-disc article p{
-    text-align: left;
+    text-align:left
 }
-.wrapper-disc h2 {
-    padding-bottom: 1rem;
+.wrapper-disc h2{
+    padding-bottom:1rem
 }
-
-.wrapper-disc article {
-    margin: 25px;
+.wrapper-disc article{
+    margin:25px
 }
-.wrapper-disc article h2 a {
-    text-decoration: none;
-    color: #14213D;
+.wrapper-disc article h2 a{
+    text-decoration:none;
+    color:#14213d
 }
-
 main.wrapper-disc picture{
-    box-shadow: 5px 4px 10px rgb(119, 113, 113);
-    margin: 0 auto;
+    box-shadow:5px 4px 10px #777171;
+    margin:0 auto
 }
 .wrapper-disc picture img{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display:flex;
+    align-items:center;
+    justify-content:center
 }
 .first{
-    width: 300px;
-    height: auto;
-    grid-area: 1 / 1 / 2 / 2;
-    
+    width:300px;
+    height:auto;
+    grid-area:1/1/2/2
 }
 .first-p{
-    grid-area: 1 / 2 / 2 / 3;
+    grid-area:1/2/2/3
 }
 .second{
-    width: 300px;
-    height: auto;
-    grid-area: 2 / 2 / 3 / 3;
+    width:300px;
+    height:auto;
+    grid-area:2/2/3/3
 }
 .second-p{
-    grid-area: 2 / 1 / 3 / 2;
+    grid-area:2/1/3/2
 }
 .third{
-    width: 300px;
-    height: auto;
-    grid-area: 3 / 1 / 4 / 2;
+    width:300px;
+    height:auto;
+    grid-area:3/1/4/2
 }
 .third-p{
-    grid-area: 3 / 2 / 4 / 3;
+    grid-area:3/2/4/3
 }
 .fourth{
-    width: 300px;
-    height: auto;
-    grid-area: 4 / 2 / 5 / 3;
+    width:300px;
+    height:auto;
+    grid-area:4/2/5/3
 }
 .fourth-p{
-    grid-area: 4 / 1 / 5 / 2;
-  
+    grid-area:4/1/5/2
 }
 .fifth{
-    width: 300px;
-    height: auto;
-    padding: 20px;
-    grid-area: 5 / 1 / 6 / 2;
+    width:300px;
+    height:auto;
+    padding:20px;
+    grid-area:5/1/6/2
 }
-.fifth-p{
-    grid-area: 5 / 2 / 6 / 3;
-}
-.foot{
-    position: fixed;
-    height: 80px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    margin-bottom: 0px;
-    grid-area: 6 / 1 / 7 / 6;
-    padding: 20px;
+.fifth-p {
+    grid-area:5/2/6/3
 }
 /*Discover Page - Ending*/
 /*Join Page - Beginning*/
