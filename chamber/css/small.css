@@ -451,12 +451,13 @@ footer{
 }
 #cards {
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: repeat(3,1fr);
     grid-gap: 5px;
     margin: 0 auto;
   }
   #cards .item {
-      display: flex;
+    display: flex;
+    
     padding: 10px;
     border: 1px solid #ddd;
     justify-content: space-around;
@@ -465,7 +466,7 @@ footer{
   #cards .item:nth-child(odd) { background: #f7f7f7; }
   
   /* (B) TRANSFORM INTO GRID VIEW */
-  #cards.grid { grid-template-columns: repeat(3, 1fr); }
+  #cards.grid { grid-template-columns: 100%; }
   #cards.grid .item:nth-child(odd) { background: none; }
 
 /*directory page - ending*/
