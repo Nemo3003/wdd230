@@ -5,8 +5,9 @@ fetch(apiURL)
     const iconsrc= `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
     const desc = jsObject.weather[0].description;
     let temp = jsObject.main.temp;
+    let speed = jsObject.wind.speed;
     document.getElementById('wind-speed').textContent = `Wind speed: ${jsObject.wind.speed}`;
-    if (temp > 10) {
+    if (temp > 10 && speed > 177) {
       document.getElementById('chill').textContent = `Wind chill: N/A`
     }else {
       document.getElementById('chill').textContent = `Wind chill: ${jsObject.wind.deg} km/h`
