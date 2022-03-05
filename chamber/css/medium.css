@@ -154,8 +154,6 @@
         box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
     }
      /*Directory page - ending*/
-     .grid-view {
-      grid-template-columns: 1fr 1fr;
-  }
+     
 }
 }
