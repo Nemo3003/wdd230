@@ -193,9 +193,9 @@
     /*Join page - ending*/
   /*Directory page - beginning*/
   .grid-cards{
-    display: grid;
-    grid-column: 1fr;
-    }
+    display: ruby-base;
+ }
+ }
   /*Directory page - ending*/
 }
 @media (max-width: 31.25rem){
@@ -380,9 +380,8 @@
     /*Directory page - beginning*/
     .grid-cards{
         display: grid;
-        grid-column: 1fr;
+        grid-template-columns: 1fr;
      }
   /*Directory page - ending*/
   
-}
 }
