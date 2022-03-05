@@ -4,10 +4,8 @@ const requestURL =" https://nemo3003.github.io/wdd230/chamber/js/data.json";
 fetch(requestURL)
     .then(function (response) {
         return response.json();
-
     })
     .then(function (jsonObject) {
-        console.table(jsonObject); // temporary checking for valid response and data parsing
         const companies = jsonObject['companies'];
         for (let i = 0; i < companies.length; i++) {
             let card = document.createElement('section');
@@ -28,24 +26,21 @@ fetch(requestURL)
             card.appendChild(phone);
             card.appendChild(website);
             
-
             image.setAttribute('src', companies[i].imageurl);
             title.setAttribute('class', 'title-dir');
             image.setAttribute('class', 'img-dir');
             card.setAttribute('id', 'item');
-            
-
 
             document.getElementById('cards').appendChild(card);
-
             
         };
     });
 
 
-
+//get the buttons
 let list_btn = document.getElementById("sList")
 let grid_btn = document.getElementById('sGrid')
+//This displays the list view
 list_btn.addEventListener('click', ()=>{
     document.getElementById('cards').setAttribute('class', 'list-cards');
     var divs = document.querySelectorAll('#item');
@@ -63,7 +58,7 @@ list_btn.addEventListener('click', ()=>{
         divs[i].classList.add('item-list');
     }
 })
-
+//Here we handle the grid view
 grid_btn.addEventListener('click', ()=>{
     document.getElementById('cards').setAttribute('class', 'grid-cards');
     var divs = document.querySelectorAll('#item');
@@ -83,7 +78,7 @@ grid_btn.addEventListener('click', ()=>{
 })
 //This handles the resizing event. It displays the list view
 let res = function () {
-    let eventHandler = function(event){
+    let eventHandlers = function(event){
         let element = document.getElementById('cards');
         element.setAttribute('class', 'list-cards');
         var divs = document.querySelectorAll('#item');
@@ -101,7 +96,7 @@ let res = function () {
             divs[i].classList.add('item-list');
         }
     };
-    window.addEventListener('resize', eventHandler, false);
+    window.addEventListener('resize', eventHandlers, false);
 };
 
 document.addEventListener('DOMContentLoaded', res, false);
@@ -125,7 +120,7 @@ window.addEventListener('load', (event) => {
         divs[i].classList.add('item-grid');
     }
 });
-//Jquery code to
+//Jquery code to handle the different views
 //$(".listView").on('click', function() {
  //   listView();
  //   setView('list');

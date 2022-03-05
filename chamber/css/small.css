@@ -448,15 +448,18 @@ footer{
 .main-dir{
     display: flex;
     height: fit-content;
-    margin: 1rem;
+    margin: 4rem;
 }
 .buttons-dir {
     display: flex;
     justify-content: center;
     margin: 3rem;
+    font-size: larger;
 }
+
 #sList, #sGrid {
     cursor: pointer;
+    margin: 2rem ;
 }
 .grid-cards {
     display: grid;
