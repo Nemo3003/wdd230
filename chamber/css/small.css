@@ -463,10 +463,13 @@ footer{
     grid-template-columns: repeat(3, 1fr);
     margin: 0 auto;
     gap: 5rem;
+    
 }
 
 .item-grid {
     margin: 0 auto;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    border-radius: 20px;
 }
 .list-cards {
     display: flex;
