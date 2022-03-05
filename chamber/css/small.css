@@ -455,6 +455,9 @@ footer{
     justify-content: center;
     margin: 3rem;
 }
+#sList, #sGrid {
+    cursor: pointer;
+}
 .grid-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
