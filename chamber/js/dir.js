@@ -30,6 +30,7 @@ fetch(requestURL)
             title.setAttribute('class', 'title-dir');
             image.setAttribute('class', 'img-dir');
             card.setAttribute('id', 'item');
+            image.setAttribute('alt', companies[i].name);
 
             document.getElementById('cards').appendChild(card);
             
