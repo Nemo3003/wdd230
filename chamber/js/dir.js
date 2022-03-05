@@ -81,7 +81,7 @@ grid_btn.addEventListener('click', ()=>{
         divs[i].classList.add('item-grid');
     }
 })
-
+//This handles the resizing event. It displays the list view
 let res = function () {
     let eventHandler = function(event){
         let element = document.getElementById('cards');
@@ -105,6 +105,26 @@ let res = function () {
 };
 
 document.addEventListener('DOMContentLoaded', res, false);
+
+//This will handle the event after the page loads. It displays inmediately the grid view
+
+window.addEventListener('load', (event) => {
+    document.getElementById('cards').setAttribute('class', 'grid-cards');
+    var divs = document.querySelectorAll('#item');
+    for (var i = 0; i < divs.length; i++) {
+        divs[i].classList.add('item-grid');
+    }
+    document.getElementById('cards').removeAttribute('class', 'list-cards');
+    var divs = document.querySelectorAll('#item');
+    for (var i = 0; i < divs.length; i++) {
+        divs[i].classList.remove('item-list');
+    }
+    document.getElementById('cards').setAttribute('class', 'grid-cards');
+    var divs = document.querySelectorAll('#item');
+    for (var i = 0; i < divs.length; i++) {
+        divs[i].classList.add('item-grid');
+    }
+});
 //Jquery code to
 //$(".listView").on('click', function() {
  //   listView();
