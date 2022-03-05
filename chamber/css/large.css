@@ -13,14 +13,15 @@
     nav ul li a:hover {
         padding: 1rem 2.5rem;
     }
-   
+    /*Directory*/
+    
 
     
 
 
 @media (max-width: 45rem){
     
-    P{
+    p{
         margin-bottom: 8%;
     }
     .wrapper {
@@ -191,31 +192,9 @@
     }
     /*Join page - ending*/
   /*Directory page - beginning*/
-  .title-dir {
-        text-align:center;
-    }
-    
-    .cards {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-column-gap: 2px;
-        grid-row-gap: 2px; 
-        justify-items:center;
-    }
-
-    .img-dir {
-        max-width: 90%;
-        margin: 1rem;
-        box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
-    
-    }
-    .main-footer{
-        min-height: 10px;
-    }
-    div.cards {
-        display: grid;
-        grid-template-columns: 1fr;
-        margin: 0 auto;
+  .grid-cards{
+    display: grid;
+    grid-column: 1fr;
     }
   /*Directory page - ending*/
 }
@@ -399,24 +378,10 @@
     }
     /*Join page - ending*/
     /*Directory page - beginning*/
-  .title-dir {
-        text-align:center;
-    }
-    
-    .cards {
+    .grid-cards{
         display: grid;
-        grid-template-columns: 1fr;
-        grid-column-gap: 2px;
-        grid-row-gap: 2px; 
-        justify-items:center;
-    }
-
-    .img-dir {
-        max-width: 90%;
-        margin: 1rem;
-        box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
-    
-    }
+        grid-column: 1fr;
+     }
   /*Directory page - ending*/
   
 }

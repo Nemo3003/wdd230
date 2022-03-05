@@ -450,6 +450,11 @@ footer{
     height: fit-content;
     margin: 1rem;
 }
+.buttons-dir {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+}
 .grid-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -461,7 +466,8 @@ footer{
     margin: 0 auto;
 }
 .list-cards {
-    display: block;
+    display: flex;
+    flex-direction: column;
     border:1px solid #000; 
     margin: 0 auto;
 
@@ -471,8 +477,14 @@ footer{
 }
 .item-list {
     display:  flex;
-    margin: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1rem;
     border:1px solid #000; 
+
+}
+.item-list p {
+    margin: 2rem;
 
 }
 /*directory page - ending*/

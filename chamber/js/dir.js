@@ -18,9 +18,9 @@ fetch(requestURL)
             let image = document.createElement('img');
 
             title.textContent = companies[i].name;
-            address.textContent = companies[i].address;
-            phone.textContent = companies[i].phone;
-            website.textContent	= companies[i].website
+            address.textContent = `Address: ${companies[i].address}`;
+            phone.textContent = `Tel: ${companies[i].phone}`;
+            website.textContent	= `Website: ${companies[i].website}`;
 
             card.appendChild(title);
             card.appendChild(image);
