@@ -444,22 +444,35 @@ footer{
 /*contact page - ending*/
 /*directory page - beginning*/
 /*I WILL WORK ON USING LESS CSS AS WELL AS LESS @MEDIA*/
-.grid-cards {
-    display:  grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-.item-grid {
+/*------Directory Page-------*/
+.main-dir{
     display: flex;
-    margin:  0 auto;
+    height: fit-content;
+    margin: 1rem;
+}
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    gap: 5rem;
+}
+
+.item-grid {
+    margin: 0 auto;
 }
 .list-cards {
     display: block;
+    border:1px solid #000; 
+    margin: 0 auto;
 
+}
+.list-cards .item-list img {
+    display: none;
 }
 .item-list {
     display:  flex;
     margin: 50px;
+    border:1px solid #000; 
 
 }
-
 /*directory page - ending*/

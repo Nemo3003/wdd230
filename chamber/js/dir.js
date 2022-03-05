@@ -48,19 +48,37 @@ let list_btn = document.getElementById("sList")
 let grid_btn = document.getElementById('sGrid')
 list_btn.addEventListener('click', ()=>{
     document.getElementById('cards').setAttribute('class', 'list-cards');
-    document.getElementById('item').setAttribute('class', 'item-list');
+    var divs = document.querySelectorAll('#item');
+    for (var i = 0; i < divs.length; i++) {
+        divs[i].classList.add('item-list');
+    }
     document.getElementById('cards').removeAttribute('class', 'grid-cards');
-    document.getElementById('item').removeAttribute('class', 'item-grid');
+    var divs = document.querySelectorAll('#item');
+    for (var i = 0; i < divs.length; i++) {
+        divs[i].classList.remove('item-grid');
+    }
     document.getElementById('cards').setAttribute('class', 'list-cards');
-    document.getElementById('item').setAttribute('class', 'item-list');
+    var divs = document.querySelectorAll('#item');
+    for (var i = 0; i < divs.length; i++) {
+        divs[i].classList.add('item-list');
+    }
 })
 grid_btn.addEventListener('click', ()=>{
     document.getElementById('cards').setAttribute('class', 'grid-cards');
-    document.getElementById('item').setAttribute('class', 'item-grid');
-    document.getElementById('cards').setAttribute('class', 'list-cards');
-    document.getElementById('item').setAttribute('class', 'item-list');
-    document.getElementById('cards').removeAttribute('class', 'grid-cards');
-    document.getElementById('item').removeAttribute('class', 'item-grid');
+    var divs = document.querySelectorAll('#item');
+    for (var i = 0; i < divs.length; i++) {
+        divs[i].classList.add('item-grid');
+    }
+    document.getElementById('cards').removeAttribute('class', 'list-cards');
+    var divs = document.querySelectorAll('#item');
+    for (var i = 0; i < divs.length; i++) {
+        divs[i].classList.remove('item-list');
+    }
+    document.getElementById('cards').setAttribute('class', 'grid-cards');
+    var divs = document.querySelectorAll('#item');
+    for (var i = 0; i < divs.length; i++) {
+        divs[i].classList.add('item-grid');
+    }
 })
 //Jquery code to
 //$(".listView").on('click', function() {

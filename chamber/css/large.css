@@ -13,7 +13,69 @@
     nav ul li a:hover {
         padding: 1rem 2.5rem;
     }
-   
+    .directoryPage h1 {
+        font-family: 'Montserrat';
+    }
+    .links ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+    .links ul li span {
+        margin: 7px;
+        font-size: 2rem;
+    }
+    .links ul li:hover,
+    .links ul li.active {
+        color: white;
+        background-color: #14213D;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    /*--------Grid View-------------*/
+    .grid-view section {
+        margin: 2rem;
+        box-shadow: #666 3px 4px 6px 3px;
+        padding: 2.5rem 1.5rem;
+        background-color: #14213D;
+        color: #FCA311;
+    }
+    .grid-view section img{
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    .grid-view section p,
+    .grid-view section a {
+        font-size: 13px;
+        font-weight: bolder;
+    }
+    .grid-view section h2, 
+    .directoryPage h1 {
+        text-align: center;
+    }
+    /*-----------List View------------*/
+    .list-view section {
+        padding: 1rem;
+        color: #14213D;
+        padding-left: 2rem;
+        margin: 0 .5rem;
+    }
+    .list-view section:nth-last-of-type(odd) {
+        background-color: #14213D;
+        color: white;
+    }
+    .list-view section:nth-last-of-type(even) {
+        background-color: rgba(252,163,17, .7);
+        font-weight: bold;
+    }
+    .list-view section p {
+        padding: 3px;
+    }
+    .list-view section:last-child {
+        margin-bottom: 3rem;
+    }
     }
 
 
