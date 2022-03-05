@@ -63,6 +63,7 @@ list_btn.addEventListener('click', ()=>{
         divs[i].classList.add('item-list');
     }
 })
+
 grid_btn.addEventListener('click', ()=>{
     document.getElementById('cards').setAttribute('class', 'grid-cards');
     var divs = document.querySelectorAll('#item');
@@ -80,6 +81,30 @@ grid_btn.addEventListener('click', ()=>{
         divs[i].classList.add('item-grid');
     }
 })
+
+let res = function () {
+    let eventHandler = function(event){
+        let element = document.getElementById('cards');
+        element.setAttribute('class', 'list-cards');
+        var divs = document.querySelectorAll('#item');
+        for (var i = 0; i < divs.length; i++) {
+           divs[i].classList.add('item-list');
+        }
+        element.removeAttribute('class', 'grid-cards');
+        var divs = document.querySelectorAll('#item');
+        for (var i = 0; i < divs.length; i++) {
+            divs[i].classList.remove('item-grid');
+        }
+        element.setAttribute('class', 'list-cards');
+        var divs = document.querySelectorAll('#item');
+        for (var i = 0; i < divs.length; i++) {
+            divs[i].classList.add('item-list');
+        }
+    };
+    window.addEventListener('resize', eventHandler, false);
+};
+
+document.addEventListener('DOMContentLoaded', res, false);
 //Jquery code to
 //$(".listView").on('click', function() {
  //   listView();
