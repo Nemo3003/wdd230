@@ -146,6 +146,12 @@ main{
     height: auto;
 
 }
+.weather p{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    color:rgb(46, 27, 27);
+}
 .code-cont{
     display: grid;
     grid-template-columns: repeat(2, 200px);
