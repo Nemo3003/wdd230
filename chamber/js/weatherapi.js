@@ -1,3 +1,5 @@
+"use strict";
+
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=3429721&appid=7d25f81a71306eb3ef3609d311f3b054&units=metric";
 fetch(apiURL)
   .then((response) => response.json())
