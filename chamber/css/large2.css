@@ -1,4 +1,4 @@
-@media only screen and (min-width: 63.75rem) {
+
     nav button {
         display: none;
     }
@@ -138,6 +138,3 @@
         text-transform: capitalize;
         line-height: 3rem;
     }
-    
-    
-}
