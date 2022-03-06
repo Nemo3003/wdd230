@@ -13,7 +13,7 @@ fetch(apiURL)
   0.3965 * temperature * windSpeed ** 0.16;
     let actual_wind_chill = windChillCelsius(temp, speed)
     document.getElementById('wind-speed').textContent = `Wind speed: ${jsObject.wind.speed} km/h`;
-    if (temp > 10 && speed > 177) {
+    if (temp > 10 || speed > 177) {
       document.getElementById('chill').textContent = `Wind chill: N/A`
     }else {
       document.getElementById('chill').textContent = `Wind chill: ${Math.round(actual_wind_chill)} C`
