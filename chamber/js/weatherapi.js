@@ -20,7 +20,7 @@ fetch(apiURL)
     }
     
     document.getElementById('humidity').textContent = `Humidity: ${jsObject.main.humidity}%`;
-    document.getElementById('description').textContent = `${desc}`;
+    document.getElementById('description').textContent = `Conditions: ${desc}`;
     document.getElementById('temp').textContent = `Temp ${jsObject.main.temp} C`;
     document.querySelector('#icon-src').textContent = iconsrc;
     document.querySelector('#weathericon').setAttribute('src', iconsrc);
