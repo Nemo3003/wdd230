@@ -1,4 +1,20 @@
 
+@media only screen and (min-width: 63.75rem) {
+
+    nav button {
+        display: none;
+    }
+    nav ul#Nav {
+        display: flex;
+    }
+    nav ul li{
+        text-align: center;
+        flex: 1 0 auto;
+    }
+    nav ul li a:hover {
+        padding: 1rem 2.5rem;
+    }
+}
 *{
     padding: 0;
     margin: 0;
