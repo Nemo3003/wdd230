@@ -118,7 +118,14 @@
         box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
     }
      /*Directory page - ending*/
-     .grid-view {
-      grid-template-columns: 1fr 1fr;
-  }
+     .grid-cards{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding-bottom: 5rem;
+       }
+      .main-dir {
+         padding-bottom: 5rem;
+      }
+     
+    
 }
