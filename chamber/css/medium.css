@@ -2,6 +2,7 @@
    body{
       margin-bottom:80px;
    }
+   
     main{
         display: grid; 
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -88,14 +89,7 @@
         grid-column-end: 5;
         
      }
-     footer{
-      position: fixed;
-      height: 70px;
-      bottom: 0px;
-      left: 0px;
-      right: 0px;
-      margin-bottom: 0px;
-     }
+     
      /*Directory page - beginning*/
      .cards {
         display: grid;

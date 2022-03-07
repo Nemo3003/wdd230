@@ -26,14 +26,9 @@ body{
     font-size: 20px;
 }
 /*-----------------------------------------------Nav------------------------------------------------------------------*/
-nav button {
-    margin: 0 auto;
-    background-color: transparent;
-    border: none;
-    font-size: 2rem;
-    color: white;
-    padding: 1rem;
-}
+
+
+
 nav {
     background-color: #FC9E4F;
     text-align: center;
@@ -41,6 +36,14 @@ nav {
     justify-content: space-around;
     font-size: 2rem;
     font-weight: bold;
+}
+nav button {
+    margin: 0 auto;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    padding: 1rem;
 }
 #menu-btn {
     font-size: 1.25rem;
