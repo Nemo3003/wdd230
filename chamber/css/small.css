@@ -383,27 +383,36 @@ main.wrapper-disc picture{
 }
 /*Discover Page - Ending*/
 /*Join Page - Beginning*/
-fieldset{
+.join-content fieldset{
     border: 1px solid #000;
     border-radius: 20px;
+    
+    
 }
-.main-join{
-    font-size: 24px;
-
-    width: 350px;
-    height: 1200px;
-    /* Setup */
-    align-items: center;
-    justify-content: center;
+.main-join {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 85rem;
+}
+.main-join {
+    font-size: x-large;
+}
+.join-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+    max-width: 40rem;
     margin: 0 auto;
-
 }
 .submit-Btn{
-    margin-top: 4%;
-    padding: 5px;
+    display: flex;
+    margin: 1rem auto;
+    padding: 1rem;
     border-radius: 8px;
-    margin-left: 15rem;
-    margin-bottom: -1.5rem;
     cursor: pointer;
 }
 .cost{
@@ -416,13 +425,20 @@ fieldset{
     margin-bottom: 5%;
 }
 .description{
-   
     font-size: 15px;
     text-align: justify;
+    margin: 1.5rem;
 }
 legend{
     text-align: center;
 }
+.membership {
+    padding: 2rem;
+}
+.join-content .businesses {
+    padding: 10rem;
+}
+
 /*Join Page - Ending*/
 /*Thank you page - beginning*/
 .body-ty{

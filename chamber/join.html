@@ -60,45 +60,48 @@
     
     </header>
     <main class="main-join">
-        <form action="thankyou.html" autocomplete="off" method="GET">
+        <div class="join-content"> 
+         <form action="thankyou.html" autocomplete="off" method="GET">
             <h3 class="join-title">Join chamber form</h3>
-            <fieldset>
-                <legend><strong>Basic information</strong></legend>
-                <label>First Name*<br />
-                <input name="ftname" type="text" placeholder="Karen"  required /></label><br>
-                <label>Last Name*<br />
-                <input name="lname" type="text" placeholder="Peterson"  required/></label><br>
-            </fieldset>
-            <fieldset>
-                <legend><strong>Contact referrence</strong></legend>
-                <label>Email*<br />
-                    <input name="email" type="email" placeholder="example@info.com"  required/>
-                </label><br>
-                <label>Contact number*<br />
-                <input name="contact" type="tel" placeholder="113775648" required/></label><br>
-            </fieldset>
-            <fieldset>
-                <legend>Business Info</legend>
-                <label>Business Position<br>
-                    <input name="businessPosition" type="text" placeholder="Your business position"></label><br>
-                <label >Business name:<br />
-                    <input name="businessname" type="text" pattern="[a-zA-Z][a-zA-Z0-9\s]*"  placeholder="Enter a name"/></label><br>
-                <label>Business Description</label>
-                <textarea name="businessdescription" rows="4" cols="50" placeholder="Enter a brief description of your business"></textarea><br>
-            </fieldset>
-            <fieldset>
-                <legend>Membership</legend>
-                <label class="la-lvl"><input type="radio" name="member" value="np"><span class="level"> Non-profit </span><span class="cost"> Free </span></label><p class="description"> You will have your business listed inside this chamber of commerce.</p>
-                <label class="la-lvl"><input type="radio" name="member" value="bronze"><span class="level"> Bronze </span><span class="cost"> $2,500 ARS </span></label><p class="description"> Your business will have access to five free adds and of course paid adds to be better presented to Puerto Tirol</p>
-                <label class="la-lvl"><input type="radio" name="member" value="silver"><span class="level"> Silver </span><span class="cost"> $6,120 ARS</span></label><p class="description"> Stay up-to-date in the Chamber's events, receive sugestions and even training if needed on how to grow your business.</p>
-                <label class="la-lvl"><input type="radio" name="member" value="gold"><span class="level"> Gold </span><span class="cost"> $8,100 ARS </span></label><p class="description"> Be part of our online community, have access to 50% discount in every add you pay for, stay up-to-date in everything that is going on in economy as well as receive tips to improve your business.</p>
-            </fieldset>
-            <fieldset>
-                <label><input class="checkbox" name="checkbox" type="checkbox" value="yes" required /> I confirm that the information above is true.</label><br /> 
-            </fieldset>
-            <label><input type="hidden" id="date" name="date" value=""></label>
-            <button type="submit" value="Submit" class="submit-Btn">Submit Form</button>
-        </form>
+            
+                <fieldset>
+                    <legend><strong>Basic information</strong></legend>
+                    <label>First Name*<br />
+                    <input name="ftname" type="text" placeholder="Karen"  required /></label><br>
+                    <label>Last Name*<br />
+                    <input name="lname" type="text" placeholder="Peterson"  required/></label><br>
+                </fieldset>
+                <fieldset>
+                    <legend><strong>Contact referrence</strong></legend>
+                    <label>Email*<br />
+                        <input name="email" type="email" placeholder="example@info.com"  required/>
+                    </label><br>
+                    <label>Contact number*<br />
+                    <input name="contact" type="tel" placeholder="113775648" required/></label><br>
+                </fieldset>
+                <fieldset class="business">
+                    <legend>Business Info</legend>
+                    <label>Business Position<br>
+                        <input name="businessPosition" type="text" placeholder="Your business position"></label><br>
+                    <label >Business name:<br />
+                        <input name="businessname" type="text" pattern="[a-zA-Z][a-zA-Z0-9\s]*"  placeholder="Enter a name"/></label><br>
+                    <label>Business Description</label>
+                    <textarea name="businessdescription"  placeholder="Enter a brief description of your business"></textarea><br>
+                </fieldset>
+                <fieldset class="membership">
+                    <legend>Membership</legend>
+                    <label class="la-lvl"><input type="radio" name="member" value="np"><span class="level"> Non-profit </span><span class="cost"> Free </span></label><p class="description"> You will have your business listed inside this chamber of commerce.</p>
+                    <label class="la-lvl"><input type="radio" name="member" value="bronze"><span class="level"> Bronze </span><span class="cost"> $2,500 ARS </span></label><p class="description"> Your business will have access to five free adds and of course paid adds to be better presented to Puerto Tirol</p>
+                    <label class="la-lvl"><input type="radio" name="member" value="silver"><span class="level"> Silver </span><span class="cost"> $6,120 ARS</span></label><p class="description"> Stay up-to-date in the Chamber's events, receive sugestions and even training if needed on how to grow your business.</p>
+                    <label class="la-lvl"><input type="radio" name="member" value="gold"><span class="level"> Gold </span><span class="cost"> $8,100 ARS </span></label><p class="description"> Be part of our online community, have access to 50% discount in every add you pay for, stay up-to-date in everything that is going on in economy as well as receive tips to improve your business.</p>
+                </fieldset>
+                <fieldset>
+                    <label><input class="checkbox" name="checkbox" type="checkbox" value="yes" required /> I confirm that the information above is true.</label><br /> 
+                </fieldset>
+                <label><input type="hidden" id="date" name="date" value=""></label>
+                <button type="submit" value="Submit" class="submit-Btn">Submit Form</button>
+             </form>
+        </div>
  
     </main>
     <footer>
