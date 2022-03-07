@@ -30,6 +30,7 @@
      
         grid-row-end: 3;
         grid-column-end: 5;
+        padding: 1rem;
         
      }
      .spot1 {
@@ -40,7 +41,7 @@
      
         grid-row-end: 4;
         grid-column-end: 3;
-
+         padding: 1rem;
         
      }
      .spot2 {
@@ -65,9 +66,11 @@
      
         grid-row-end: 5;
         grid-column-end: 5;
-    
-
         
+     }
+     .join p {
+        margin: 0 auto;
+        padding: .5rem;
      }
      .event {
      
@@ -84,12 +87,23 @@
         background-color: rgb(177, 170, 170);
         grid-row-start: 5;
         grid-column-start: 4;
-     
         grid-row-end: 6;
         grid-column-end: 5;
+        padding-bottom: 12rem;
         
      }
-     
+     .weather p {
+        margin:0.2rem;
+     }
+     footer{
+      position: fixed;
+      height: 70px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      margin-bottom: 0px;
+      padding-bottom: 5rem;
+   }
      /*Directory page - beginning*/
      .cards {
         display: grid;
@@ -107,39 +121,4 @@
      .grid-view {
       grid-template-columns: 1fr 1fr;
   }
-@media screen and (max-width:40.9375rem){
-   body{
-      margin-bottom:100px;
-   }
-   
-   footer{
-      position: fixed;
-      height: 70px;
-      bottom: 0px;
-      left: 0px;
-      right: 0px;
-      margin-bottom: 0px;
-   }
-}
-@media screen and (max-width: 49.75rem){
-   body{
-      margin-bottom:100px;
-   }
-   
-   footer{
-      position: fixed;
-      height: 70px;
-      bottom: 0px;
-      left: 0px;
-      right: 0px;
-      margin-bottom: 0px;
-   }
-   /*Directory page - beginning*/
-   .grid-cards{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-   }
-     /*Directory page - ending*/
-     
-}
 }
