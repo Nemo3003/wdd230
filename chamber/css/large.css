@@ -147,23 +147,30 @@
     border: 1px solid #000;
     border-radius: 20px;
     }
+    .body-join {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+    }
     .main-join{
+        display: flex;
         font-size: 10px;
-
-        width: 35px;
-        height: 800px;
+        max-width: 20rem;
+        height: fit-content;
         /* Setup */
         align-items: center;
         justify-content: center;
         margin: 0 auto;
+        font-size: x-large;
 
     }
     .submit-Btn{
-        margin-top: 4%;
+        display: flex;
+        justify-content: center;
         padding: 5px;
         border-radius: 8px;
-        margin-right: 10rem;
-        
+        margin-bottom: 2rem;
     }
     .cost{
         background-color: #a1a1be;
@@ -174,8 +181,7 @@
         margin-bottom: 10%;
     }
     .description{
-       
-        font-size: 10px;
+        
         text-align: justify;
     }
     legend{
