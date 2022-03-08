@@ -395,7 +395,7 @@ main.wrapper-disc picture{
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    height: 85rem;
+    height: 91rem;
 }
 .main-join {
     font-size: x-large;
