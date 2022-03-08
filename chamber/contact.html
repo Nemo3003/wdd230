@@ -60,11 +60,19 @@
 
 </header>
 <body>
-    <main>
-        <div class="container-contact">
-            <h1>SORRY! THIS SITE IS CURRENTLY UNDER CONSTRUCTION</h1>
-            <img src="https://th.bing.com/th/id/R.590592b4fd0a2328ad05d2219f145764?rik=fPgYkq3%2fxP%2b55g&riu=http%3a%2f%2fi.ytimg.com%2fvi%2fLANBV693yG8%2fmaxresdefault.jpg&ehk=w9Zg47%2fB225NWoOTdXGY%2bCtspQJpnmBgL8kgwjTl2B0%3d&risl=&pid=ImgRaw&r=0" alt="under construction">
-        </div>
+    <main class="main-contact">
+            <div class="formcontainer">
+                <form method="get" action="thankyou.html">
+                    <h2>Contact Us</h2>
+                    <label class="top">Full Name*<input type="text" name="fname" placeholder="Your name here" required
+                            pattern="[A-Za-z].{5,}"></label>
+                    <label class="top">Email*<input type="email" name="email" required
+                            placeholder="JohnDoe@example.com"></label>
+                    <label class="top">Phone<input type="tel" name="phone" placeholder="5551231234"></label>
+                    <label for="comment" class="top">Comments<textarea placeholder="Write your comments!" name="comment" id="comment" cols="50"
+                            rows="10"></textarea></label>
+                </form>
+            </div>
     </main>
     <footer>
         <div class="footer-content">

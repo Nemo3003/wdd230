@@ -521,3 +521,27 @@ footer{
 
 }
 /*directory page - ending*/
+/*Contact page - beginning*/
+    .main-contact {
+        display: flex;
+        height: fit-content;
+    }
+
+    .formcontainer {
+        padding: 1em;
+
+  }
+    .formcontainer
+    input,
+    textarea {
+        width: 100%;
+        padding: 1em;
+        border: 1px solid #333;
+        border-radius: 0.25rem;
+        box-sizing: border-box;
+        margin-top: 0.375rem;
+        margin-bottom: 1rem;
+        resize: vertical;
+  }
+  
+/*Contact Page - ending*/
