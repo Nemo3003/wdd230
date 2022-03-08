@@ -1,4 +1,4 @@
-
+"use strict";
 
 document.querySelector('#now').innerHTML = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format();
 //document.getElementById("displayDateTime").innerHTML = dateTime + ' <br> Day :- ' + daylist[day];

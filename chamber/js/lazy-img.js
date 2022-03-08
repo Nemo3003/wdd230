@@ -1,3 +1,5 @@
+"use strict";
+
 let imagesToLoad = document.querySelectorAll('img[data-src]');
 
 const imageOptions = {

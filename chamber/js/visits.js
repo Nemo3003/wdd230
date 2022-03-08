@@ -1,3 +1,5 @@
+"use strict";
+
 let numOfVisits = document.querySelector('.daysOfVisit');
 
 let numOfVisits1 = Number(window.localStorage.getItem('visits'));

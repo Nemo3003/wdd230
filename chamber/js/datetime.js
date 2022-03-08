@@ -1,3 +1,4 @@
+"use strict";
 const day = new Date();
 
 var datetime = "Last Sync: " + day.getDate() + "/"
