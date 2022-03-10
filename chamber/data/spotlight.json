@@ -1,0 +1,17 @@
+{
+    "spotlights": [
+        {
+            "title": "FirstTitle",
+            "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+            "description": "FirstDescription"
+        },{
+            "title": "SecondTitle",
+            "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+            "description": "SecondDescription"
+        },{
+            "title": "ThirdTitle",
+            "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+            "description": "ThirdDescription"
+        }
+    ]
+}

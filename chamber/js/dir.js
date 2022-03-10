@@ -1,5 +1,5 @@
 "use strict";
-const requestURL =" https://nemo3003.github.io/wdd230/chamber/js/data.json";
+const requestURL =" https://nemo3003.github.io/wdd230/chamber/data/data.json";
 //name, address, phone, website, imageurl
 
 fetch(requestURL)
