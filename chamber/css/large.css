@@ -143,49 +143,11 @@
     }
     /*Discover page - ending*/
     /*Join page - beginning*/
-    fieldset{
-    border: 1px solid #000;
-    border-radius: 20px;
-    }
-    .body-join {
+    .main-join {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        margin: 0 auto;
-    }
-    .main-join{
-        display: flex;
-        font-size: 10px;
-        max-width: 20rem;
-        height: fit-content;
-        /* Setup */
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-        font-size: x-large;
-
-    }
-    .submit-Btn{
-        display: flex;
-        justify-content: center;
-        padding: 5px;
-        border-radius: 8px;
-        margin-bottom: 2rem;
-    }
-    .cost{
-        background-color: #a1a1be;
-    }
-    .join-title{
-        text-align: center;
-        font-size: 15px;
-        margin-bottom: 10%;
-    }
-    .description{
-        
-        text-align: justify;
-    }
-    legend{
-        text-align: center;
+        height:fit-content;
+        margin-bottom: 6.5rem
     }
     /*Join page - ending*/
     /*Directory page - beginning*/
