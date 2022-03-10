@@ -138,6 +138,8 @@ nav ul.open {
 .fa-github:hover {color: rgb(255, 123, 0);}
 .icons i {
     display: inline-block;
+    font-size: 2rem;
+    cursor: pointer;
 }
 /*--------------------------------------------------Main Content----------------------------------------------------------------*/
 main{
