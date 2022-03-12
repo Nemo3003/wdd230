@@ -4,9 +4,6 @@
   and (-webkit-min-device-pixel-ratio: 2) {
     
     
-    .checkbtn{
-        display: block;
-    }
     p{
         margin-bottom: 8%;
     }
@@ -59,7 +56,10 @@
     .spot2{
         grid-area: 6 / 1 / 7 / 2;
         background-color: rgb(177, 170, 170);
-        padding-bottom: 5rem;
+        padding-bottom: 9rem;
+    }
+    .spot2 p{
+        margin: 1rem;
     }
 
     .spot3{
@@ -70,7 +70,14 @@
     img{
         width: 100%;
     }
-    
+    footer {
+        padding-bottom: 8rem;
+        font-size: x-small;
+    }
+    .footer-content{
+        margin-bottom: 1rem;
+     
+    }
     
     /*Discover page - beginning*/
     .wrapper-disc article p{
