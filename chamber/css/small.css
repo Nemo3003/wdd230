@@ -136,7 +136,7 @@ nav ul.open {
 .fa-facebook:hover {color: rgb(0, 110, 255);}
 .fa-instagram:hover {color: rgb(255, 0, 191);}
 .fa-github:hover {color: rgb(255, 123, 0);}
-.icons i {
+i {
     display: inline-block;
     font-size: 2rem;
     cursor: pointer;
