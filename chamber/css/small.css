@@ -530,5 +530,12 @@ footer{
         margin-bottom: 1rem;
         resize: vertical;
   }
+.button-contact{
+      display: flex;
+      padding: 1em;
+      border-radius: 0.625rem;
+      margin: 0 auto;
+      cursor: pointer;
+  }
   
 /*Contact Page - ending*/
