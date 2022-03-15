@@ -123,6 +123,7 @@ i {
     display: inline-block;
     font-size: 2rem;
     cursor: pointer;
+    color: rgb(219, 201, 201);
 }
 /*--------------------------------------------------Main Content----------------------------------------------------------------*/
 .wrapper{
@@ -153,7 +154,7 @@ i {
     display: flex;
     justify-content: center;
     color:rgb(46, 27, 27);
-    margin-bottom: -2rem;
+    margin: -1.79rem;
 }
 
 #weathericon {
