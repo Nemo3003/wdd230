@@ -72,7 +72,7 @@
     }
     footer {
         padding-bottom: 8rem;
-        font-size: x-small;
+        font-size: small;
     }
     .footer-content{
         margin-bottom: 1rem;
@@ -92,6 +92,7 @@
         grid-template-rows: repeat(11, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
+        height: 125rem;
 
     }
     .first{
@@ -153,7 +154,7 @@
     .main-join {
         display: flex;
         flex-direction: column;
-        height:fit-content;
+        height:101.5rem;
         margin-bottom: 6.5rem
     }
     /*Join page - ending*/
@@ -165,7 +166,11 @@
   /*Directory page - ending*/
   /*Contact page - beginning*/
   
-  
+  .main-contact {
+      display: flex;
+      flex-direction: column;
+      height: 46rem;
+  }
 /*Contact Page - ending*/
 }
 

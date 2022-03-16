@@ -206,6 +206,9 @@ p{
 .spot1 img {
     width: 100px;
     height: 100px;
+    margin-left: 7rem;
+    margin-top: 1rem;
+    box-shadow: #000 0px 0px 10px;
 }
 .spot2{
     grid-area: 3 / 4 / 5 / 5;
@@ -218,6 +221,9 @@ p{
 .spot2 img {
     width: 100px;
     height: 100px;
+    margin-left: 7rem;
+    margin-top: 1rem;
+    box-shadow: #000 0px 0px 10px;
 }
 .spot3{
     grid-area: 5 / 4 / 7 / 5;
@@ -228,6 +234,9 @@ p{
 .spot3 img {
     width: 100px;
     height: 100px;
+    margin-left: 7rem;
+    margin-top: 1rem;
+    box-shadow: #000 0px 0px 10px;
 }
 h1{
     font-size: 25px;
