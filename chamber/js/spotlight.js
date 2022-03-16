@@ -32,27 +32,7 @@ fetch(requestURL)
 
     }
     });
-fetch(requestURL)
-    .then((response) => response.json())
-    .then((jsObject) => {
-    const spotlights = jsObject['spotlights'];
-    let choice = randomChoice(positions2);
-    for (let i = 0; i <1; i++) {
-        let title = document.createElement('h2');
-        let image = document.createElement('img');
-        let description = document.createElement('p');
-        
-        title.textContent = spotlights[choice].name;
-        description.textContent = spotlights[choice].description;
 
-        image.setAttribute('src', spotlights[choice].image);
-
-        document.getElementById('spot1').appendChild(title);
-        document.getElementById('spot1').appendChild(image);
-        document.getElementById('spot1').appendChild(description);
-
-    }
-    });
     fetch(requestURL)
     .then((response) => response.json())
     .then((jsObject) => {
