@@ -174,11 +174,13 @@ i {
 
 .hero{
     grid-area: 1 / 2 / 5 / 4;
+    
 
 }
 .hero img{
     height: 100%;
 }
+
 
 .news{
     grid-area: 5 / 2 / 7 / 4;

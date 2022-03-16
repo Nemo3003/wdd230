@@ -2,40 +2,40 @@
     "spotlights": [
         {
             "title": "FirstTitle",
-            "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
-            "description": "FirstDescription"
+            "image": "https://nemo3003.github.io/wdd230/chamber/images/first.png",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt."
         },{
             "title": "SecondTitle",
-            "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
-            "description": "SecondDescription"
+            "image": "https://nemo3003.github.io/wdd230/chamber/images/second.png",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt."
         },{
             "title": "ThirdTitle",
-            "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
-            "description": "ThirdDescription"
+            "image": "https://nemo3003.github.io/wdd230/chamber/images/third.png",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt."
         },{
             "title": "FourthTitle",
-            "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
-            "description": "FourthDescription"
+            "image": "https://nemo3003.github.io/wdd230/chamber/images/fourth.png",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt."
         },{
             "title": "FifthTitle",
-            "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
-            "description": "FifthDescription"
+            "image": "https://nemo3003.github.io/wdd230/chamber/images/fifth.png",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt."
         },{
             "title": "SixthTitle",
-            "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
-            "description": "SixthDescription"
+            "image": "https://nemo3003.github.io/wdd230/chamber/images/sixth.png",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt."
         },{
             "title": "SeventhTitle",
-            "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+            "image": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt.",
             "description": "SeventhDescription"
         },{
             "title": "eighthTitle",
-            "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
-            "description": "EighthDescription"
+            "image": "https://nemo3003.github.io/wdd230/chamber/images/eighth.png",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt."
         },{
             "title": "NinethTitle",
-            "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
-            "description": "NinethDescription"
+            "image": "https://nemo3003.github.io/wdd230/chamber/images/nineth.png",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt."
         }
     ]
 }
