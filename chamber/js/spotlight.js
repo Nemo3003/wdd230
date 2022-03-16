@@ -1,9 +1,9 @@
 "use strict";
 const requestURL =" https://nemo3003.github.io/wdd230/chamber/data/spotlight.json";
 // Get the JSON data
-let positions1 = [0,1,2,3,4,5]
-let positions2 = [3,4,5,7,8,6]
-let positions3 = [6,7,8,1,2,0]
+let positions1 = [0,1,2]
+let positions2 = [3,4,5]
+let positions3 = [6,7,8]
 function randomChoice(arr) {
     return arr[Math.floor(arr.length * Math.random())];
 }
@@ -32,13 +32,14 @@ fetch(requestURL)
         document.getElementById('spot').appendChild(description);
 
     }
+    
     });
 
 fetch(requestURL)
     .then((response) => response.json())
     .then((jsObject) => {
     const spotlights = jsObject['spotlights'];
-    let choice = randomChoice(positions3);
+    let choice = randomChoice(positions2);
     for (let i = 0; i <1; i++) {
         let title = document.createElement('h2');
         let image = document.createElement('img');
@@ -61,6 +62,7 @@ fetch(requestURL)
     .then((response) => response.json())
     .then((jsObject) => {
     const spotlights = jsObject['spotlights'];
+    let choice = randomChoice(positions3);
     for (let i = 0; i <1; i++) {
         let title = document.createElement('h2');
         let image = document.createElement('img');
