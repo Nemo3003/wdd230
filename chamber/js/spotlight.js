@@ -7,9 +7,6 @@ let positions3 = [6,7,8]
 function randomChoice(arr) {
     return arr[Math.floor(arr.length * Math.random())];
 }
-let choice = randomChoice(positions1);
-console.log(choice)
-
 
 fetch(requestURL)
     .then((response) => response.json())
