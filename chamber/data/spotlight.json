@@ -26,8 +26,8 @@
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt."
         },{
             "title": "SeventhTitle",
-            "image": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt.",
-            "description": "SeventhDescription"
+            "image": "https://nemo3003.github.io/wdd230/chamber/images/seventh.png",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt."
         },{
             "title": "eighthTitle",
             "image": "https://nemo3003.github.io/wdd230/chamber/images/eighth.png",

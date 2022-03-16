@@ -33,7 +33,7 @@ fetch(requestURL)
     }
     });
 
-    fetch(requestURL)
+fetch(requestURL)
     .then((response) => response.json())
     .then((jsObject) => {
     const spotlights = jsObject['spotlights'];
