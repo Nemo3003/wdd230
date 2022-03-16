@@ -135,6 +135,9 @@ i {
     height: calc(100vh - 80px);
     font-size: large;
 }
+p{
+    text-align: center;
+}
 .event{
     grid-area: 1 / 1 / 3 / 2; 
     background-color: #ccc;
@@ -167,7 +170,6 @@ i {
     padding: 5px;
 }
 .join p{
-    text-align: center;
     margin-top: 10%;
 }
     
@@ -187,38 +189,47 @@ i {
     background-color: #ccc;
 }
 .news p{
-    margin-top: 2rem;
+    margin-top: .5rem;
 }
 .news h2 {
     margin-top: 0.5rem;
 }
-p{
-    text-align: center;
-}
+
 .spot1{
     grid-area: 1 / 4 / 3 / 5;
     background-color: #ccc;
+    padding-bottom: 3rem;
 }
+
 .spot1 p{
-    text-align: center;
-    margin-top: 10%;
+
     padding: 5px;
+}
+.spot1 img {
+    width: 100px;
+    height: 100px;
 }
 .spot2{
     grid-area: 3 / 4 / 5 / 5;
     background-color: #ccc;
+    padding-bottom: 3rem;
+}
+.spot2 p{
     padding: 5px;
 }
-
-
+.spot2 img {
+    width: 100px;
+    height: 100px;
+}
 .spot3{
     grid-area: 5 / 4 / 7 / 5;
     background-color: #ccc;
-    padding: 5px;
+    padding-bottom: 2rem;
 }
-.spot3 p{
-    text-align: center;
-    margin-top: 10%;
+
+.spot3 img {
+    width: 100px;
+    height: 100px;
 }
 h1{
     font-size: 25px;
