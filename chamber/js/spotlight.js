@@ -1,7 +1,7 @@
 "use strict";
-const positions1 = [1,2,3]
-const positions2 = [4,5,6]
-const positions3 = [7,8,9]
+let positions1 = [0,1,2,3,4,5]
+let positions2 = [3,4,5,6,7,8]
+let positions3 = [6,7,8,0,1,2]
 function randomChoice(arr) {
     return arr[Math.floor(arr.length * Math.random())];
 }
