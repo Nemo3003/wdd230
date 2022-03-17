@@ -1,0 +1,16 @@
+@media only screen 
+  and (min-device-width: 7.5rem) 
+  and (max-device-width: 30rem)
+  and (-webkit-min-device-pixel-ratio: 2){
+    .sidenav .closebtn {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+  } 
+  .openButton {
+    display: block;
+}
+}

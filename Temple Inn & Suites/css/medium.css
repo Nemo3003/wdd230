@@ -1,0 +1,12 @@
+@media screen and (max-width: 51.25rem) {
+    .sidenav .closebtn {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    } 
+    .openButton {
+      display: block;
+}}
