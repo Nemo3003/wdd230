@@ -1,0 +1,69 @@
+The site must be responsive to small, medium, and larger, wide screen views.
+
+The design is consistent throughout the website providing ease of navigation and supports excellent user experiences.
+
+📄 The Home page is a contemporary, exciting landing page providing images of temples and temple attending activities and must include the following:
+
+A call to action to make a hotel reservation
+
+Readily available navigation and contact information for the hotel chain
+
+Summary information about a temple of your choosing
+
+Social media links (at least two)
+
+Current weather card that summarizes the conditions. You must use the One Call API at openweathermap.org (Links to an external site.) and include the following content.
+
+The current temperature, current condition description, and humidity.
+
+Weather alerts if available/applicable from the government and display it as a closeable message at the top of the page. Closeable means the user can click to remove the alert.
+
+Display and label a three day forecast of the "day" temperature using the current date. This can be designed in another card or area.
+
+📄 The Temple page describes the details for at least four temples of your choice providing information about the address, telephone, email, services, history, ordinance schedule, session schedule, temple closure schedule. This information must be stored in a separate JSON file in order to be considered for full credit. You can store this .json file in another 📁folder in your site folder. Display the temple information like a layout of 'cards'. You may elect to have additional information shown upon clicking a card. Provide a 'LIKE' button/interface that the user  can click to 'like' a particular temple and that information is stored in localStorage. The next time a particular user visits, that 'like' indicator should be apparent.
+
+Temple Information can be found on Temples list (Links to an external site.) on lds.org.
+
+📄 The Reservation page contains a form that collects relevant information when making a normal stay reservation including the location, date, number and type of rooms, registrant's full name, email, phone, home state or country, and special accommodations/comments. Make sure to do some form validation.
+
+📄 The Services page provides a list with information of the amenities and special services offered at the hotel along with the following sub pages/content:
+
+The reception page displaying information about the wedding reception accommodations, including options for food service and setup.
+
+A full-time temple missionary page that provides information and images about the suites offered at the hotel with a simple Contact Us form for more details. 
+
+Each page should have a footer that contains contact information including a link to a Google map (Links to an external site.) showing the company headquarter address at 4800 Montgomery Ln #300, Bethesda, MD 20814 . Additional items might include social media links (again), a basic Contact Us form, and/or other relevant material. 
+
+Developmental Specifications
+
+The following development specifications are required in addition to the customer specifications in order to receive full credit on the term project.
+
+The site must be responsive to small, medium, and larger, wide screen views.
+
+The design is consistent throughout the website providing ease of navigation and supports excellent user experiences.
+
+Your page layouts may not be an exact replication of your learning project website.
+
+Meet the specifications listed in the 230 Development Standards checklist.
+
+Structure the site with valid, standards-based, semantic markup.
+
+Style with valid CSS that does not contain unused and unnecessary (duplicate) declarations nor different selector notations for the same element.
+
+Design a logo to be used at appropriate levels and locations throughout the website.
+
+Follow PARC principles and typography best-practices throughout the website.
+
+Implement an appropriate font of your choice, using a Google Fonts (Links to an external site.) reference or equivalent resource.
+
+Use the practice of wayfinding to improve the user experience of understanding where a user is on the website.
+
+Ensure that there are no spelling or grammatical errors.
+
+Include a resource/attribution page that references outside content, if necessary, as a link in the footer.
+
+Include the last modified date of the page in the footer using JavaScript.
+
+Publish the complete, working site to your Github Pages site in an organized way.
+
+Do NOT publish a link from your assignment home page portal. You will just submit your project URL.
