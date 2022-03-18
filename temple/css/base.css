@@ -38,6 +38,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    backdrop-filter: blur(8px );
+    -webkit-backdrop-filter: blur(8px);
 
   }
   .header-h1 {
@@ -52,6 +54,7 @@
     background-color: rgb(177, 155, 83);
     border-radius: .5rem 0 0 .5rem;
     padding: 1rem;
+    cursor: pointer;
   }
   .footer-main {
       display: flex;
