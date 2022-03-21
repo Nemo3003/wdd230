@@ -33,13 +33,15 @@
     margin-left: 50px;
     
   }
+  .plan-body{
+    background-color: #abac9e;
+    
+  }
   .main-body {
     background-image: url(../img/Optimized-main.jpg);   
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    backdrop-filter: blur(8px );
-    -webkit-backdrop-filter: blur(8px);
 
   }
   .header-h1 {
@@ -56,6 +58,7 @@
     padding: 1rem;
     cursor: pointer;
   }
+  /*-----------------------------------------Footer-----------------------------------------------*/
   .footer-main {
       display: flex;
       flex-wrap: wrap;
@@ -64,14 +67,53 @@
       background-color: rgb(99, 87, 73);
       padding: 7rem;
   }
-  .footer-right {
-      display: flex;
-      justify-content: flex-end;
-  }
+  
   .menu-icon {
       margin-left: 2rem;
       cursor: pointer;
   }
+  ::placeholder{
+    color: rgb(177, 155, 83);
+    font-size: larger;
+  }
+  
+  form{
+    width:220px;
+    margin:0 auto;
+  }
+  
+  .field{
+    
+    width:18rem;
+    padding:2px;
+    border:none;
+    outline:none;
+    background:none;
+    color:rgb(228, 219, 167);
+    font-style:italic;
+    border-bottom:2px solid rgb(231, 201, 137);
+
+  }
+  
+  #message{
+    resize:none;
+    height:100px;
+    overflow-y:hidden;
+  }
+  
+  #submit{
+
+    width:100px;
+    border:none;
+    background-color:rgb(255, 144, 116);
+    color:white;
+    font-size:17px;
+    cursor:pointer;
+    border-radius: 1rem;
+    font-size: larger;
+
+  }
+  
 
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
