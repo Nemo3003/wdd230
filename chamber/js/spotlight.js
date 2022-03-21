@@ -17,12 +17,11 @@ fetch(requestURL)
         let title = document.createElement('h2');
         let image = document.createElement('img');
         let description = document.createElement('p');
-        
-        title.textContent = spotlights[choice].name;
+
         description.textContent = spotlights[choice].description;
 
         image.setAttribute('src', spotlights[choice].image);
-        image.setAttribute('alt', spotlights[choice].name);
+        image.setAttribute('alt', spotlights[choice].title);
 
         document.getElementById('spot').appendChild(title);
         document.getElementById('spot').appendChild(image);
@@ -41,12 +40,11 @@ fetch(requestURL)
         let title = document.createElement('h2');
         let image = document.createElement('img');
         let description = document.createElement('p');
-        
-        title.textContent = spotlights[choice].name;
+
         description.textContent = spotlights[choice].description;
 
         image.setAttribute('src', spotlights[choice].image);
-        image.setAttribute('alt', spotlights[choice].name);
+        image.setAttribute('alt', spotlights[choice].title);
 
         document.getElementById('spot1').appendChild(title);
         document.getElementById('spot1').appendChild(image);
@@ -64,12 +62,11 @@ fetch(requestURL)
         let title = document.createElement('h2');
         let image = document.createElement('img');
         let description = document.createElement('p');
-        
-        title.textContent = spotlights[choice].name;
+
         description.textContent = spotlights[choice].description;
 
         image.setAttribute('src', spotlights[choice].image);
-        image.setAttribute('alt', spotlights[choice].name);
+        image.setAttribute('alt', spotlights[choice].title);
 
         document.getElementById('spot2').appendChild(title);
         document.getElementById('spot2').appendChild(image);
