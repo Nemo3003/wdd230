@@ -1,3 +1,6 @@
+/*+++++++++++++++++++++++++++++++++++++++++++IMPORTS++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Merriweather:wght@300&family=Rubik:wght@500&display=swap');
+/*=========================================Nav Bar========================================================*/
 .sidenav {
     height: 100%; 
     position: fixed; 
@@ -33,10 +36,15 @@
     margin-left: 50px;
     
   }
-  .plan-body{
-    background-color: #abac9e;
-    
+  .openButton {
+    position:absolute;
+    right: 0;
+    background-color: rgb(177, 155, 83);
+    border-radius: .5rem 0 0 .5rem;
+    padding: 1rem;
+    cursor: pointer;
   }
+  
   .main-body {
     background-image: url(../img/Optimized-main.jpg);   
     background-position: center;
@@ -50,15 +58,8 @@
     text-align: center;
     padding-top: 20px;
   }
-  .openButton {
-    position:absolute;
-    right: 0;
-    background-color: rgb(177, 155, 83);
-    border-radius: .5rem 0 0 .5rem;
-    padding: 1rem;
-    cursor: pointer;
-  }
-  /*-----------------------------------------Footer-----------------------------------------------*/
+  
+  /*==============================================Footer================================================*/
   .footer-main {
       display: flex;
       flex-wrap: wrap;
@@ -76,7 +77,7 @@
     color: rgb(177, 155, 83);
     font-size: larger;
   }
-  
+  /*----------------------------------------------------Footer Form-----------------------------------------*/
   form{
     width:220px;
     margin:0 auto;
@@ -85,7 +86,7 @@
   .field{
     
     width:18rem;
-    padding:2px;
+    padding:.5px;
     border:none;
     outline:none;
     background:none;
@@ -113,8 +114,59 @@
     font-size: larger;
 
   }
-  
-
+  /*===================================PLAN DOCUMENT==================================================*/
+  /*----------------------------------PLAN BODY------------------------------------------------------*/
+  .plan-body{
+    background-color: #abac9e;
+    margin: 2rem;
+    
+  }
+  /*---------------------------------------COLORS-----------------------------------------------------*/
+  /*Nav menu*/
+  .colors li:nth-child(1){
+    background-color: #3A3845;
+    color: #fff;
+  }
+  /*Footer*/
+  .colors li:nth-child(2){
+    background-color: #826F66;
+    color: #fff;
+  }
+  /*Body*/
+  .colors li:nth-child(3){
+    background-color: #F7CCAC;
+    color: rgb(39, 34, 34);
+  }
+  /*Copyright*/
+  .colors li:nth-child(4){
+    background-color: #C69B7B;
+    color: rgb(39, 34, 34);
+  }
+  /*------------------------------------TYPOGRAPHY----------------------------------------------------*/
+  .typography li:nth-child(1){
+    font-family: 'Merriweather', serif;
+  }
+  .typography li:nth-child(1)::before{
+    content: "BODY: ";
+    font-weight: 200;
+    color:rgb(38, 60, 94);
+  }
+  .typography li:nth-child(2){
+    font-family: 'Rubik', sans-serif;
+  }
+  .typography li:nth-child(2)::before{
+    content: "NAV: ";
+    font-weight: 200;
+    color:rgb(38, 60, 94);
+  }
+  .typography li:nth-child(3){
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  .typography li:nth-child(3)::before{
+    content: "FOOTER: ";
+    font-weight: 200;
+    color:rgb(38, 60, 94);
+  }
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
