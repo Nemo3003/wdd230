@@ -121,6 +121,13 @@
     margin: 2rem;
     
   }
+  /*----------------------------------PERSONAS--------------------------------------------------------*/
+  .target img {
+    display: flex;
+    max-width: 10rem;
+    min-width: 2rem;
+    margin: 0 auto;
+  }
   /*---------------------------------------COLORS-----------------------------------------------------*/
   /*Nav menu*/
   .colors li:nth-child(1){
@@ -166,6 +173,16 @@
     content: "FOOTER: ";
     font-weight: 200;
     color:rgb(38, 60, 94);
+  }
+  /*-----------------------------------SKETCHES------------------------------------------------------------*/
+  .sketches {
+    margin-bottom: 1rem;
+  }
+  .sketches img{
+    display: flex;
+    max-width: 25rem;
+    min-width: 2rem;
+    margin: 0 auto;
   }
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
