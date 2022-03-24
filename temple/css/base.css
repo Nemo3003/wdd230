@@ -44,7 +44,7 @@
     padding: 1rem;
     cursor: pointer;
   }
-  
+/*==============================================CONTENT====================================================*/
   .main-body {
     background-image: url(../img/Optimized-main.jpg);   
     background-position: center;
@@ -58,7 +58,23 @@
     text-align: center;
     padding-top: 20px;
   }
-  
+  /*-----------------------------------------Weather----------------------------------------------------*/
+  .weather {
+    font-weight: 1rem;
+    color: rgb(71, 24, 24);
+    text-align: center;
+    padding-top: 20px;
+  }
+  /*------------------------------------------Temples---------------------------------------------------*/
+  .temples {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+  }
+  .temples img {
+    width: 20rem;
+    
+  }
   /*==============================================Footer================================================*/
   .footer-main {
       display: flex;
@@ -66,7 +82,7 @@
       height:fit-content;
       bottom: 0;
       background-color: rgb(99, 87, 73);
-      padding: 7rem;
+      padding: 2rem;
   }
   
   .menu-icon {
@@ -77,10 +93,14 @@
     color: rgb(177, 155, 83);
     font-size: larger;
   }
+  .footer-company {
+    font-size: x-large;
+  }
   /*----------------------------------------------------Footer Form-----------------------------------------*/
   form{
-    width:220px;
-    margin:0 auto;
+    max-width:220px;
+    margin:0 35rem;
+    
   }
   
   .field{
