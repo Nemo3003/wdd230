@@ -16,7 +16,7 @@ let temples_list = [{
 }
 ];
 const output = (array)=>{
-    array.forEach(temple => {
+    array.slice(-3).forEach(temple => {
         const article = document.createElement('article');
         const h3 = document.createElement('h3');
         const h4 = document.createElement('h4');
