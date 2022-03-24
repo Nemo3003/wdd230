@@ -46,35 +46,3 @@ fetch(url)
     output(temples);
 })
 
-const reset = () =>{
-    const mainNode = document.querySelector("#temples");
-    while (mainNode.firstChild) {
-        mainNode.removeChild(mainNode.lastChild);
-    }
-}
-function compare(a, b) {
-	if (a.name > b.name) {
-		return 1;
-	} else if (a.name < b.name) {
-		return -1;
-	} else {
-        return 0;
-}}
-
-const sortBy = () =>{
-    reset();
-    let value = out('sortBy').value;
-    let temples_sorted = [];
-
-	if (value === 'templeNameAscending') {
-		temples_sorted = temples.sort(compare);
-	} else if (value === 'templeNameDescending') {
-		temples_sorted = temples.reverse(compare);
-	} else {
-		console.log('Something went troppo male, brutissimo!!');
-	}
-    output(temples_sorted);
-    console.log(temples_sorted)
-}
-
-out('sortBy').addEventListener('change', sortBy);

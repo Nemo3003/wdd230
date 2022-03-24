@@ -1,6 +1,7 @@
 /*+++++++++++++++++++++++++++++++++++++++++++IMPORTS++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Merriweather:wght@300&family=Rubik:wght@500&display=swap');
 /*=========================================Nav Bar========================================================*/
+
 .sidenav {
     height: 100%; 
     position: fixed; 
@@ -37,12 +38,21 @@
     
   }
   .openButton {
-    position:absolute;
+    position:fixed;
     right: 0;
     background-color: rgb(177, 155, 83);
     border-radius: .5rem 0 0 .5rem;
     padding: 1rem;
     cursor: pointer;
+    
+  }
+  .btn-book {
+    display: flex;
+    background-color: rgb(177, 155, 83);
+    border-radius: .5rem 0 0 .5rem;
+    padding: 1rem;
+    cursor: pointer;
+    margin: 0 auto;
   }
 /*==============================================CONTENT====================================================*/
   .main-body {
@@ -51,6 +61,9 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+  }
+  h1,h2,h3 {
+    text-align: center;
   }
   .header-h1 {
     font-size: 50px;
@@ -62,23 +75,40 @@
   .weather {
     font-weight: 1rem;
     color: rgb(71, 24, 24);
-    text-align: center;
-    padding-top: 20px;
+    margin: 4rem; 
+    max-width: 100%;
+    border: 2px solid rgb(38, 60, 94);
+    font-size: 1.5rem;
+    line-height: .1rem;
+    box-shadow: 0px 0px 13px 10px rgba(0,0,0,0.25);
+    padding: 1rem;
+    background-color: #FBD786;
   }
+  
+  
   /*------------------------------------------Temples---------------------------------------------------*/
   #temples {
     display: grid;
+    font-weight: 1rem;
     grid-template-columns: 1fr 1fr 1fr;
     margin:1rem;
-    gap: 3rem;
+    gap: 2rem;
   }     
  
   .temple-image {
-      width: 25rem;
+      max-width: 25rem;
+      box-shadow: 0px 0px 13px 10px rgba(0,0,0,0.25);
+}
+#temples article {
+  box-shadow: 0px -3px 13px 0px rgba(0,0,0,0.75);
+  padding: .3rem;
+  text-align: center;
+  background-color: #FBD786;
+
 }
   /*==============================================Footer================================================*/
   .footer-main {
-      display: flex;
+     
       flex-wrap: wrap;
       height:fit-content;
       bottom: 0;
@@ -94,20 +124,20 @@
     color: rgb(177, 155, 83);
     font-size: larger;
   }
-  .footer-company {
+  .footer-left {
     font-size: x-large;
+    color: rgb(212, 169, 27); 
   }
+  
   /*----------------------------------------------------Footer Form-----------------------------------------*/
   form{
-    max-width:220px;
-    margin:0 35rem;
-    
+    max-width:18rem;
+    margin-left:55rem;
+    margin-top: -13rem;
   }
   
   .field{
-    
-    width:18rem;
-    padding:.5px;
+    padding:0.031rem;
     border:none;
     outline:none;
     background:none;
@@ -119,13 +149,13 @@
   
   #message{
     resize:none;
-    height:100px;
+    height:6.25rem;
     overflow-y:hidden;
   }
   
   #submit{
 
-    width:100px;
+    width:6.25rem;
     border:none;
     background-color:rgb(255, 144, 116);
     color:white;
@@ -206,6 +236,7 @@
     min-width: 2rem;
     margin: 0 auto;
   }
+
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
