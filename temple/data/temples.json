@@ -1,5 +1,5 @@
-{
-    "temples":[{
+[
+    {
         "templeName": "Bountiful Utah Temple",
         "location": "Bountiful, Utah, United States",
         "dedicated": "8 January 1995",
@@ -101,4 +101,4 @@
         "dedicated": "2 November 1997",
         "imageUrl": "https://assets.ldscdn.org/41/0a/410a29915aac112f15a293d963abfadee117776f1068523/vernal_temple_lds.jpeg"
     }
-    ]}
+    ]

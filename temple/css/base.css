@@ -66,15 +66,16 @@
     padding-top: 20px;
   }
   /*------------------------------------------Temples---------------------------------------------------*/
-  .temples {
+  #temples {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    
-  }
-  .temples img {
-    width: 20rem;
-    
-  }
+    margin:1rem;
+    gap: 3rem;
+  }     
+ 
+  .temple-image {
+      width: 25rem;
+}
   /*==============================================Footer================================================*/
   .footer-main {
       display: flex;

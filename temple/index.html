@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="This website is the home page of the Temple Inn & Suites">
+    <meta name="description" content="Temple Inn & Suites Tel 3636363655">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temple Inn & Suites</title>
     <link rel="stylesheet" href="css/normalize.css">
@@ -20,7 +20,7 @@
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.html">Home</a>
-        <a href="reception.html">Reservation</a>
+        <a href="reservation.html">Reservation</a>
         <a href="services.html">Services</a>
         <a href="temple.html">Temples</a>
         <a href="#contact">Contact Us</a>
@@ -32,6 +32,7 @@
       
       
       <main>
+          <button class="btn-book">BOOK NOW!</button>
           <div class="weather" id="weather">
               <h3>Weather</h3>
               <div class="code-cont">
@@ -46,13 +47,17 @@
                </div>
           </div>
           <section>
-                <div class="temples">
-                   
-                    <div id="temple1"></div>
-                    <div id="temple2"></div>
-                    <div id="temple3"></div>
-                </div>
-          </section>
+            <h2>Temples</h2>
+            <p>
+                Sort by: 
+                <select id="sortBy">
+                    <option value="templeNameAscending">Temple Name Ascending</option>
+                    <option value="templeNameDescending">Temple Name Descending</option>
+                </select>
+            </p>
+            <div id="temples">
+            </div>
+        </section>
       </main>
 
       <footer class="footer-main">

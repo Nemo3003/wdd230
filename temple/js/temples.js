@@ -1,85 +1,80 @@
-"use strict";
-
-const url = 'https://nemo3003.github.io/wdd230/temple/data/temples.json';
-
-let positions1 = [0,1,2]
-let positions2 = [3,4,5]
-let positions3 = [6,7,8]
-function randomChoice(arr) {
-    return arr[Math.floor(arr.length * Math.random())];
+let temples = [];
+const out = element => document.getElementById(element)
+const tager = tag => document.createElement(tag)
+const attris = (tag, attribute, value ) => tag.setAttribute(attribute,value);
+let temples_list = [{
+    "templeName": "Bountiful Utah Temple",
+    "location": "Bountiful, Utah, United States",
+    "dedicated": "8 January 1995",
+    "imageUrl": "https://assets.ldscdn.org/b3/1f/b31f8fc3892ce063cfbd0607cd53980290fcc0ae/aba_nigeria_temple_lds.jpeg"
+},
+{
+    "templeName": "Brigham City Utah Temple",
+    "location": "Brigham City, Utah, United States",
+    "dedicated": "23 September 2012",
+    "imageUrl": "https://assets.ldscdn.org/93/92/9392e6adee3d1aa025548de1a852a27ad8ea40f4/brigham_city_utah_temple_dawn.jpeg"
 }
+];
+const output = (array)=>{
+    array.forEach(temple => {
+        const article = document.createElement('article');
+        const h3 = document.createElement('h3');
+        const h4 = document.createElement('h4');
+        const h4_2 = document.createElement('h4');
+        const img = document.createElement('img');
+        h3.innerHTML = temple.templeName;
+        h4.innerHTML = temple.location;
+        h4_2.innerHTML = temple.dedicated;
+        img.src = temple.imageUrl;
+        img.alt = temple.templeName;
+        img.setAttribute('class', 'temple-image');
+        article.appendChild(h3);
+        article.appendChild(h4);
+        article.appendChild(h4_2);
+        article.appendChild(img);
+        document.querySelector('#temples').appendChild(article);
+    }, this);
+ }
 
-
+const url = 'https://byui-cse.github.io/cse121b-course/week05/temples.json'
 fetch(url)
-//dedication, imageUrl, location, templeName
+
 .then(response => response.json())
 
-.then((jsObject) => {
-    const temples = jsObject['temples'];
-    for (let i = 0; i < 1; i++) {
-        let choice = randomChoice(positions1);
-        let card = document.createElement('div');
-        let name = document.createElement('h2');
-        let image = document.createElement('img');
-        let dedication = document.createElement('p');
-        let location = document.createElement('p');
+.then(temples_list =>{
+    temples = temples_list;
+    output(temples);
+})
 
-        name.textContent = temples[choice].templeName;
-        image.setAttribute('src', temples[choice].imageUrl);
-        image.setAttribute('alt', temples[choice].templeName);
-        dedication.textContent = temples[choice].dedication;
-        location.textContent = temples[choice].location;
-
-        card.appendChild(name);
-        card.appendChild(image);
-        card.appendChild(dedication);
-        card.appendChild(location);
-
-        document.getElementById('temple1').appendChild(card);
-      
-
-
+const reset = () =>{
+    const mainNode = document.querySelector("#temples");
+    while (mainNode.firstChild) {
+        mainNode.removeChild(mainNode.lastChild);
     }
-    for (let i = 0; i < 1; i++) {
-        let choice = randomChoice(positions2);
-        let card = document.createElement('div');
-        let name = document.createElement('h2');
-        let image = document.createElement('img');
-        let dedication = document.createElement('p');
-        let location = document.createElement('p');
+}
+function compare(a, b) {
+	if (a.name > b.name) {
+		return 1;
+	} else if (a.name < b.name) {
+		return -1;
+	} else {
+        return 0;
+}}
 
-        name.textContent = temples[choice].templeName;
-        image.setAttribute('src', temples[choice].imageUrl);
-        image.setAttribute('alt', temples[choice].templeName);
-        dedication.textContent = temples[choice].dedication;
-        location.textContent = temples[choice].location;
+const sortBy = () =>{
+    reset();
+    let value = out('sortBy').value;
+    let temples_sorted = [];
 
-        card.appendChild(name);
-        card.appendChild(image);
-        card.appendChild(dedication);
-        card.appendChild(location);
+	if (value === 'templeNameAscending') {
+		temples_sorted = temples.sort(compare);
+	} else if (value === 'templeNameDescending') {
+		temples_sorted = temples.reverse(compare);
+	} else {
+		console.log('Something went troppo male, brutissimo!!');
+	}
+    output(temples_sorted);
+    console.log(temples_sorted)
+}
 
-        document.getElementById('temple2').appendChild(card);}
-        for (let i = 0; i < 1; i++) {
-            let choice = randomChoice(positions3);
-            let card = document.createElement('div');
-            let name = document.createElement('h2');
-            let image = document.createElement('img');
-            let dedication = document.createElement('p');
-            let location = document.createElement('p');
-    
-            name.textContent = temples[choice].templeName;
-            image.setAttribute('src', temples[choice].imageUrl);
-            image.setAttribute('alt', temples[choice].templeName);
-            dedication.textContent = temples[choice].dedication;
-            location.textContent = temples[choice].location;
-    
-            card.appendChild(name);
-            card.appendChild(image);
-            card.appendChild(dedication);
-            card.appendChild(location);
-    
-            document.getElementById('temple3').appendChild(card);}
-
-
-});
+out('sortBy').addEventListener('change', sortBy);
