@@ -1,6 +1,6 @@
 "use strict";
 
-const url = 'https://nemo3003.github.io/wdd230/wdd230/temple/data/temples.json';
+const url = 'https://nemo3003.github.io/wdd230/temple/data/temples.json';
 fetch(url)
 //dedication, imageUrl, location, templeName
 .then(response => response.json())
