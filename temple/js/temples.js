@@ -1,20 +1,5 @@
-let temples = [];
-const out = element => document.getElementById(element)
-const tager = tag => document.createElement(tag)
-const attris = (tag, attribute, value ) => tag.setAttribute(attribute,value);
-let temples_list = [{
-    "templeName": "Bountiful Utah Temple",
-    "location": "Bountiful, Utah, United States",
-    "dedicated": "8 January 1995",
-    "imageUrl": "https://assets.ldscdn.org/b3/1f/b31f8fc3892ce063cfbd0607cd53980290fcc0ae/aba_nigeria_temple_lds.jpeg"
-},
-{
-    "templeName": "Brigham City Utah Temple",
-    "location": "Brigham City, Utah, United States",
-    "dedicated": "23 September 2012",
-    "imageUrl": "https://assets.ldscdn.org/93/92/9392e6adee3d1aa025548de1a852a27ad8ea40f4/brigham_city_utah_temple_dawn.jpeg"
-}
-];
+¨use strict¨;
+
 const output = (array)=>{
     array.slice(-3).forEach(temple => {
         const article = document.createElement('article');
@@ -36,7 +21,7 @@ const output = (array)=>{
     }, this);
  }
 
-const url = 'https://byui-cse.github.io/cse121b-course/week05/temples.json'
+const url = 'https://nemo3003.github.io/wdd230/temple/data/temples.json';
 fetch(url)
 
 .then(response => response.json())
@@ -45,4 +30,3 @@ fetch(url)
     temples = temples_list;
     output(temples);
 })
-
