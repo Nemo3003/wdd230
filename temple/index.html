@@ -34,18 +34,25 @@
       
       <main>
           <button class="btn-book">BOOK NOW!</button>
-          <div class="weather" id="weather">
-              <div class="code-cont">
-                <h3>Weather</h3>
-                <p><span id="icon-src"></span>"</p><figure><img src="" alt="icon" id="weathericon" />  <figcaption></figcaption></figure>
-                <p class="wind-speed" id="wind-speed"></p><br>
-                <p id="humidity"></p><br>
-                <p id="description"></p><br>
-                <p id="chill"></p><br>
-                <p id="temp"></p><br>
-                   
-               </div>
-          </div>
+         <div class="localweather">
+                <h3 class="weekforecast">3 Day Forecast</h3>
+                <div class="flex">
+                    <div class="forecastdays">
+                        <span class="weekday" id="weekday1"></span>
+                        <img src="" alt="" id="icon1"><br>
+                        <span class="data" id="ftemp1">°F</span>
+                    </div>
+                    <div class="forecastdays">
+                        <span class="weekday" id="weekday2"></span>
+                        <img src="" alt="" id="icon2"><br>
+                        <span class="data" id="ftemp2">°F</span>
+                    </div>
+                    <div class="forecastdays">
+                        <span class="weekday" id="weekday3"></span>
+                        <img src="" alt="" id="icon3"><br>
+                        <span class="data" id="ftemp3">°F</span>
+                    </div>
+                </div>
           <section>
             <h2>Temples</h2>
             
