@@ -1,29 +1,25 @@
 "use strict";
 
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=3429721&appid=7d25f81a71306eb3ef3609d311f3b054&units=imperial";  
-fetch(apiURL)
-  .then((response) => response.json())
-  .then((jsObject) => {
-    const iconsrc= `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
-    const desc = jsObject.weather[0].description;
-    let temp = jsObject.main.temp;
-    let speed = jsObject.wind.speed;
-    const windChillCelsius = (temperature, windSpeed) =>
- 13.12 +
-  0.6215 * temperature -
-  11.37 * windSpeed ** 0.16 +
-  0.3965 * temperature * windSpeed ** 0.16;
-    let actual_wind_chill = windChillCelsius(temp, speed)
-    document.getElementById('wind-speed').textContent = `Wind speed: ${jsObject.wind.speed} mp/h`;
-    if (temp > 10 || speed > 177) {
-      document.getElementById('chill').textContent = `Wind chill: N/A`
-    }else {
-      document.getElementById('chill').textContent = `Wind chill: ${Math.round(actual_wind_chill)} °F`
-    }
-    
-    document.getElementById('humidity').textContent = `Humidity: ${jsObject.main.humidity}%`;
-    document.getElementById('description').textContent = `Conditions: ${desc}`;
-    document.getElementById('temp').textContent = `Temp ${jsObject.main.temp} °F`;
-    document.querySelector('#icon-src').textContent = jsObject.weather.icon;
-    document.querySelector('#weathericon').setAttribute('src', iconsrc);
-  });
+
+    const fapiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5014130&appid=390e2c7ae7f11da066639b14a77939e5&units=imperial";
+    fetch(fapiURL)
+    .then((response) => response.json())
+    .then((jsObject) => {
+        const time = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
+        console.log(time);
+        const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+        let day = 0;
+        time.forEach(forecast => {
+            if (day > 2)
+            return;
+            let thedate = new Date(forecast.dt_txt);
+            const imagesrc = 'https://openweathermap.org/img/w/' + forecast.weather[0].icon + '.png';
+            const desc = forecast.weather[0].description;
+            document.querySelector(`#weekday${day+1}`).textContent = weekdays[thedate.getDay()];
+            document.querySelector(`#ftemp${day+1}`).textContent = forecast.main.temp.toFixed(0) + "°F";
+            document.querySelector(`#icon${day+1}`).setAttribute('src', imagesrc);
+            document.querySelector(`#icon${day+1}`).setAttribute('alt', desc);
+            day++;
+        });
+    });
