@@ -1,5 +1,3 @@
-¨use strict¨;
-
 const output = (array)=>{
     array.slice(-3).forEach(temple => {
         const article = document.createElement('article');
