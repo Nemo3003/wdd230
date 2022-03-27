@@ -1,5 +1,5 @@
-const cput = (array)=>{
-    array.forEach(temple => {
+const output = (array)=>{
+    array.slice(-3).forEach(temple => {
         const article = document.createElement('article');
         const h3 = document.createElement('h3');
         const h4 = document.createElement('h4');
@@ -15,7 +15,7 @@ const cput = (array)=>{
         article.appendChild(h4);
         article.appendChild(h4_2);
         article.appendChild(img);
-        document.querySelector('#temple').appendChild(article);
+        document.querySelector('#temples').appendChild(article);
     }, this);
  }
 
@@ -26,5 +26,5 @@ fetch(url)
 
 .then(temples_list =>{
     temples = temples_list;
-    cput(temples);
+    output(temples);
 })

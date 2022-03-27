@@ -176,77 +176,21 @@
     font-size: larger;
 
   }
-  /*===================================PLAN DOCUMENT==================================================*/
-  /*----------------------------------PLAN BODY------------------------------------------------------*/
-  .plan-body{
-    background-color: #abac9e;
-    margin: 2rem;
-    font-size: larger ;     
-    
-  }
-  /*----------------------------------PERSONAS--------------------------------------------------------*/
-  .target img {
-    display: flex;
-    max-width: 10rem;
-    min-width: 2rem;
-    margin: 0 auto;
-  }
-  /*---------------------------------------COLORS-----------------------------------------------------*/
-  /*Nav menu*/
-  .colors li:nth-child(1){
-    background-color: #3A3845;
-    color: #fff;
-  }
-  /*Footer*/
-  .colors li:nth-child(2){
-    background-color: #826F66;
-    color: #fff;
-  }
-  /*Body*/
-  .colors li:nth-child(3){
-    background-color: #F7CCAC;
-    color: rgb(39, 34, 34);
-  }
-  /*Copyright*/
-  .colors li:nth-child(4){
-    background-color: #C69B7B;
-    color: rgb(39, 34, 34);
-  }
-  /*------------------------------------TYPOGRAPHY----------------------------------------------------*/
-  .typography li:nth-child(1){
-    font-family: 'Merriweather', serif;
-  }
-  .typography li:nth-child(1)::before{
-    content: "BODY: ";
-    font-weight: 200;
-    color:rgb(38, 60, 94);
-  }
-  .typography li:nth-child(2){
-    font-family: 'Rubik', sans-serif;
-  }
-  .typography li:nth-child(2)::before{
-    content: "NAV: ";
-    font-weight: 200;
-    color:rgb(38, 60, 94);
-  }
-  .typography li:nth-child(3){
-    font-family: 'Josefin Sans', sans-serif;
-  }
-  .typography li:nth-child(3)::before{
-    content: "FOOTER: ";
-    font-weight: 200;
-    color:rgb(38, 60, 94);
-  }
-  /*-----------------------------------SKETCHES------------------------------------------------------------*/
-  .sketches {
-    margin-bottom: 1rem;
-  }
-  .sketches img{
-    display: flex;
-    max-width: 25rem;
-    min-width: 2rem;
-    margin: 0 auto;
-  }
+/*======================================TEMPLE PAGE==============================================*/
+.temple-main {
+    background-color: #D5EDBA;
+}
+
+#temple {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem;
+  
+}
+#temple article img{
+  border-radius: .9rem;
+}
 
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
