@@ -191,6 +191,35 @@
 #temple article img{
   border-radius: .9rem;
 }
+/*====================================RESERVATION PAGE===========================================*/
+ .main-contact {
+        display: flex;
+        height:  fit-content;
+        margin: 0 auto;
+    }
+
+ .formcontainer {
+        padding: 7em;
+
+  }
+    
+ input,
+ textarea {
+        width: 100%;
+        padding: 1em;
+        border: 1px solid #333;
+        border-radius: 0.25rem;
+        box-sizing: border-box;
+        
+     
+  }
+.button-contact{
+      display: flex;
+      padding: 1em;
+      border-radius: 0.625rem;
+      margin: 0 auto;
+      cursor: pointer;
+  }
 
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
