@@ -5,14 +5,24 @@ const cput = (array)=>{
         const h4 = document.createElement('h4');
         const h4_2 = document.createElement('h4');
         const p = document.createElement('p');
+        const p_2 = document.createElement('p');
+        const p_3 = document.createElement('p');
+        const p_4 = document.createElement('p');
+        const p_5 = document.createElement('p');
+        const p_6 = document.createElement('p');
         const img = document.createElement('img');
         const voting = document.createElement('div');
         const like = document.createElement('button');
         const dislike = document.createElement('button')
         h3.innerHTML = temple.templeName;
-        h4.innerHTML = temple.location;
-        h4_2.innerHTML = temple.dedicated;
-        p.innerHTML = temple.address;
+        h4.innerHTML = temple.location;        
+        h4_2.innerHTML = `Dedicated: ${temple.dedicated}`
+        p.innerHTML = `Address: ${temple.address}`;
+        p_2.innerHTML = `Phone: ${temple.phone}`;
+        p_3.innerHTML = `Email: ${temple.email}`
+        p_4.innerHTML = `Services: ${temple.services}`;
+        p_5.innerHTML = `Closures: ${temple.closure}`;   
+        p_6.innerHTML = `Schedule: ${temple.schedule}`;
 
         like.setAttribute('type', 'like');
         dislike.setAttribute('type', 'dislike');
@@ -29,6 +39,11 @@ const cput = (array)=>{
         article.appendChild(h4);
         article.appendChild(h4_2);
         article.appendChild(p);
+        article.appendChild(p_2);
+        article.appendChild(p_3);
+        article.appendChild(p_4);
+        article.appendChild(p_5);
+        article.appendChild(p_6);
         article.appendChild(img);
         
         voting.appendChild(like);
