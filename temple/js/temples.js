@@ -1,4 +1,4 @@
-"use strict";
+
 
 const cput = (array)=>{
     array.forEach(temple => {
@@ -31,7 +31,7 @@ const cput = (array)=>{
         liking.innerHTML = `Likes:`;
         disliking.innerHTML = `Dislikes:`;
         
-        
+        console.log(temple.letter);
         liking.setAttribute('id', `countsLike${temple.letter}`);
         disliking.setAttribute('id', `countsDislike${temple.letter}`);
         like.textContent = 'Like';
@@ -41,10 +41,10 @@ const cput = (array)=>{
         dislike.setAttribute('type', 'dislike');
         dislike.setAttribute('class', `dislike ${temple.templeName}`);
         like.addEventListener('click', () =>{
-            Like();
+            `${temple.templeName}` === `${temple.templeName}` ? Like() : null;
         })
         dislike.addEventListener('click', () =>{
-            Dislike();
+            `${temple.templeName}` === `${temple.templeName}` ? Dislike() : null;
         });
 
         img.src = temple.imageUrl;
@@ -82,12 +82,43 @@ fetch(url)
     cput(temples);
 })
 
-let like = 1;
-let dislike = -1;
+let like = 0;
+let dislike = 0;
+
 const Like = () =>{
-    document.getElementById(`countsLike${temple.letter}`).innerHTML = `Likes: ${like++}`;
-    
+    if(document.getElementById(`countsLikeA`)){
+        document.getElementById(`countsLikeA`).innerHTML = `Likes: ${like++}`;
+        clearInterval(like);
+    }
+    if(document.getElementById(`countsLikeB`)){
+        document.getElementById(`countsLikeB`).innerHTML = `Likes: ${like+-2}`;
+        clearInterval(like);
+    }
+    if(document.getElementById(`countsLikeC`)){
+        document.getElementById(`countsLikeC`).innerHTML = `Likes: ${like+-2}`;
+        clearInterval(like);
+    }
+    if(document.getElementById(`countsLikeD`)){
+        document.getElementById(`countsLikeD`).innerHTML = `Likes: ${like+-2}`;
+        clearInterval(like);
+    }
+
 }
 const Dislike = () => {
-    document.getElementById(`countsDislike${temple.letter}`).innerHTML = `Dislikes: ${dislike--}`;
+    if(document.getElementById(`countsDislikeA`)){
+        document.getElementById(`countsDislikeA`).innerHTML = `Dislikes: ${dislike++}`;
+        clearInterval(dislike);
+    };
+    if(document.getElementById(`countsDislikeB`)){
+        document.getElementById(`countsDislikeB`).innerHTML = `Dislikes: ${dislike+-2}`;
+        clearInterval(dislike);
+    };
+    if(document.getElementById(`countsDislikeC`)){
+        document.getElementById(`countsDislikeC`).innerHTML = `Dislikes: ${dislike+-2}`;
+        clearInterval(dislike);
+    };
+    if(document.getElementById(`countsDislikeD`)){
+        document.getElementById(`countsDislikeD`).innerHTML = `Dislikes: ${dislike+-2}`;
+        clearInterval(dislike);
+    }
 }
