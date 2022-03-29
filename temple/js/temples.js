@@ -28,9 +28,9 @@ const cput = (array)=>{
         count.innerHTML = `Count: ${temple.position}`;
 
         like.setAttribute('type', 'like');
-        like.setAttribute('id', temple.name);
+        like.setAttribute('id', temple.name[temple.position]);
         dislike.setAttribute('type', 'dislike');
-        dislike.setAttribute('id', temple.name);
+        dislike.setAttribute('id', temple.name[temple.position]);
         like.setAttribute('onclick', 'Like()');
         dislike.setAttribute('onclick', 'Dislike()');
         like.textContent = 'Like';
@@ -51,6 +51,7 @@ const cput = (array)=>{
         article.appendChild(p_5);
         article.appendChild(p_6);
         article.appendChild(img);
+        article.appendChild(count);
         
         voting.appendChild(like);
         voting.appendChild(dislike);
