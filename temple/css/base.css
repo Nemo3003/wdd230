@@ -62,6 +62,9 @@
     background-size: cover;
 
   }
+  button {
+    cursor: pointer;
+  }
   h1,h2,h3 {
     text-align: center;
   }
@@ -203,6 +206,7 @@
 #temple article img{
   border-radius: .9rem;
 }
+
 /*====================================RESERVATION PAGE===========================================*/
  .main-contact {
         display: flex;

@@ -10,7 +10,8 @@
         "services": "Clothing rental available. No cafeteria available. No patron housing available. Distribution center nearby",
         "closures": "Saturday, 2 April 2022 Monday, 4 April 2022 - Monday, 18 April 2022 Saturday, 2 July 2022 Saturday, 23 July 2022 - Monday, 19 September 2022 - Monday, 3 October 2022 - Wednesday, 23 November 2022 - Thursday, 24 November 2022 - Friday, 23 December 2022 - Saturday, 24 December 2022 - Saturday, 31 December 2022",
         "schedule": "N/A",
-        "position": 1
+        "position": 1,
+        "letter": "A"
     },
     {
         "templeName": "Brigham City Utah Temple",
@@ -23,7 +24,8 @@
         "services": "Clothing rental available. No cafeteria available. No patron housing available. Distribution center nearby",
         "closures": "Saturday, 2 April 2022  - Monday, 8 August 2022 - Monday, 22 August 2022 - Friday, 9 September 2022 (Limited Operations) - Saturday, 10 September 2022 - Saturday, 1 October 2022 - Wednesday, 23 November 2022 (Limited Operations) - Thursday, 24 November 2022 - Saturday, 24 December 2022 - Saturday, 31 December 2022 (Limited Operations)",
         "schedule": "N/A",
-        "position": 2
+        "position": 2,
+        "letter": "B"
     },
     {
         "templeName": "Cedar City Utah Temple",
@@ -36,7 +38,8 @@
         "services": "Clothing rental available. No cafeteria available. No patron housing available. Distribution center nearby",
         "closures": "Saturday, 2 April 2022 - Monday, 11 April 2022 - Monday, 25 April 2022 - Saturday, 1 October 2022 - Monday, 10 October 2022 - Monday, 24 October 2022 - Wednesday, 23 November 2022 - Thursday, 24 November 2022 - Saturday, 24 December 2022 - Sunday, 25 December 2022 - Saturday, 31 December 2022 - Sunday, 1 January 2023",
         "schedule": "N/A",
-        "position": 3
+        "position": 3,
+        "letter": "C"
     },
     {
         "templeName": "Draper Utah Temple",
@@ -49,6 +52,7 @@
         "services": "Clothing rental available. No cafeteria available. No patron housing available. Distribution center nearby",
         "closures": "Saturday, 2 April 2022 - Monday, 29 August 2022 - Monday, 12 September 2022 - Saturday, 1 October 2022 - Wednesday, 23 November 2022 (Limited Operations) - Thursday, 24 November 2022 - Saturday, 24 December 2022 - Saturday, 31 December 2022",
         "schedule": "N/A",
-        "position": 4
+        "position": 4,
+        "letter": "D"
     }
     ]
