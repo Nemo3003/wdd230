@@ -4,6 +4,7 @@ const cput = (array)=>{
         const h3 = document.createElement('h3');
         const h4 = document.createElement('h4');
         const h4_2 = document.createElement('h4');
+        const p = document.createElement('p');
         const img = document.createElement('img');
         const voting = document.createElement('div');
         const like = document.createElement('button');
@@ -11,6 +12,7 @@ const cput = (array)=>{
         h3.innerHTML = temple.templeName;
         h4.innerHTML = temple.location;
         h4_2.innerHTML = temple.dedicated;
+        p.innerHTML = temple.address;
 
         like.setAttribute('type', 'like');
         dislike.setAttribute('type', 'dislike');
@@ -26,6 +28,7 @@ const cput = (array)=>{
         article.appendChild(h3);
         article.appendChild(h4);
         article.appendChild(h4_2);
+        article.appendChild(p);
         article.appendChild(img);
         
         voting.appendChild(like);
