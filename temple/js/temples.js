@@ -1,9 +1,11 @@
 const cput = (array)=>{
     array.forEach(temple => {
+        
         const article = document.createElement('article');
         const h3 = document.createElement('h3');
         const h4 = document.createElement('h4');
         const h4_2 = document.createElement('h4');
+        const count = document.createElement('p');
         const p = document.createElement('p');
         const p_2 = document.createElement('p');
         const p_3 = document.createElement('p');
@@ -23,9 +25,12 @@ const cput = (array)=>{
         p_4.innerHTML = `Services: ${temple.services}`;
         p_5.innerHTML = `Closures: ${temple.closure}`;   
         p_6.innerHTML = `Schedule: ${temple.schedule}`;
+        count.innerHTML = `Count: ${temple.position}`;
 
         like.setAttribute('type', 'like');
+        like.setAttribute('id', temple.name);
         dislike.setAttribute('type', 'dislike');
+        dislike.setAttribute('id', temple.name);
         like.setAttribute('onclick', 'Like()');
         dislike.setAttribute('onclick', 'Dislike()');
         like.textContent = 'Like';
@@ -38,6 +43,7 @@ const cput = (array)=>{
         article.appendChild(h3);
         article.appendChild(h4);
         article.appendChild(h4_2);
+        article.appendChild(count);
         article.appendChild(p);
         article.appendChild(p_2);
         article.appendChild(p_3);
