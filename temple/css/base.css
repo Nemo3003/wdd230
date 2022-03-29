@@ -141,7 +141,7 @@
     margin-bottom: 2rem;
   }
   /*----------------------------------------------------Footer Form-----------------------------------------*/
-  form{
+  .form-footer{
     max-width:18rem;
     margin-left:55rem;
     margin-top: -12rem;
@@ -195,11 +195,15 @@
  .main-contact {
         display: flex;
         height:  fit-content;
-        margin: 0 auto;
+        font-size: x-large;
+        background-color: #FBD786;
     }
 
  .formcontainer {
-        padding: 7em;
+
+        padding: 2em;
+        max-width: 50rem;
+        margin: 0 auto;
 
   }
     
@@ -220,6 +224,34 @@
       margin: 0 auto;
       cursor: pointer;
   }
+/*=====================================SERVICES===================================================*/
+.card {
+    display: flex;
+    height: 20rem;
+    max-width: 60%;
+    align-items: flex-end;
+    border: 3px solid #b0215e;
+    margin: 1rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+} 
+.card11 {
+  background-color: aquamarine;
+}
+.left-menu {
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  top: 0;
+  position: fixed;
+  background-color: rgb(177, 155, 83);
+  padding: 2rem;
+  font-size: larger;
+  margin: .1rem;
+}
 
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
