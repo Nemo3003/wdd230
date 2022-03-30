@@ -13,18 +13,18 @@
 <body> 
     <header>
         <h1>Missionary page</h1>
-        <img src="https://nemo3003.github.io/wdd230/chamber/images/first.png" alt="temple inn">
+        <nav id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="reservation.html">Reservation</a>
+            <a href="services.html">Services</a>
+            <a href="temple.html">Temples</a>
+            <a href="#contact">Contact Us</a>
+            <img class="menu-icon" src="https://img.icons8.com/doodle/48/000000/facebook-new.png"/>
+            <img class="menu-icon" src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/>
+          </nav>
     </header>
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html">Home</a>
-        <a href="reception.html">Reception</a>
-        <a href="services.html">Services</a>
-        <a href="temple.html">Temples</a>
-        <a href="missionary.html">Missionary</a>
-        <img class="menu-icon" src="https://img.icons8.com/doodle/48/000000/facebook-new.png"/>
-        <img class="menu-icon" src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/>
-      </div>
+    
       
       <span class="openButton" onclick="openNav()"><img src="https://img.icons8.com/ios-glyphs/30/000000/menu--v1.png" alt="openNav"/></span>
       
@@ -42,15 +42,18 @@
 
         <div class="footer-left">
 
-            <p class="footer-company">Temple Inn & Suites © 2022</p>
+            <img class="logo" src="img/logo_50.png" alt="logo">
+            <p >&copy; <span id="year"></span> Temple Inn & Suites</p>
+            <p>4800 Montgomery Ln #300, Bethesda, MD 20814</p>
+            <p>Last Updated: <span id="modify"></span></p>
+           
+        </div>
+        <div class="footer-center">
+            <div class="mapouter google-maps"><div class="gmap_canvas"><iframe width="200" height="150" id="gmap_canvas" src="https://maps.google.com/maps?q=4800%20Montgomery,%20bethesda&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net"></a><br><style>.mapouter{position:relative;text-align:right;height:150px;width:200px;}</style><a href="https://www.embedgooglemap.net">interactive google maps for website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:150px;width:200px;}</style></div></div>
 
         </div>
-
         <div class="footer-right">
-
-            <p>Contact Us</p>
-
-            <form action="#" method="post">
+            <form name="contact" class="form-footer" action="#" method="post">
 
                 <input type="text" class="field" placeholder="Name" /><br>
                 <input type="email" class="field" placeholder="E-mail" />

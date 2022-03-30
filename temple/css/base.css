@@ -77,7 +77,7 @@
   /*-----------------------------------------Weather----------------------------------------------------*/
      .flex {
       display: flex;
-      flex-flow: row wrap;
+      flex-wrap: wrap;
       margin: 25px auto;
       max-width: 700px;
       border-right: 1px solid #333;
@@ -88,6 +88,7 @@
       border-bottom: 1px solid #333;
       border-left: 1px solid #333;
       text-align: center;
+      background-color: rgb(118, 165, 165);
 }
   
   
@@ -95,7 +96,7 @@
   #temples {
     display: grid;
     font-weight: 1rem;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     margin:1rem;
     gap: 2rem;
   }     
@@ -114,10 +115,9 @@
 
   /*==============================================Footer================================================*/
   .footer-main {
-     
-      flex-wrap: wrap;
-      height:fit-content;
-      bottom: 0;
+     display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      max-height:fit-content;
       background-color: rgb(99, 87, 73);
       padding: 2rem;
   }
@@ -134,20 +134,17 @@
     font-size: x-large;
     color: rgb(212, 169, 27); 
   }
-  .logo {
-    margin-left: 5rem;
-  }
+
   /*----------------------------------------------------Google Maps-----------------------------------------*/
   .google-maps {
-    margin-left: 35rem;
-    margin-top: -10rem;
-    margin-bottom: 2rem;
+    
+    margin: 0 auto;
   }
   /*----------------------------------------------------Footer Form-----------------------------------------*/
   .form-footer{
     max-width:18rem;
-    margin-left:55rem;
-    margin-top: -12rem;
+    margin: .4rem;
+    
   }
   
   .field{
@@ -162,9 +159,7 @@
   }
   
   #message{
-    resize:none;
     height:6.25rem;
-    overflow-y:hidden;
   }
   
   #submit{

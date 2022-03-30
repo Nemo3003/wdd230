@@ -1,4 +1,4 @@
-@media only screen and (min-width: 32.5em) {
+@media only screen and (max-width: 32.5rem) {
     .sidenav .closebtn {
         display: block;
         position: absolute;
@@ -11,10 +11,12 @@
       display: block;
     }
     #temples {
-        display: grid;
         grid-template-columns: 1fr 1fr;
-        margin:1rem;
-        gap: 2rem;
-      }     
 
-}
+      }     
+      .footer-main {
+        grid-template-columns: 1fr;
+      }
+   
+    }
+
