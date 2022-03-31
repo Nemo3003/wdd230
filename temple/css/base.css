@@ -96,7 +96,6 @@
   /*------------------------------------------Temples---------------------------------------------------*/
   #temples {
     display: grid;
-    font-weight: 1rem;
     grid-template-columns: repeat(3, 1fr);
     margin:1rem;
     gap: 2rem;
