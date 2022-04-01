@@ -28,9 +28,9 @@ Temple Information can be found on Temples list (Links to an external site.) on 
 
 📄 The Services page provides a list with information of the amenities and special services offered at the hotel along with the following sub pages/content:
 
-The reception page displaying information about the wedding reception accommodations, including options for food service and setup.
+📄📄The reception page displaying information about the wedding reception accommodations, including options for food service and setup.
 
-A full-time temple missionary page that provides information and images about the suites offered at the hotel with a simple Contact Us form for more details. 
+📄📄A full-time temple missionary page that provides information and images about the suites offered at the hotel with a simple Contact Us form for more details. 
 
 Each page should have a footer that contains contact information including a link to a Google map (Links to an external site.) showing the company headquarter address at 4800 Montgomery Ln #300, Bethesda, MD 20814 . Additional items might include social media links (again), a basic Contact Us form, and/or other relevant material. 
 
