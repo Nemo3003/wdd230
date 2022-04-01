@@ -10,11 +10,10 @@
     .openButton {
       display: block;
     }
-    .flex {
-      display: block;
-    }
+    
     #temples {
-        grid-template-columns: 1fr 1fr;
+      display: block;
+
 
       }     
       .footer-main {

@@ -1,7 +1,7 @@
 "use strict";
 
 
-    const fapiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5014130&appid=390e2c7ae7f11da066639b14a77939e5&units=imperial";
+    const fapiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5014130&appid=7d25f81a71306eb3ef3609d311f3b054&units=imperial";
     fetch(fapiURL)
     .then((response) => response.json())
     .then((jsObject) => {
