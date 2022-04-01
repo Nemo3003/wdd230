@@ -91,7 +91,19 @@
       text-align: center;
       background-color: rgb(118, 165, 165);
 }
+  /*Alert*/
+  div.weatheralert {
+    background-color: rgb(146, 204, 79);
+    color: rgb(75, 58, 58);
+    text-align: center;
+    padding: .5em;
+  }
   
+  .alertbtn {
+    color: rgb(212, 201, 135);
+    cursor: pointer;
+  
+  }
   
   /*------------------------------------------Temples---------------------------------------------------*/
   #temples {
