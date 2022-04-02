@@ -94,7 +94,7 @@
 .footer-main {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: .5fr .1fr;
 }
 .footer-left {
   grid-area: 1 / 1 / 2 / 2; 
