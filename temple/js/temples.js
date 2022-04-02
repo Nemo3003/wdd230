@@ -19,6 +19,7 @@ const cput = (array)=>{
         const voting = document.createElement('div');
         const like = document.createElement('button');
         const dislike = document.createElement('button')
+
         h3.innerHTML = temple.templeName;
         h4.innerHTML = temple.location;        
         h4_2.innerHTML = `Dedicated: ${temple.dedicated}`
@@ -85,9 +86,12 @@ fetch(url)
 let like = 0;
 let dislike = 0;
 
+
 const Like = () =>{
+    let likeA = [];
     if(document.getElementById(`countsLikeA`)){
-        document.getElementById(`countsLikeA`).innerHTML = `Likes: ${like++}`;
+        let a = likeA.push(like++);
+        document.getElementById(`countsLikeA`).innerHTML = `Likes: ${a}`;
         clearInterval(like);
     }
     if(document.getElementById(`countsLikeB`)){

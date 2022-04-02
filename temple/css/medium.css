@@ -13,9 +13,13 @@
     
     #temples {
       display: block;
-
-
       }     
+    /*=========================MISSIONARY======================*/
+    .rooms-m {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+    }
       .footer-main {
         grid-template-columns: 1fr;
       }

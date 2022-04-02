@@ -189,7 +189,7 @@
   }
 /*======================================TEMPLE PAGE==============================================*/
 .temple-main {
-    background-color: #D5EDBA;
+    
     padding: 2rem;
 }
 
@@ -202,7 +202,7 @@
   
 }
 #temple article {
-  
+  background-color: #D5EDBA;
   border: 1px solid #333;
   padding: .5rem;
   text-align: center;
@@ -219,11 +219,15 @@
  .reservation-form {
   display: flex;
   flex-direction: column;
-  margin: 4rem;
+  margin: 2rem auto;
   justify-content: center;
+  align-items: center;
+  max-width: 35rem;
   font-size: larger;
-  background-color: #818181;
+  background-color: #FBD786;
   padding: 2rem;  
+  border-radius: .9rem;
+  box-shadow: 3px 8px 5px 10px rgba(0,0,0,0.75);
  }
   .res-but {
     background-color: rgb(158, 147, 112);
@@ -231,6 +235,9 @@
     padding: 1rem;
     cursor: pointer;
     margin: 0 auto;
+  }
+  .fieldset-res {
+    padding: 3rem;
   }
  input,
  textarea {
@@ -240,6 +247,12 @@
         border-radius: 0.25rem;
         box-sizing: border-box;
         margin: 1rem;
+  }
+  legend {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        text-align: center;
   }
 .button-contact{
       display: flex;

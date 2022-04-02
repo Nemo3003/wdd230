@@ -16,14 +16,95 @@
 #temples {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
 }
+#temples :nth-child(1){
+  grid-area: 1 / 1 / 2 / 2;
+}
+#temples :nth-child(2){
+  grid-area: 2 / 1 / 3 / 2;
+}
+#temples :nth-child(3){
+  grid-area: 3 / 1 / 4 / 2; 
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+/*===========================TEMPLE PAGE=========================*/
 #temple {
   display: grid;
   grid-template-columns: 1fr;
 }
+/*==================SERVICES=========================*/
+.services {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.list-center {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.list-right {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.list-left {
+  grid-area: 3 / 1 / 4 / 2;
+}
+.subpages {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+/*======================RECEPTIONS=============================*/
+.section-rec {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  font-size: larger;
+}
+.accomodations {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.food-service {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.setup {
+  grid-area: 3 / 1 / 4 / 2;
+}
+/*=============================MISSIONARY============================*/
+.rooms-m {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  font-size: x-large;
+}
+
+.rooms-m img{
+  max-width: 18rem;
+}
+.miss-form-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  font-size: x-large;
+}
+
+/*=======================FOOTER===============================*/
 .footer-main {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.footer-left {
+  grid-area: 1 / 1 / 2 / 2; 
+}
+.footer-center {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.footer-right {
+  grid-area: 3 / 1 / 4 / 2;
+  
 }
 }
 
