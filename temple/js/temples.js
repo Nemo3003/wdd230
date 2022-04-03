@@ -40,13 +40,8 @@ const cput = (array)=>{
         like.setAttribute('class', `like ${temple.templeName}`);
         dislike.setAttribute('type', 'dislike');
         dislike.setAttribute('class', `dislike ${temple.templeName}`);
-        like.addEventListener('click', () =>{
-            `${temple.templeName}` === `${temple.templeName}` ? Like() : null;
-        })
-        dislike.addEventListener('click', () =>{
-            `${temple.templeName}` === `${temple.templeName}` ? Dislike() : null;
-        });
-
+        like.addEventListener('click', `${Like}${temple.letter}`);
+        dislike.addEventListener('click', Dislike);
         img.src = temple.imageUrl;
         img.alt = temple.templeName;
         img.setAttribute('class', 'temple-image');
@@ -85,25 +80,20 @@ fetch(url)
 let like = 0;
 let dislike = 0;
 
-const Like = () =>{
-    if(document.getElementById(`countsLikeA`)){
-        document.getElementById(`countsLikeA`).innerHTML = `Likes: ${like++}`;
-        clearInterval(like);
-    }
-    if(document.getElementById(`countsLikeB`)){
-        document.getElementById(`countsLikeB`).innerHTML = `Likes: ${like+-2}`;
-        clearInterval(like);
-    }
-    if(document.getElementById(`countsLikeC`)){
-        document.getElementById(`countsLikeC`).innerHTML = `Likes: ${like+-2}`;
-        clearInterval(like);
-    }
-    if(document.getElementById(`countsLikeD`)){
-        document.getElementById(`countsLikeD`).innerHTML = `Likes: ${like+-2}`;
-        clearInterval(like);
+const LikeA = () =>{
+ 
+        let checkLike = localStorage.getItem('Bountiful');
+        if (checkLike === null || checkLike == ''){
+            localStorage.setItem('Bountiful', 'like')
+        }else if (checkLike == 'like'){
+            localStorage.setItem('Bountiful', '')
+        }else {
+            localStorage.setItem('Bountiful', 'like')
+        }
+        document.getElementById('countsLikeA').classList.toggle("open");
     }
 
-}
+
 const Dislike = () => {
     if(document.getElementById(`countsDislikeA`)){
         document.getElementById(`countsDislikeA`).innerHTML = `Dislikes: ${dislike++}`;

@@ -1,4 +1,4 @@
-@media only screen and (max-width: 32.5rem) {
+@media only screen and (min-width: 31.5rem) {
     .sidenav .closebtn {
         display: block;
         position: absolute;
@@ -12,8 +12,20 @@
     }
     
     #temples {
-      display: block;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
       }     
+    #temples :nth-child(1){
+      grid-area: 1 / 1 / 2 / 2;
+    }
+    #temples :nth-child(2){
+      grid-area: 1 / 2 / 2 / 3;
+    }
+    #temples :nth-child(3){
+      grid-area: 2 / 1 / 2 / 2;
+    }
+    
     /*=========================MISSIONARY======================*/
     .rooms-m {
       display: grid;
