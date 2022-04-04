@@ -60,7 +60,7 @@
 .section-rec {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: .5fr .7fr .8fr;
   font-size: larger;
 }
 .accomodations {
