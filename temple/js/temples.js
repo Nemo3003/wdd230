@@ -1,4 +1,4 @@
-const requestURL = 'https://nemo3003.github.io/wdd230/wdd230/temple/data/temples.json';
+const requestURL = 'https://nemo3003.github.io/wdd230/temple/data/temples.json';
 const cards = document.getElementById('temple');
 
 fetch(requestURL)
