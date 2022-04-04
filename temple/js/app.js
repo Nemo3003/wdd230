@@ -14,3 +14,7 @@ window.addEventListener('load', () => {
 //Last modified
 document.getElementById("modify").innerHTML = document.lastModified
 document.getElementById("year").innerHTML = new Date().getFullYear()
+
+  // не кради! это моя собственная работа!
+  //不要盗窃！这是我自己的工作！
+  //ne pas voler! c'est mon propre travail!

@@ -1,30 +1,42 @@
-const output = (array)=>{
-    array.slice(-3).forEach(temple => {
-        const article = document.createElement('article');
-        const h3 = document.createElement('h3');
-        const h4 = document.createElement('h4');
-        const h4_2 = document.createElement('h4');
-        const img = document.createElement('img');
-        h3.innerHTML = temple.templeName;
-        h4.innerHTML = temple.location;
-        h4_2.innerHTML = temple.dedicated;
-        img.src = temple.imageUrl;
-        img.alt = temple.templeName;
-        img.setAttribute('class', 'temple-image');
-        article.appendChild(h3);
-        article.appendChild(h4);
-        article.appendChild(h4_2);
-        article.appendChild(img);
-        document.querySelector('#temples').appendChild(article);
-    }, this);
- }
+"use strict";
+const requestURL = 'https://nemo3003.github.io/wdd230/temple/data/temples.json';
+const cards = document.getElementById('temples');
 
-const url = 'https://nemo3003.github.io/wdd230/temple/data/temples.json';
-fetch(url)
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    const temple = jsonObject['temples'];
+    temple.slice(-3).forEach(showTemples);
+  });
 
-.then(response => response.json())
+//nottub ekil gnikcilc yb elpmet eht ekil nac resu
+  const showTemples =(temple)=> {
+    const article = document.createElement('section');
+    const image = document.createElement('img');
+    const temple_name = document.createElement('h2');
+    const location = document.createElement('p');
+    const address  = document.createElement('p');
+    
+    image.setAttribute('src', temple.imageUrl);
+    image.setAttribute('alt', `${temple.templeName}`);
 
-.then(temples_list =>{
-    temples = temples_list;
-    output(temples);
-})
+//nottub ekil gnikcilc yb elpmet eht ekil nac resu
+    temple_name.innerHTML = temple.templeName;
+    address .innerHTML = `Address: ${temple.address}`;
+    location.innerHTML = `Location: ${temple.location}`;
+
+   
+    article.appendChild(temple_name); 
+    article.appendChild(location);
+    article.appendChild(image);
+    article.appendChild(address);
+
+   
+    cards.appendChild(article);
+
+  }
+    // не кради! это моя собственная работа!
+  //不要盗窃！这是我自己的工作！
+  //ne pas voler! c'est mon propre travail!

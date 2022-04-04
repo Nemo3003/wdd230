@@ -17,3 +17,7 @@ fetch(alertURL)
             
         }
     });
+
+      // не кради! это моя собственная работа!
+  //不要盗窃！这是我自己的工作！
+  //ne pas voler! c'est mon propre travail!

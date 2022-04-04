@@ -1,3 +1,5 @@
+"use strict";
+
 const requestURL = 'https://nemo3003.github.io/wdd230/temple/data/temples.json';
 const cards = document.getElementById('temple');
 
@@ -41,7 +43,7 @@ fetch(requestURL)
     phone.innerHTML = `Phone: ${temple.phone}`;
     email.innerHTML = `Email: ${temple.email}`;
     services.innerHTML = `Services: ${temple.services}`;
-    //history.innerHTML = `History: ${temple.history}`;
+    history.innerHTML = `History: ${temple.history}`;
     schedule.innerHTML = `Session Schedule: ${temple.sessionSchedule}`;
     closure.innerHTML = `Closing Schedule: ${temple.closingSchedule}`;
     likes.innerHTML = ' ' + num_likes + ' likes';
@@ -50,6 +52,7 @@ fetch(requestURL)
     article.appendChild(location);
     article.appendChild(image);
     article.appendChild(services);
+    article.appendChild(history);
     article.appendChild(schedule);
     article.appendChild(closure);
     article.appendChild(address);
@@ -57,7 +60,6 @@ fetch(requestURL)
     article.appendChild(email);
     article.appendChild(like);
     article.appendChild(likes);
-    //article.appendChild(history);
    
     cards.appendChild(article);
 
