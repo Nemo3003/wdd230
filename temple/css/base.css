@@ -222,10 +222,7 @@
 #temple article img{
   border-radius: .9rem;
 }
-#temple article.clicked {
-  color: #00dfae; 
-  font-weight:bold;
-}
+
 /*====================================RESERVATION PAGE===========================================*/
 .main-reser {
   background-color:#DDDDDD;

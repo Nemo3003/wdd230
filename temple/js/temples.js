@@ -26,25 +26,25 @@ fetch(requestURL)
     const closure = document.createElement('p');
     let like = document.createElement('button');
     const likes = document.createElement('span');
-    let num_likes = Number(window.localStorage.getItem(temple.templeName));
+    let num_likes = Number(window.localStorage.getItem(temple.letter));
     
     image.setAttribute('src', temple.imageUrl);
     image.setAttribute('alt', `${temple.templeName}`);
-
-    like.setAttribute('value', 'Like');
+    like.innerHTML = 'Like';
+    like.setAttribute('type', 'button');
     like.setAttribute('class', 'like');
     like.setAttribute('id', temple.letter);
 //nottub ekil gnikcilc yb elpmet eht ekil nac resu
-    temple_name.textContent = temple.templeName;
-    address .textContent = `Address: ${temple.address}`;
-    location.textContent = `Location: ${temple.location}`;
-    phone.textContent = `Phone: ${temple.phone}`;
-    email.textContent = `Email: ${temple.email}`;
-    services.textContent = `Services: ${temple.services}`;
-    //history.textContent = `History: ${temple.history}`;
-    schedule.textContent = `Session Schedule: ${temple.sessionSchedule}`;
-    closure.textContent = `Closing Schedule: ${temple.closingSchedule}`;
-    likes.textContent = ' ' + num_likes + ' likes';
+    temple_name.innerHTML = temple.templeName;
+    address .innerHTML = `Address: ${temple.address}`;
+    location.innerHTML = `Location: ${temple.location}`;
+    phone.innerHTML = `Phone: ${temple.phone}`;
+    email.innerHTML = `Email: ${temple.email}`;
+    services.innerHTML = `Services: ${temple.services}`;
+    //history.innerHTML = `History: ${temple.history}`;
+    schedule.innerHTML = `Session Schedule: ${temple.sessionSchedule}`;
+    closure.innerHTML = `Closing Schedule: ${temple.closingSchedule}`;
+    likes.innerHTML = ' ' + num_likes + ' likes';
    
     article.appendChild(temple_name); 
     article.appendChild(location);
@@ -59,12 +59,13 @@ fetch(requestURL)
     article.appendChild(likes);
     //article.appendChild(history);
    
-    cards.appendChild( article);
+    cards.appendChild(article);
 
     function Like(){
         num_likes++;
 
         localStorage.setItem(like.id, num_likes);
+        window.location.reload();
     }
     
     like.onclick = Like;
