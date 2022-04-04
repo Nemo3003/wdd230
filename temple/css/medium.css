@@ -1,4 +1,6 @@
-@media only screen and (min-width: 31.5rem) {
+@media only screen and (min-width: 31.5rem)
+and (max-width: 47rem) {
+  
     .sidenav .closebtn {
         display: block;
         position: absolute;
@@ -13,9 +15,12 @@
     
     #temples {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: .5fr .5fr;
       grid-gap: 1rem;
       }     
+    #temples img {
+      max-width: 14.5rem;
+    }
     #temples :nth-child(1){
       grid-area: 1 / 1 / 2 / 2;
     }

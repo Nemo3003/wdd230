@@ -1,114 +1,76 @@
+const requestURL = 'https://nemo3003.github.io/wdd230/wdd230/temple/data/temples.json';
+const cards = document.getElementById('temple');
 
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    const temple = jsonObject['temples'];
+    temple.forEach(showTemples);
+  });
 
-const cput = (array)=>{
-    array.forEach(temple => {
-        
-        const article = document.createElement('article');
-        const h3 = document.createElement('h3');
-        const h4 = document.createElement('h4');
-        const h4_2 = document.createElement('h4');
-        const p = document.createElement('p');
-        const p_2 = document.createElement('p');
-        const p_3 = document.createElement('p');
-        const p_4 = document.createElement('p');
-        const p_5 = document.createElement('p');
-        const p_6 = document.createElement('p');
-        const liking = document.createElement('p');
-        const disliking = document.createElement('p');
-        const img = document.createElement('img');
-        const voting = document.createElement('div');
-        const like = document.createElement('button');
-        const dislike = document.createElement('button')
-        h3.innerHTML = temple.templeName;
-        h4.innerHTML = temple.location;        
-        h4_2.innerHTML = `Dedicated: ${temple.dedicated}`
-        p.innerHTML = `Address: ${temple.address}`;
-        p_2.innerHTML = `Phone: ${temple.phone}`;
-        p_3.innerHTML = `Email: ${temple.email}`
-        p_4.innerHTML = `Services: ${temple.services}`;
-        p_5.innerHTML = `Closures: ${temple.closures}`;   
-        p_6.innerHTML = `Schedule: ${temple.schedule}`;
-        liking.innerHTML = `Likes:`;
-        disliking.innerHTML = `Dislikes:`;
-        
-        console.log(temple.letter);
-        liking.setAttribute('id', `countsLike${temple.letter}`);
-        disliking.setAttribute('id', `countsDislike${temple.letter}`);
-        like.textContent = 'Like';
-        dislike.textContent = 'Dislike';
-        like.setAttribute('type', 'like');
-        like.setAttribute('class', `like ${temple.templeName}`);
-        dislike.setAttribute('type', 'dislike');
-        dislike.setAttribute('class', `dislike ${temple.templeName}`);
-        like.addEventListener('click', `${Like}${temple.letter}`);
-        dislike.addEventListener('click', Dislike);
-        img.src = temple.imageUrl;
-        img.alt = temple.templeName;
-        img.setAttribute('class', 'temple-image');
+//nottub ekil gnikcilc yb elpmet eht ekil nac resu
+  const showTemples =(temple)=> {
 
-        article.appendChild(h3);
-        article.appendChild(h4);
-        article.appendChild(h4_2);
-        article.appendChild(p);
-        article.appendChild(p_2);
-        article.appendChild(p_3);
-        article.appendChild(p_4);
-        article.appendChild(p_5);
-        article.appendChild(p_6);
-        article.appendChild(img);
-        article.appendChild(liking);
-        article.appendChild(disliking);
-        
-        voting.appendChild(like);
-        voting.appendChild(dislike);
-        article.appendChild(voting);
+    const article = document.createElement('section');
+    const image = document.createElement('img');
+    const temple_name = document.createElement('h2');
+    const location = document.createElement('p');
+    const address  = document.createElement('p');
+    const phone = document.createElement('p');
+    const email = document.createElement('p');
+    const services = document.createElement('p');
+    const history = document.createElement('p');
+    const schedule = document.createElement('p');
+    const closure = document.createElement('p');
+    let like = document.createElement('button');
+    const likes = document.createElement('span');
+    let num_likes = Number(window.localStorage.getItem(temple.templeName));
+    
+    image.setAttribute('src', temple.imageUrl);
+    image.setAttribute('alt', `${temple.templeName}`);
 
-        document.querySelector('#temple').appendChild(article);
-    }, this);
- }
+    like.setAttribute('value', 'Like');
+    like.setAttribute('class', 'like');
+    like.setAttribute('id', temple.letter);
+//nottub ekil gnikcilc yb elpmet eht ekil nac resu
+    temple_name.textContent = temple.templeName;
+    address .textContent = `Address: ${temple.address}`;
+    location.textContent = `Location: ${temple.location}`;
+    phone.textContent = `Phone: ${temple.phone}`;
+    email.textContent = `Email: ${temple.email}`;
+    services.textContent = `Services: ${temple.services}`;
+    //history.textContent = `History: ${temple.history}`;
+    schedule.textContent = `Session Schedule: ${temple.sessionSchedule}`;
+    closure.textContent = `Closing Schedule: ${temple.closingSchedule}`;
+    likes.textContent = ' ' + num_likes + ' likes';
+   
+    article.appendChild(temple_name); 
+    article.appendChild(location);
+    article.appendChild(image);
+    article.appendChild(services);
+    article.appendChild(schedule);
+    article.appendChild(closure);
+    article.appendChild(address);
+    article.appendChild(phone);
+    article.appendChild(email);
+    article.appendChild(like);
+    article.appendChild(likes);
+    //article.appendChild(history);
+   
+    cards.appendChild( article);
 
-const url = 'https://nemo3003.github.io/wdd230/temple/data/temples.json';
-fetch(url)
+    function Like(){
+        num_likes++;
 
-.then(response => response.json())
-
-.then(temples_list =>{
-    temples = temples_list;
-    cput(temples);
-})
-
-let like = 0;
-let dislike = 0;
-
-const LikeA = () =>{
- 
-        let checkLike = localStorage.getItem('Bountiful');
-        if (checkLike === null || checkLike == ''){
-            localStorage.setItem('Bountiful', 'like')
-        }else if (checkLike == 'like'){
-            localStorage.setItem('Bountiful', '')
-        }else {
-            localStorage.setItem('Bountiful', 'like')
-        }
-        document.getElementById('countsLikeA').classList.toggle("open");
+        localStorage.setItem(like.id, num_likes);
     }
-
-
-const Dislike = () => {
-    if(document.getElementById(`countsDislikeA`)){
-        document.getElementById(`countsDislikeA`).innerHTML = `Dislikes: ${dislike++}`;
-        clearInterval(dislike);
-    };
-    if(document.getElementById(`countsDislikeB`)){
-        document.getElementById(`countsDislikeB`).innerHTML = `Dislikes: ${dislike+-2}`;
-        clearInterval(dislike);
-    };
-    if(document.getElementById(`countsDislikeC`)){
-        document.getElementById(`countsDislikeC`).innerHTML = `Dislikes: ${dislike+-2}`;
-        clearInterval(dislike);
-    };
-    if(document.getElementById(`countsDislikeD`)){
-        document.getElementById(`countsDislikeD`).innerHTML = `Dislikes: ${dislike+-2}`;
-        clearInterval(dislike);
-    }
-}
+    
+    like.onclick = Like;
+  }
+  //User can like the temple by clicking the like button.
+  //nottub ekil gnikcilc yb elpmet eht ekil nac resu
+  // не кради! это моя собственная работа!
+  //不要盗窃！这是我自己的工作！
+  //ne pas voler! c'est mon propre travail!

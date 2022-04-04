@@ -1,5 +1,6 @@
-[
-    {
+{
+    "temples": [
+        {
         "templeName": "Bountiful Utah Temple",
         "location": "Bountiful, Utah, United States",
         "dedicated": "8 January 1995",
@@ -55,4 +56,4 @@
         "position": 4,
         "letter": "D"
     }
-    ]
+    ]}

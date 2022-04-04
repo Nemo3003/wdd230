@@ -2,18 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="This website is the home page of the Temple Inn & Suites">
+    <meta name="description" content="Temple Inn & Suites Tel 3636363655">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <title>Temple Inn & Suites</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/base.css">
+    
 </head>
-<body> 
+<body class = "main-body"> 
     <header>
         <h1 class="header-h1">TEMPLE INN & SUITES</h1>
-        <h2>Temples</h2>
         <nav id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="index.html">Home</a>
@@ -21,23 +23,19 @@
             <a href="services.html">Services</a>
             <a href="temple.html">Temples</a>
             <a href="#contact">Contact Us</a>
-            <img class="menu-icon" src="https://img.icons8.com/doodle/48/000000/facebook-new.png"/>
-            <img class="menu-icon" src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/>
+            <img class="menu-icon" alt="facebook" src="https://img.icons8.com/doodle/48/000000/facebook-new.png"/>
+            <img class="menu-icon" alt="instagram" src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/>
           </nav>
     </header>
     
       
       <span class="openButton" onclick="openNav()"><img src="https://img.icons8.com/ios-glyphs/30/000000/menu--v1.png" alt="openNav"/></span>
-      
-      
-      <main class="temple-main">
-          
-          <section>
-            <div id="temple">
-            </div>
-        </section>
-      </main>
 
+    <main>
+        <div class="content_temple">
+            <div class="temple"></div>
+        </div>
+    </main>
       <footer class="footer-main">
 
         <div class="footer-left">
@@ -70,7 +68,8 @@
 
     </footer>
     <script src="js/app.js"></script>
-    <script src="js/temples.js"></script>
+
+    <script src="js/temples.js" defer></script>
     
 </body>
 </html>
