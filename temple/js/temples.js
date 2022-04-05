@@ -26,6 +26,7 @@ fetch(requestURL)
     const history = document.createElement('p');
     const schedule = document.createElement('p');
     const closure = document.createElement('p');
+
     let like = document.createElement('button');
     const likes = document.createElement('span');
     let num_likes = Number(window.localStorage.getItem(temple.letter));

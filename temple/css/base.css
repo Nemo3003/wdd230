@@ -14,8 +14,7 @@ body {
     background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
 
   }
   button, .submit {
@@ -57,7 +56,9 @@ body {
   transition: 0.3s;
 }
 
-
+.btnClose {
+  margin: 0 auto;
+}
 .sidenav a:hover {
   color: #f1f1f1;
 }
@@ -149,7 +150,7 @@ body {
   border-radius: .5rem;
   font-size: larger;
   }
-
+ 
   /*==============================================Footer================================================*/
   .footer-main {
      display: grid;
