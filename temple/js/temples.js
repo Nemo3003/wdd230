@@ -44,8 +44,8 @@ fetch(requestURL)
     email.innerHTML = `Email: ${temple.email}`;
     services.innerHTML = `Services: ${temple.services}`;
     history.innerHTML = `History: ${temple.history}`;
-    schedule.innerHTML = `Session Schedule: ${temple.sessionSchedule}`;
-    closure.innerHTML = `Closing Schedule: ${temple.closingSchedule}`;
+    schedule.innerHTML = `Session Schedule: ${temple.schedule}`;
+    closure.innerHTML = `Closing Schedule: ${temple.closures}`;
     likes.innerHTML = ' ' + num_likes + ' likes';
    
     article.appendChild(temple_name); 
