@@ -13,6 +13,9 @@
   .openButton {
     display: block;
 }
+.main-body {
+  text-align: center;
+}
 #temples {
   display: grid;
   grid-template-columns: 1fr;
@@ -30,12 +33,18 @@
 .flex {
   display: flex;
   flex-direction: column;
+  
 }
 /*===========================TEMPLE PAGE=========================*/
-#temple {
+
+.temple-main #temple {
   display: grid;
   grid-template-columns: 1fr;
+  gap: 2rem;
+  margin: 2rem;
+  
 }
+
 /*==================SERVICES=========================*/
 .services {
   display: grid;
@@ -95,9 +104,11 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: .5fr .1fr;
+  
 }
 .footer-left {
   grid-area: 1 / 1 / 2 / 2; 
+  
 }
 .footer-center {
   grid-area: 2 / 1 / 3 / 2;
