@@ -17,9 +17,11 @@
   text-align: center;
 }
 #temples {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  display: flex;
+  flex-direction: column;
+}
+#temples section {
+  margin-left: 1.4rem;
 }
 #temples :nth-child(1){
   grid-area: 1 / 1 / 2 / 2;
