@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Merriweather:wght@300&family=Rubik:wght@500&display=swap');
 
 /*==============================================CONTENT====================================================*/
-
 body {
   background-color: #F7CCAC;
   font-family: 'Merriweather', serif;
@@ -74,11 +73,12 @@ body {
 .openButton {
   position:fixed;
   right: 0;
+  top: 0;
   background-color: rgb(177, 155, 83);
   border-radius: .5rem 0 0 .5rem;
   padding: 1rem;
   cursor: pointer;
-  
+  border: 2px solid rgb(27, 27, 26);
 }
 .btn-book {
   display: flex;
@@ -131,7 +131,7 @@ body {
   /*------------------------------------------Temples---------------------------------------------------*/
   #temples {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     margin:1rem;
     gap: 2rem;
   }     
