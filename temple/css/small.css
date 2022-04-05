@@ -21,7 +21,7 @@
   flex-direction: column;
 }
 #temples section {
-  margin-left: 1.4rem;
+  margin-left: 4rem;
 }
 #temples :nth-child(1){
   grid-area: 1 / 1 / 2 / 2;
@@ -32,7 +32,7 @@
 #temples :nth-child(3){
   grid-area: 3 / 1 / 4 / 2; 
 }
-.flex {
+.forecastist {
   display: flex;
   flex-direction: column;
   

@@ -16,8 +16,10 @@
             const imagesrc = `https://openweathermap.org/img/w/${forecast.weather[0].icon}.png`;
             const desc = forecast.weather[0].description;
             document.querySelector(`#weekday${day+1}`).textContent = weekdays[thedate.getDay()];
-            document.querySelector(`#ftemp${day+1}`).textContent = forecast.main.temp.toFixed(0) + "°F";
-
+            document.querySelector(`#condition${day+1}`).textContent = desc;
+            document.querySelector(`#ftemp${day+1}`).textContent = `Temp: ${forecast.main.temp.toFixed(0)}°F`;
+            document.querySelector(`#fhumidity${day+1}`).textContent = `Hum: ${forecast.main.humidity} %`;
+            
             document.querySelector(`#icon${day+1}`).setAttribute('src', imagesrc);
             document.querySelector(`#icon${day+1}`).setAttribute('alt', desc);
             day++;
