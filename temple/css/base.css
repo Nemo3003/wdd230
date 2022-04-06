@@ -90,7 +90,20 @@ body {
   margin: 0 auto;
 }
   /*-----------------------------------------Weather----------------------------------------------------*/
-     .forecastist {
+  .localweather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 35rem;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+    border-left: 1px solid #333;
+    background-color: rgb(118, 165, 165);
+    border-radius: 1rem;
+  }   
+  .forecastist {
       display: flex;
       flex-wrap: wrap;
       margin: 25px auto;
@@ -108,7 +121,7 @@ body {
       border-radius: 1rem;
       
 }
-.weekday {
+.weekday, .today {
   font-size: 1.5rem;
   color: rgb(68, 68, 65);
   font-weight: bold;

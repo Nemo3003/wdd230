@@ -38,12 +38,23 @@
             <span class="alertbtn" onclick="this.parentElement.style.display='none';">&times;</span>
         </div>
           <a href="reservation.html"><button class="btn-book">BOOK NOW!</button></a>
+          <div class="localweather">
+            <h3 class="summarytitle">Weather Summary</h3><br>
+            
+          </div>
                 <h3 class="weekforecast">3 Day Forecast</h3>
                 <div class="forecastist">
+                    <div class="forecastdays"> 
+                        <h4 class="today">Today</h4>
+                        <img src="" alt="" class="img-actual"><br>
+                        <span id="condition"></span><br>
+                        <span id="current-temp">°F</span><br>
+                        <span id="humidity"></span><br>
+                    </div>
                     <div class="forecastdays">
                         <span class="weekday" id="weekday1"></span><br>
                         <img src="" alt="" id="icon1"><br>
-                        <span id="condition1"></span><br>
+                        <span id="fcondition1"></span><br>
                         <span class="data" id="ftemp1">°F</span><br>
                         <span id="fhumidity1"></span><br>
                         <span class="alert" id="alert"></span>
@@ -51,14 +62,14 @@
                     <div class="forecastdays">
                         <span class="weekday" id="weekday2"></span><br>
                         <img src="" alt="" id="icon2"><br>
-                        <span id="condition2"></span><br>
+                        <span id="fcondition2"></span><br>
                         <span class="data" id="ftemp2">°F</span><br>
                         <span id="fhumidity2"></span><br>
                     </div>
                     <div class="forecastdays">
                         <span class="weekday" id="weekday3"></span><br>
                         <img src="" alt="" id="icon3"><br>
-                        <span id="condition3"></span><br>
+                        <span id="fcondition3"></span><br>
                         <span class="data" id="ftemp3">°F</span><br>
                         <span id="fhumidity3"></span><br>
                     </div>
