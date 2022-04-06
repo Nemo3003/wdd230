@@ -2,6 +2,10 @@
   and (min-width: 7.5rem) 
   and (max-width: 31rem)
  {
+   body {
+    position: relative;
+    z-index: -1;
+   }
     .sidenav .closebtn {
       display: block;
       position: absolute;
@@ -16,12 +20,13 @@
     top: 0;
 }
 .main-body {
+
   text-align: center;
+
 }
 #temples {
   transform: translateX(2%);
-  position: relative;
-  z-index: -1;
+ 
 }
 
 #temples :nth-child(1){
@@ -38,6 +43,7 @@
   flex-direction: column;
   
 }
+
 /*===========================TEMPLE PAGE=========================*/
 
 .temple-main #temple {

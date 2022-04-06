@@ -12,9 +12,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
 
   }
   button, .submit {
@@ -319,6 +316,7 @@ body {
   padding: 1rem;
   font-size: x-large;
   background-color: #FBD786;
+
   
 }
 .list-center{

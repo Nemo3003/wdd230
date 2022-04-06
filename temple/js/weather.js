@@ -5,7 +5,7 @@ const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=4348599&appid
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        const imagesrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
+        const imagesrc= `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
         const desc = jsObject.weather[0].description;
         document.getElementById('condition').textContent = jsObject.weather[0].description;
         document.getElementById('current-temp').textContent = `Temp:${jsObject.main.temp.toFixed(0)}°F`;

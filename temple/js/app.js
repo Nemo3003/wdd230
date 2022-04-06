@@ -11,6 +11,9 @@ function closeNav() {
 window.addEventListener('load', () => {
   document.getElementById('mySidenav').style.width = '0'; 
 });
+window.addEventListener('resize', ()=>{
+  document.getElementById('mySidenav').style.width = '0'; 
+});
 //Last modified
 document.getElementById("modify").innerHTML = document.lastModified
 document.getElementById("year").innerHTML = new Date().getFullYear()
