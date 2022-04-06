@@ -20,8 +20,8 @@
             <a href="services.html">Services</a>
             <a href="temple.html">Temples</a>
             <a href="#contact">Contact Us</a>
-            <img class="menu-icon" alt="facebook" src="https://img.icons8.com/doodle/48/000000/facebook-new.png"/>
-            <img class="menu-icon" alt="instagram" src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/>
+            <a href="https://www.facebook.com"><img class="menu-icon" alt="facebook" src="https://img.icons8.com/doodle/48/000000/facebook-new.png"/></a>
+            <a href="https://www.instagram.com/"><img class="menu-icon" alt="instagram" src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/></a>
           </nav>
     </header>
     
@@ -142,7 +142,7 @@
   
               <label>
                 special accommodations/comments
-                <textarea name="textarea" placeholder="Write your comments or special requests here..."></textarea>
+                <textarea name="textarea" placeholder="Write your comments or special requests here..." required></textarea>
               </label>
             </fieldset>
   
@@ -167,12 +167,12 @@
 
         </div>
         <div class="footer-right">
-            <form name="contact" class="form-footer" action="thankyou.html" method="post">
+            <form id="contact" name="contact" class="form-footer" action="thankyou.html" method="get">
 
-                <input type="text" class="field" placeholder="Name" /><br>
-                <input type="email" class="field" placeholder="E-mail" />
+                <input type="text" class="field" placeholder="Name"  pattern="[A-Za-z].{5,}" required/><br>
+                <input type="email" class="field" placeholder="E-mail" required/>
               
-                <textarea id="message" class="field" placeholder="Message"></textarea>
+                <textarea id="message" class="field" placeholder="Message" required></textarea>
                 
                 <input id="submit" type="submit" value="Send">
             </form>
